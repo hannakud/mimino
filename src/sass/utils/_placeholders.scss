@@ -1,6 +1,6 @@
 // Швидке центрування по вертикалі
 
-%aling-center {
+%align-center {
   display: flex;
   align-items: center;
 }
@@ -13,5 +13,5 @@
 }
 
 // Приклад підключення
-// @extend %aling-center;
+// @extend %align-center;
 // @extend %justify-center;
