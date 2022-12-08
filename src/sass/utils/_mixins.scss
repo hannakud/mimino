@@ -1,0 +1,56 @@
+// шаблон розмірів шрифта
+
+@mixin font($weight, $size, $height, $spacing) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+// Приклад підключення
+// @include font(700, 36px, 1.17, 0.03em);
+
+
+// шаблон для точок перелому адаптивних сторінок
+
+@mixin mobile {
+  @media screen and (min-width: 414px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
+// шаблон для підключення растрових зображень з щільністью 
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+// Приклад використання
+
+// @include tablet {
+//   background-image: $gradient, url('../images/tab/hero-backgraund-tab.jpg');
+//   @include retina {
+//     background-image: url('../images/tab/hero-backgraund-tab-2x.jpg');
+//   }
+// }
+
+// @include desktop {
+//   max-height: 600px;
+//   background-image: $gradient, url('../images/desktop/hero-backgraund-desk.jpg');
+//   @include retina {
+//     background-image: url('../images/desktop/hero-backgraund-desk-2x.jpg');
+//   }
+// }
