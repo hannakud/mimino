@@ -1,0 +1,17 @@
+// Швидке центрування по вертикалі
+
+%align-center {
+  display: flex;
+  align-items: center;
+}
+
+// Швидке центрування по горизонталі
+
+%justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+// Приклад підключення
+// @extend %align-center;
+// @extend %justify-center;
