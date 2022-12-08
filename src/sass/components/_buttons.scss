@@ -1,0 +1,31 @@
+.button {
+  width: 236px;
+  height: 48px;
+
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  border: 2px solid $c-white-main;
+  border-radius: 25px;
+  color: $c-main-accent;
+  text-align: center;
+
+  transition: background-color $transition-cubic;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $c-white-main;
+  }
+}
+
+.button-light {
+  background-color: $c-buttons-background;
+}
+
+.button-dark {
+  background-color: $c-black-main;
+}
