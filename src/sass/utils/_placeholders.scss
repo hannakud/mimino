@@ -15,7 +15,7 @@
 // Приклад підключення
 // @extend %align-center;
 // @extend %justify-center;
-.visually-hidden {
+%visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
