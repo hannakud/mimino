@@ -1,1 +1,189 @@
+.header {
+  background-color: $c-black-main;
+}
+.header-container {
+  display: flex;
+  align-items: center;
 
+  @include desktop {
+    justify-content: space-around;
+  }
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+
+  @include mobile {
+    max-width: 414px;
+  }
+
+  @include tablet {
+    max-width: 1024px;
+  }
+
+  @include desktop {
+    max-width: 1280px;
+  }
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 10px;
+}
+
+.logo-type {
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(39 / 36);
+  letter-spacing: 0.3em;
+  color: $c-logo-header-restaurant;
+
+  @include mobile {
+    margin-right: 52px;
+  }
+  @include tablet {
+    font-size: 40px;
+    line-height: calc(43 / 40);
+
+    margin-right: 87px;
+  }
+  @include desktop {
+    font-size: 40px;
+    line-height: calc(43 / 40);
+
+    margin-right: 96px;
+  }
+}
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-link-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: $c-main-accent;
+  display: block;
+
+  margin-right: 5px;
+
+  @include mobile {
+    margin-right: 12px;
+  }
+
+  @include tablet {
+    font-size: 20px;
+    line-height: calc(20 / 24);
+
+    margin-right: 32px;
+  }
+
+  @include desktop {
+    font-size: 20px;
+    line-height: calc(20 / 24);
+
+    margin-right: 32px;
+  }
+}
+.contact-icon {
+  fill: $c-main-accent;
+
+  @include tablet {
+    margin-right: 14px;
+  }
+  @include desktop {
+    margin-right: 14px;
+  }
+}
+.header-tel {
+  @media screen and (max-width: 414px) {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    color: $c-white-main;
+  }
+}
+.header-item-tel {
+  display: flex;
+  align-items: center;
+  @include tablet {
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+
+    padding: 11px 8px 12px 14px;
+  }
+
+  @include desktop {
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+  }
+}
+
+.hotel-tel {
+  @include tablet {
+    margin-right: 16px;
+  }
+
+  @include desktop {
+    margin-right: 16px;
+  }
+}
+.header-item-tel:not(:last-child) {
+  margin-right: 15px;
+  @include mobile {
+    margin-right: 26px;
+  }
+  @include tablet {
+    margin-right: 72px;
+  }
+
+  @include desktop {
+    margin-right: 72px;
+  }
+}
+
+.soc-list {
+  @media screen and (max-width: 414px) {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: flex;
+    gap: 22px;
+
+    align-items: center;
+    justify-content: center;
+  }
+}
+.soc-icon {
+  fill: $c-main-accent;
+  display: flex;
+}
