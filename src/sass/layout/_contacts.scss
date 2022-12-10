@@ -33,8 +33,7 @@
 .contacts-wrapper {
   @include tablet {
     display: flex;
-    gap: 101px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 }
@@ -97,8 +96,12 @@
 }
 
 .contact-title {
-  @include font(500, 20px, 1.2, 0.02em);
+  @include font(500, 16px, 1.2, 0.02em);
   color: $c-second-accent;
+
+  @include mobile {
+    @include font(500, 20px, 1.2, 0.02em);
+  }
 
   @include tablet {
     margin-bottom: 8px;
@@ -160,9 +163,16 @@
   display: flex;
   gap: 11px;
   align-items: center;
-
-  @include font(400, 14px, 1.21, 0.02em);
   color: $c-logo-restaurant-hotel;
+  @include font(400, 10px, 1.21, 0.02em);
+
+  @include mobile {
+    @include font(400, 14px, 1.21, 0.02em);
+  }
+
+  @include desktop {
+    color: $c-logo-homepage;
+  }
 }
 
 .contact-address-link {
@@ -170,8 +180,16 @@
   gap: 16px;
   align-items: center;
 
-  @include font(400, 16px, 1.25, 0.01em);
+  @include font(400, 14px, 1.25, 0.01em);
   color: $c-logo-restaurant-hotel;
+
+  @include mobile {
+    @include font(400, 16px, 1.25, 0.01em);
+  }
+
+  @include desktop {
+    color: $c-logo-homepage;
+  }
 }
 
 .contacts-map {
