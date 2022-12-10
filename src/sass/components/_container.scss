@@ -4,16 +4,17 @@
   padding-right: 15px;
   padding-left: 15px;
   width: 100%;
-
   @include mobile {
-    max-width: 384px;
+    width: 414px;
   }
-
   @include tablet {
-    max-width: 930px;
+    width: 1024px;
+    padding-right: 47px;
+    padding-left: 47px;
   }
-
   @include desktop {
-    max-width: 1110px;
+    max-width: 1280px;
+    padding-right: 85px;
+    padding-left: 85px;
   }
 }
