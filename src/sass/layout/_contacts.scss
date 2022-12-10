@@ -1,7 +1,122 @@
+.logo {
+  font-family: 'Film P3', sans-serif;
+
+  @include font(700, 40px, 1.08, 0.3em);
+  color: $c-logo-restaurant-hotel;
+}
+
+.section-contacts {
+  padding-top: 36px;
+  padding-bottom: 32px;
+
+  background-color: $c-bgc-light;
+
+  @include tablet {
+    padding-top: 56px;
+    padding-bottom: 44px;
+  }
+
+  @include desktop {
+    padding-bottom: 73px;
+  }
+}
+
 .contacts-title {
   @extend %visually-hidden;
 }
 
-.contacts-logo {
-  font-family: 'Film P3', sans-serif;
+.contacts-sub-title {
+  margin-top: 12px;
+  margin-bottom: 16px;
+
+  @include font(600, 16px, 1.25, 0.02em);
+  color: $c-text-rest-homepage;
+
+  @include desktop {
+    @include font(600, 20px, 1.2, 0.02em);
+  }
+}
+
+.contacts-item {
+  @extend %align-center;
+
+  margin-bottom: 16px;
+
+  &:first-child {
+    gap: 22px;
+  }
+
+  &:nth-child(2) {
+    gap: 54px;
+  }
+
+  &:last-child {
+    margin-bottom: 32px;
+  }
+}
+
+.contact-title-link {
+  @include font(500, 20px, 1.2, Null);
+  color: $c-second-accent;
+}
+
+.contacts-icon {
+  width: 24px;
+  height: 24px;
+  fill: $c-second-accent;
+}
+
+.contact-thumb {
+  display: flex;
+  gap: 12px;
+
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+  height: 40px;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  &-address {
+    display: flex;
+    border: 0.5px solid #f3c653;
+    border-radius: 2px;
+    height: 76px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 124px;
+  }
+}
+
+.contacts-tel-link {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  @include font(400, 14px, 1.21, 0.02em);
+  color: $c-logo-restaurant-hotel;
+}
+
+.contact-address-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  @include font(400, 16px, 1.25, 0.01em);
+  color: $c-logo-restaurant-hotel;
+}
+
+.contacts-map {
+  width: 100%;
+
+  @include mobile {
+    max-width: 394px;
+  }
+
+  @include tablet {
+    max-width: 535px;
+  }
+
+  @include desktop {
+    max-width: 634px;
+  }
 }
