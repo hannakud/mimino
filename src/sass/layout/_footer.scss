@@ -18,6 +18,7 @@ footer {
     letter-spacing: 0.3em;
 
     color: $c-main-accent;
+
     @media screen and (min-width: 1024px) {
         font-size: 64px;
         line-height: 1.07;
@@ -83,3 +84,13 @@ footer {
 .footer-soc-icon{
     fill: $c-icons-footer;
 }
+
+.footer-wrap{
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 414px){
+        padding: 0;
+        justify-content: space-between;
+    }
+} 
