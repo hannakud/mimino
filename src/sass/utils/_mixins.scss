@@ -9,27 +9,25 @@
 // Приклад підключення
 // @include font(700, 36px, 1.17, 0.03em);
 
-
 // шаблон для точок перелому адаптивних сторінок
 
 @mixin mobile-small {
-  @media screen and (max-width: 413px) {
-   @content;
+  @media screen and (max-width: 414px) {
+    @content;
   }
- }
- 
- @mixin mobile {
-  @media screen and (min-width: 414px) and (max-width: 1023px) {
-   @content;
+}
+
+@mixin mobile {
+  @media screen and (min-width: 415px) and (max-width: 1023px) {
+    @content;
   }
- }
- 
- @mixin tablet {
+}
+
+@mixin tablet {
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
-   @content;
+    @content;
   }
- }
- 
+}
 
 @mixin desktop {
   @media screen and (min-width: 1280px) {
@@ -37,10 +35,12 @@
   }
 }
 
-// шаблон для підключення растрових зображень з щільністью 
+// шаблон для підключення растрових зображень з щільністью
 
 @mixin retina {
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     @content;
   }
 }
