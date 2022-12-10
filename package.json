@@ -12,13 +12,15 @@
     "url": "https://github.com/hannakud/mimino.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Hanna Kudraishova <anyarasp@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hannakud/mimino/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "jquery": "^3.6.1",
+    "modern-normalize": "^1.1.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.6.0",

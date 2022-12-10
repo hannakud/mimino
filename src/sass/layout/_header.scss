@@ -1,6 +1,9 @@
 .header {
-  background-color: $c-black-main;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
 }
+
 .header-container {
   display: flex;
   align-items: center;
@@ -9,24 +12,19 @@
     justify-content: space-around;
   }
 }
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-  width: 100%;
-
-  @include mobile {
-    max-width: 414px;
-  }
+.header-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
 
   @include tablet {
-    max-width: 1024px;
+    gap: 32px;
   }
+}
 
-  @include desktop {
-    max-width: 1280px;
-  }
+.telephone-number {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .header-nav {
@@ -34,48 +32,46 @@
   align-items: center;
   padding-top: 16px;
   padding-bottom: 10px;
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .logo-type {
   font-family: 'Film P3';
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(39 / 36);
-  letter-spacing: 0.3em;
+  @include font(700, 36px, 1.08, 0.3em);
   color: $c-logo-header-restaurant;
 
-  @include mobile {
+  @include mobile-small {
     margin-right: 52px;
   }
   @include tablet {
     font-size: 40px;
-    line-height: calc(43 / 40);
-
+    line-height: 1.07;
     margin-right: 87px;
   }
   @include desktop {
     font-size: 40px;
-    line-height: calc(43 / 40);
-
+    line-height: 1.07;
     margin-right: 96px;
   }
 }
+
 .header-list {
   display: flex;
   align-items: center;
+  gap: 26px;
+  @include mobile {
+    margin-left: auto;
+  }
 }
 
 .header-link-title {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.02em;
+  @include font(500, 14px, 1.25, 0.02em);
   color: $c-main-accent;
   display: block;
-
-  margin-right: 5px;
 
   @include mobile {
     margin-right: 12px;
@@ -84,17 +80,16 @@
   @include tablet {
     font-size: 20px;
     line-height: calc(20 / 24);
-
     margin-right: 32px;
   }
 
   @include desktop {
     font-size: 20px;
     line-height: calc(20 / 24);
-
     margin-right: 32px;
   }
 }
+
 .contact-icon {
   fill: $c-main-accent;
 
@@ -105,76 +100,64 @@
     margin-right: 14px;
   }
 }
+
 .header-tel {
-  @media screen and (max-width: 414px) {
+  @include mobile-small {
     display: none;
   }
   @include mobile {
     display: none;
   }
   @include tablet {
+    @include font(400, 14px, 1.21, 0.02em);
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(17 / 14);
-
     display: flex;
     align-items: center;
-    letter-spacing: 0.02em;
-
     color: $c-white-main;
   }
-}
-.header-item-tel {
-  display: flex;
-  align-items: center;
-  @include tablet {
-    border: 1px solid rgba(243, 198, 83, 0.7);
-    border-radius: 2px;
 
-    padding: 11px 8px 12px 14px;
-  }
+  .header-item-tel {
+    display: flex;
+    align-items: center;
+    @include tablet {
+      border: 1px solid $c-icons-footer;
+      border-radius: 2px;
+      padding: 11px 8px 12px 14px;
+    }
 
-  @include desktop {
-    border: 1px solid rgba(243, 198, 83, 0.7);
-    border-radius: 2px;
-  }
-}
-
-.hotel-tel {
-  @include tablet {
-    margin-right: 16px;
+    @include desktop {
+      border: 1px solid $c-icons-footer;
+      border-radius: 2px;
+    }
   }
 
-  @include desktop {
-    margin-right: 16px;
-  }
-}
-.header-item-tel:not(:last-child) {
-  margin-right: 15px;
-  @include mobile {
-    margin-right: 26px;
-  }
-  @include tablet {
-    margin-right: 72px;
+  .hotel-tel {
+    @include tablet {
+      margin-right: 16px;
+    }
+
+    @include desktop {
+      margin-right: 16px;
+    }
   }
 
-  @include desktop {
-    margin-right: 72px;
+  .header-item-tel:not(:last-child) {
+    margin-right: 15px;
+    @include mobile-small {
+      margin-right: 26px;
+    }
+    @include tablet {
+      margin-right: 72px;
+    }
+
+    @include desktop {
+      margin-right: 72px;
+    }
   }
 }
 
 .soc-list {
-  @media screen and (max-width: 414px) {
-    display: none;
-  }
-  @include mobile {
-    display: none;
-  }
-  @include tablet {
-    display: none;
-  }
   @include desktop {
     display: flex;
     gap: 22px;
@@ -183,7 +166,20 @@
     justify-content: center;
   }
 }
+
 .soc-icon {
   fill: $c-main-accent;
   display: flex;
+}
+
+.container-socials {
+  @include mobile-small {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
 }

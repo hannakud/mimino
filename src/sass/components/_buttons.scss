@@ -1,4 +1,4 @@
-/* 
+/*
 Всі малі кнопки
 З напівпрозорим фоном використовуємо class="button button-light"
 з чорним фоном використовуємо class="button button-dark"
@@ -12,6 +12,7 @@
   border: 2px solid $c-white-main;
   border-radius: 25px;
   color: $c-main-accent;
+  padding: 14px 24px;
 
   transition: background-color $transition-cubic;
 
@@ -30,7 +31,7 @@
   }
 }
 
-/* Кнопки "Оформити бронювання" 
+/* Кнопки "Оформити бронювання"
 Для сторінок використовуємо class="btn"
 Для модалок використовуємо class="btn btn-modal"
 */

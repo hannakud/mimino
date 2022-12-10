@@ -1,6 +1,6 @@
 // шаблон розмірів шрифта
 
-@mixin font($weight, $size, $height, $spacing) {
+@mixin font($weight, $size, $height, $spacing: normal) {
   font-weight: $weight;
   font-size: $size;
   line-height: $height;
@@ -14,7 +14,7 @@
 @mixin mobile-small {
   @media screen and (max-width: 414px) {
     @content;
-  }
+ }
 }
 
 @mixin mobile {

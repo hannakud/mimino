@@ -1,0 +1,158 @@
+.room-hero {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  .hero-top-gradient {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 118px;
+    background: linear-gradient(#000 0%,rgba(0,0,0,.55) 54.17%,rgba(0,0,0,0) 100%);
+    //@include mobile {
+    //  height: 80px;
+    //}
+  }
+
+  .room-hero-slider_item {
+    display: block !important;
+    @include mobile {
+      max-width: 414px;
+      margin: 0 auto;
+    }
+  }
+
+  .slick-arrow {
+    font-size: 0;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    background: $c-arrows-background url(../images/icons/hero-slider-arrow.svg) center no-repeat;
+    position: absolute;
+    top: calc(50% - 20px);
+    outline: none;
+    border: 0;
+    transition: background $transition-cubic;
+
+    &:hover {
+      background: $c-arrows-background url(../images/icons/hero-slider-arrow-hover.svg) center no-repeat;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    &.slick-prev {
+      left: 15px;
+      //@include mobile {
+      //  left: 10px;
+      //}
+      @include tablet {
+        left: 47px;
+      }
+      @include desktop {
+        left: 85px;
+      }
+    }
+
+    &.slick-next {
+      right: 15px;
+      transform: rotate(180deg);
+      //@include mobile {
+      //  right: 10px;
+      //}
+      @include tablet {
+        right: 47px;
+      }
+      @include desktop {
+        right: 85px;
+      }
+    }
+  }
+
+  .hero-content {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 18px;
+    width: 100%;
+
+    background: linear-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 54.17%, $c-black-main 100%);
+  }
+
+  .social-list {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    //@include mobile {
+    //  flex-direction: row;
+    //}
+    //@include tablet {
+    //  flex-direction: row;
+    //}
+    //@include desktop {
+    //  display: none;
+    //}
+  }
+
+  .social-image {
+    position: absolute;
+    fill: $c-main-accent;
+    opacity: 0.7;
+    transition: opacity $transition-cubic;
+  }
+
+  .social-item {
+    position: relative;
+    height: 24px;
+    width: 24px;
+    &:hover {
+      .social-image {
+        opacity: 1;
+      }
+    }
+  }
+
+  .room-title {
+    @include font(700, 28px, 1.15, 0.05em);
+    color: white;
+    margin-bottom: 14px;
+    font-family: 'Times New Roman';
+    @include tablet {
+      @include font(700, 36px, 1.25, 0.05em);
+      margin-bottom: 24px;
+    }
+    @include mobile {
+      padding-left: 40px;
+      margin-bottom: 20px;
+    }
+  }
+  .room-info {
+    @include font(700, 12px, 1.15, 0.02em);
+    font-family: 'Montserrat';
+    color: white;
+    margin-bottom: 17px;
+    max-width: 325px;
+    @include mobile {
+      margin-bottom: 28px;
+    }
+  }
+
+  .button-price {
+    position: absolute;
+    right: 74px;
+    bottom: 40px;
+    @include mobile {
+      right: 20px;
+      bottom: 20px;
+      padding: 8px 20px;
+    }
+    @include tablet {
+      bottom: 64px;
+    }
+    @include desktop {
+      right: 85px;
+      bottom: 66px;
+    }
+  }
+}
+
