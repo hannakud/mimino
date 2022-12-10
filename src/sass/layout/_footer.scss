@@ -3,14 +3,13 @@ footer {
     padding-bottom: 40px;
     background-color: $c-bgc-footer;
    
-    @media screen and (min-width: 414px){
-        height: 240px;
-    }
+    // @media screen and (min-width: 414px){
+    //     height: 240px;
+    // }
     
     @media screen and (min-width: 1024px) {
         padding-top: 80px;
         padding-bottom: 80px;
-        height: 304px;
     }
 }
 .logo-footer {
@@ -27,17 +26,22 @@ footer {
         font-size: 64px;
         line-height: 1.07;
     }
+    transition: color $transition-cubic;
+}
+
+.logo-footer:hover, .logo-footer:focus{
+    color: $c-second-accent;
 }
 
 .footer-nav-list {
-    margin-bottom: 34px;
+    margin-bottom: 32px;
     @media screen and (min-width: 1024px) {
         margin-bottom: 0;
     }
 }
 
 .footer-nav-item:not(:last-child) {
-    margin-bottom: 21px;
+    margin-bottom: 16px;
 }
 
 
@@ -50,6 +54,7 @@ footer {
     letter-spacing: 0.02em;
 
     color: $c-main-accent;
+    transition: color $transition-cubic;
 }
 .footer-nav-link:hover, .footer-nav-link:focus{
     color: $c-second-accent;
@@ -59,7 +64,11 @@ footer {
     gap: 21px;
     @media screen and (min-width: 1024px){
         flex-direction: column;
+        gap: 12px;
     }
+}
+.footer-soc-item{
+    tab-size: 0;
 }
 
 .footer-name-soc {
@@ -92,6 +101,11 @@ footer {
         border-radius: 2px;
         align-items: center;
     }
+    transition: border-color $transition-cubic;
+}
+
+.footer-soc-link:hover, .footer-soc-link:focus{
+    border-color: $c-second-accent;
 }
 
 .footer-soc-icon {
