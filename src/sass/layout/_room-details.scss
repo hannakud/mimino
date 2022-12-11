@@ -112,3 +112,61 @@
   transition: fill $transition-cubic;
   margin-left: 12px;
 }
+
+.gradient-room {
+  max-width: 414px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 140px,
+    rgba(186, 186, 186, 0.4) 140px,
+    rgba(186, 186, 186, 0.4) 141px,
+    rgba(0, 0, 0, 0) 141px,
+    rgba(0, 0, 0, 0) 274px,
+    rgba(186, 186, 186, 0.4) 274px,
+    rgba(186, 186, 186, 0.4) 275px,
+    rgba(0, 0, 0, 0) 275px
+  );
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 16px;
+  padding-bottom: 20px;
+  @include tablet {
+    max-width: 1024px;
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 277px,
+      rgba(186, 186, 186, 0.4) 277px,
+      rgba(186, 186, 186, 0.4) 278px,
+      rgba(0, 0, 0, 0) 278px,
+      rgba(0, 0, 0, 0) 511px,
+      rgba(186, 186, 186, 0.4) 511px,
+      rgba(186, 186, 186, 0.4) 512px,
+      rgba(0, 0, 0, 0) 512px,
+      rgba(0, 0, 0, 0) 746px,
+      rgba(186, 186, 186, 0.4) 746px,
+      rgba(186, 186, 186, 0.4) 747px,
+      rgba(0, 0, 0, 0) 747px
+    );
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
+  @include desktop {
+    max-width: 1280px;
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 338px,
+      rgba(186, 186, 186, 0.4) 338px,
+      rgba(186, 186, 186, 0.4) 339px,
+      rgba(0, 0, 0, 0) 338px,
+      rgba(0, 0, 0, 0) 640px,
+      rgba(186, 186, 186, 0.4) 640px,
+      rgba(186, 186, 186, 0.4) 641px,
+      rgba(0, 0, 0, 0) 641px,
+      rgba(0, 0, 0, 0) 942px,
+      rgba(186, 186, 186, 0.4) 942px,
+      rgba(186, 186, 186, 0.4) 943px,
+      rgba(0, 0, 0, 0) 943px
+    );
+    padding-bottom: 50px;
+  }
+}
