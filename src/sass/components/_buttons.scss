@@ -9,7 +9,6 @@
   @include font(700, 16px, 1.25, 0.02em);
   text-align: center;
 
-  border: 2px solid $c-white-main;
   border-radius: 25px;
   color: $c-main-accent;
   padding: 14px 24px;
@@ -18,6 +17,7 @@
 }
 
 .button-light {
+  border: 2px solid $c-white-main;
   background-color: $c-buttons-background;
 
   &:hover,
@@ -28,7 +28,8 @@
 }
 
 .button-dark {
-  background-color: $c-buttons-background;
+  background-color: $c-black-main;
+  border: 2px solid $c-logo-header-room;
 
   &:hover,
   &:focus,

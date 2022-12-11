@@ -1,11 +1,99 @@
 <section class="room-tripple hotel-room">
   <div class="hotel-room-container container">
-    <div class="hotel-room-info">
-      <div class="hotel-room-subtitle">Amet minim mollit non</div>
-      <div class="hotel-label">MIMIHO</div>
-      <h4 class="hotel-room-title">ТРЬОХМІСНИЙ НОМЕР</h4>
-      <p class="hotel-room-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+    <div class="upper-wrapper">
+      <div class="hotel-room-info">
+        <div class="hotel-room-subtitle">Amet minim mollit non</div>
+        <div class="hotel-label">MIMIHO</div>
+        <h4 class="hotel-room-title">ДВОМІСНИЙ НОМЕР</h4>
+        <p class="hotel-room-description">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+      <div class="hotel-room-photo">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              /src/images/desktop/hotel/room.jpg    1x,
+              /src/images/desktop/hotel/room-2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 1025px)"
+            srcset="
+              /src/images/tablet/hotel/room.jpg    1x,
+              /src/images/tablet/hotel/room-2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 415px)"
+            srcset="
+              /src/images/mobile/hotel/room.jpg    1x,
+              /src/images/mobile/hotel/room-2x.jpg 2x
+            "
+          />
+          <img
+            src="/src/images/mobile/hotel/room.jpg"
+            alt="Спальне місце в номері"
+          />
+        </picture>
+      </div>
     </div>
-    <a href="./room.html">Details</a>
+    <div class="down-wrapper">
+      <div class="slider-wrapper">
+        <div class="hotel-room-slider">
+          <div class="slider-photo">
+            <picture>
+              <source
+                media="(min-width: 415px )"
+                srcset="
+                  ./images/tablet/hotel/slider-1.jpg    1x,
+                  ./images/tablet/hotel/slider-1-2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 415px )"
+                srcset="
+                  ./images/desktop/hotel/slider-1.jpg    1x,
+                  ./images/desktop/hotel/slider-1-2x.jpg 2x
+                "
+              />
+              <img src="./images/tablet/hotel/slider-1.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="slider-photo">
+            <picture>
+              <source
+                media="(min-width: 415px )"
+                srcset="
+                  ./images/tablet/hotel/slider-2.jpg    1x,
+                  ./images/tablet/hotel/slider-2-2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 415px )"
+                srcset="
+                  ./images/desktop/hotel/slider-2.jpg    1x,
+                  ./images/desktop/hotel/slider-2-2x.jpg 2x
+                "
+              />
+              <img src="./images/tablet/hotel/slider-2.jpg" alt="" />
+            </picture>
+          </div>
+        </div>
+        <div class="slider-arrows">
+          <button class="arrow left-arrow"></button>
+          <button class="arrow right-arrow"></button>
+        </div>
+      </div>
+      <div class="buttons-wrapper">
+        <a class="button button-dark" href="./room.html">Детальніше</a>
+        <button class="button button-dark" type="button">
+          Переглянути ціни
+        </button>
+      </div>
+    </div>
   </div>
 </section>
