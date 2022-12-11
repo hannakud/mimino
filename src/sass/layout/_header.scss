@@ -7,17 +7,18 @@
 .header-container {
   display: flex;
   align-items: center;
-
-  @include desktop {
-    justify-content: space-around;
-  }
 }
+
 .header-item {
   display: flex;
   gap: 12px;
   align-items: center;
 
   @include tablet {
+    gap: 32px;
+  }
+
+  @include desktop {
     gap: 32px;
   }
 }
@@ -34,6 +35,10 @@
   padding-bottom: 10px;
   @include mobile {
     width: 100%;
+  }
+
+  @include desktop {
+    margin-right: 60px;
   }
 }
 
@@ -73,58 +78,61 @@
   color: $c-main-accent;
   display: block;
 
-  @include mobile {
-    margin-right: 12px;
-  }
-
   @include tablet {
     font-size: 20px;
-    line-height: calc(20 / 24);
-    margin-right: 32px;
+    line-height: 1.2;
   }
 
   @include desktop {
     font-size: 20px;
-    line-height: calc(20 / 24);
-    margin-right: 32px;
+    line-height: 1.2;
   }
 }
 
 .contact-icon {
   fill: $c-main-accent;
+}
 
+.tel-wrapper {
+  display: flex;
+  gap: 16px;
   @include tablet {
-    margin-right: 14px;
+    border: 1px solid $c-icons-footer;
+    border-radius: 2px;
+    padding: 11px 8px 12px 14px;
   }
   @include desktop {
-    margin-right: 14px;
+    border: 1px solid $c-icons-footer;
+    border-radius: 2px;
+    padding: 11px 8px 12px 14px;
   }
 }
 
 .header-tel {
+  @include font(400, 14px, 1.21, 0.02em);
+  font-family: 'Montserrat';
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  color: $c-white-main;
+  transition: color $transition-cubic;
+
+  &:hover,
+  &:active {
+    color: $c-main-accent;
+  }
+
   @include mobile-small {
     display: none;
   }
   @include mobile {
     display: none;
   }
-  @include tablet {
-    @include font(400, 14px, 1.21, 0.02em);
-    font-family: 'Montserrat';
-    font-style: normal;
-    display: flex;
-    align-items: center;
-    color: $c-white-main;
-  }
 
   .header-item-tel {
     display: flex;
     align-items: center;
-    @include tablet {
-      border: 1px solid $c-icons-footer;
-      border-radius: 2px;
-      padding: 11px 8px 12px 14px;
-    }
+
 
     @include desktop {
       border: 1px solid $c-icons-footer;
@@ -157,29 +165,19 @@
   }
 }
 
-.soc-list {
+.social-list-header {
+  display: none;
+
   @include desktop {
-    display: flex;
-    gap: 22px;
+    display: block;
+  }
 
-    align-items: center;
-    justify-content: center;
+  .social-list {
+    @include desktop {
+      display: flex;
+      gap: 23px;
+      flex-direction: row;
+    }
   }
 }
 
-.soc-icon {
-  fill: $c-main-accent;
-  display: flex;
-}
-
-.container-socials {
-  @include mobile-small {
-    display: none;
-  }
-  @include mobile {
-    display: none;
-  }
-  @include tablet {
-    display: none;
-  }
-}

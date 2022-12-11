@@ -1,25 +1,22 @@
 .room-hero {
   position: relative;
-  max-width: 1280px;
   margin: 0 auto;
+
+  .room-hero-container {
+    padding: 0;
+    position: relative;
+  }
 
   .hero-top-gradient {
     position: absolute;
     z-index: 1;
     width: 100%;
-    height: 118px;
-    background: linear-gradient(#000 0%,rgba(0,0,0,.55) 54.17%,rgba(0,0,0,0) 100%);
-    //@include mobile {
-    //  height: 80px;
-    //}
+    height: 138px;
+    background: linear-gradient(#000 0%, rgba(0, 0, 0, .55) 54.17%, rgba(0, 0, 0, 0) 100%);
   }
 
   .room-hero-slider_item {
     display: block !important;
-    @include mobile {
-      max-width: 414px;
-      margin: 0 auto;
-    }
   }
 
   .slick-arrow {
@@ -44,9 +41,6 @@
 
     &.slick-prev {
       left: 15px;
-      //@include mobile {
-      //  left: 10px;
-      //}
       @include tablet {
         left: 47px;
       }
@@ -58,9 +52,6 @@
     &.slick-next {
       right: 15px;
       transform: rotate(180deg);
-      //@include mobile {
-      //  right: 10px;
-      //}
       @include tablet {
         right: 47px;
       }
@@ -75,40 +66,12 @@
     bottom: 0;
     padding-bottom: 18px;
     width: 100%;
-
-    background: linear-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 54.17%, $c-black-main 100%);
-  }
-
-  .social-list {
-    display: flex;
-    flex-direction: column;
-    gap: 11px;
-    //@include mobile {
-    //  flex-direction: row;
-    //}
-    //@include tablet {
-    //  flex-direction: row;
-    //}
-    //@include desktop {
-    //  display: none;
-    //}
-  }
-
-  .social-image {
-    position: absolute;
-    fill: $c-main-accent;
-    opacity: 0.7;
-    transition: opacity $transition-cubic;
-  }
-
-  .social-item {
-    position: relative;
-    height: 24px;
-    width: 24px;
-    &:hover {
-      .social-image {
-        opacity: 1;
-      }
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .55) 54.17%, $c-black-main 100%);
+    @include tablet {
+      padding-bottom: 24px;
+    }
+    @include desktop {
+      padding-bottom: 48px;
     }
   }
 
@@ -121,19 +84,27 @@
       @include font(700, 36px, 1.25, 0.05em);
       margin-bottom: 24px;
     }
-    @include mobile {
-      padding-left: 40px;
-      margin-bottom: 20px;
+    @include desktop {
+      @include font(700, 36px, 1.25, 0.05em);
+      margin-bottom: 24px;
     }
   }
+
   .room-info {
     @include font(700, 12px, 1.15, 0.02em);
     font-family: 'Montserrat';
     color: white;
     margin-bottom: 17px;
     max-width: 325px;
-    @include mobile {
-      margin-bottom: 28px;
+    @include desktop {
+      @include font(700, 16px, 1.25, 0.02);
+      margin-bottom: 24px;
+      max-width: 400px;
+    }
+    @include desktop {
+      @include font(700, 16px, 1.25, 0.02);
+      margin-bottom: 24px;
+      max-width: 400px;
     }
   }
 
@@ -141,11 +112,6 @@
     position: absolute;
     right: 74px;
     bottom: 40px;
-    @include mobile {
-      right: 20px;
-      bottom: 20px;
-      padding: 8px 20px;
-    }
     @include tablet {
       bottom: 64px;
     }
@@ -154,5 +120,82 @@
       bottom: 66px;
     }
   }
+
+  .room-address-mobile {
+    @include tablet() {
+      display: none;
+    }
+    @include desktop() {
+      display: none;
+    }
+  }
+
+  .room-address {
+    @include mobile {
+      display: none;
+    }
+    @include mobile-small {
+      display: none;
+    }
+  }
+
+  .room-address {
+    background-color: transparent;
+    height: 47px;
+    width: 285px;
+    padding-right: 0;
+    padding-left: 10px;
+
+    .contact-address-link {
+      color: $c-address-homepage;
+      @include font(400, 16px, 1.25, 0.01);
+    }
+  }
+
+  .room-address-mobile {
+    background-color: transparent;
+    height: 47px;
+    width: 210px;
+    padding-right: 0;
+
+    .contact-address-link {
+      color: $c-address-homepage;
+      @include font(400, 12px, 1.25, 0.01);
+    }
+  }
+
+
+  .room-address-mobile {
+    position: absolute;
+    z-index: 20;
+
+    @include mobile-small {
+      top: 65px;
+      right: 15px;
+    }
+
+    @include mobile {
+      top: 65px;
+      right: 15px;
+    }
+  }
+
+  .contacts-holder {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+    @include desktop {
+      display: none;
+    }
+  }
+
+  .social-list-room-hero {
+    .social-list {
+      @include tablet {
+        flex-direction: row;
+      }
+    }
+  }
 }
+
 
