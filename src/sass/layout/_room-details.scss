@@ -13,27 +13,40 @@
 
 .item-left {
   @include desktop {
-    display: flex;
-    justify-content: space-between;
+    display: block;
   }
 }
-.room-details-title {
+.room-details-main-title {
   font-family: 'Times New Roman', serif;
   color: $c-black-main;
   @include font(400, 32px, 1.15, normal);
   text-transform: uppercase;
 }
-
+.room-details-main-title {
+  margin-bottom: 16px;
+}
 .room-details-text {
   font-family: 'Montserrat';
   color: $c-text-hotel;
   @include font(700, 16px, 1.25, 0.02em);
+  @include desktop {
+    width: 400px;
+  }
 }
-
+.room-details-text-up,
+.room-details-text-bottom {
+  font-family: 'Montserrat';
+  @include font(700, 16px, 1.25, 0.02em);
+  color: $c-text-hotel;
+}
 .text-container-first {
   @include tablet {
     display: flex;
     gap: 80px;
+  }
+  @include desktop {
+    display: flex;
+    gap: 159px;
   }
 }
 
@@ -42,7 +55,18 @@
     display: flex;
     gap: 30px;
   }
+  @include desktop {
+    display: flex;
+    gap: 159px;
+  }
 }
+.text-container {
+  @include desktop {
+    display: flex;
+    gap: 159px;
+  }
+}
+
 .room-details-subtitle {
   font-family: 'Times New Roman', serif;
   color: $c-black-main;
@@ -56,6 +80,10 @@
   display: flex;
   flex-direction: column;
   @include tablet {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  @include desktop {
     justify-content: flex-end;
     align-items: flex-end;
   }
