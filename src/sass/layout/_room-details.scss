@@ -24,6 +24,19 @@
   @include font(700, 16px, 1.25, 0.02em);
 }
 
+.text-container-first {
+  @include tablet {
+    display: flex;
+    gap: 80px;
+  }
+}
+
+.text-container-second {
+  @include tablet {
+    display: flex;
+    gap: 30px;
+  }
+}
 .room-details-subtitle {
   font-family: 'Times New Roman', serif;
   color: $c-black-main;
@@ -34,7 +47,14 @@
 
 .room-details-button-wrapper {
   padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
 }
+
 .room-details-link {
   @include font(500, 16px, 1.25, 0.02em);
   color: $c-second-accent;
