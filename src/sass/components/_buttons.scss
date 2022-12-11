@@ -15,19 +15,26 @@
   padding: 14px 24px;
 
   transition: background-color $transition-cubic;
+}
+
+.button-light {
+  background-color: $c-buttons-background;
 
   &:hover,
   &:focus,
   &:active {
     background-color: $c-white-main;
   }
+}
 
-  &-light {
-    background-color: $c-buttons-background;
-  }
+.button-dark {
+  background-color: $c-buttons-background;
 
-  &-dark {
-    background-color: $c-black-main;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $c-white-main;
+    border-color: $c-main-accent;
   }
 }
 
