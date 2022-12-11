@@ -5,12 +5,18 @@
   }
 }
 
-.room-detail-list {
+.room-details-list {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
+.item-left {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .room-details-title {
   font-family: 'Times New Roman', serif;
   color: $c-black-main;
