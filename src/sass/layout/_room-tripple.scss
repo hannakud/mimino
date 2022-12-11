@@ -1,0 +1,16 @@
+.room-tripple {
+  .hotel-room-info {
+    align-items: flex-end;
+  }
+
+  .hotel-label {
+    position: relative;
+    right: -10px;
+    @include tablet {
+      right: -18px;
+    }
+    @include desktop {
+      right: -18px;
+    }
+  }
+}

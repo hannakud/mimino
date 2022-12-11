@@ -14,7 +14,7 @@
 @mixin mobile-small {
   @media screen and (max-width: 414px) {
     @content;
- }
+  }
 }
 
 @mixin mobile {
@@ -54,7 +54,7 @@
 //   }
 // }
 
-// @include desktop {
+// @include deskt1280op {
 //   max-height: 600px;
 //   background-image: $gradient, url('../images/desktop/hero-backgraund-desk.jpg');
 //   @include retina {
