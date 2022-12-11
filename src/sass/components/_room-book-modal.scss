@@ -24,6 +24,7 @@
   cursor: pointer;
   margin-left: auto;
   padding: 0;
+  fill:rgba(128, 128, 128, 1);
 
   @media screen and (min-width: 1024px) {
     margin-top: -44px;
@@ -70,18 +71,18 @@
   }
 }
 
-.modal__close-button {
-  position: absolute;
-  top: 16px;
-  right: 16px;
+// .modal__close-button {
+//   position: absolute;
+//   top: 16px;
+//   right: 16px;
 
-  border: none;
-  outline: none;
-  margin-left: auto;
-  display: block;
-  background-color: $c-modal-background;
-  padding: 0;
-}
+//   border: none;
+//   outline: none;
+//   margin-left: auto;
+//   display: block;
+//   background-color: $c-modal-background;
+//   padding: 0;
+// }
 
 .form-room__title {
   margin-top: 20px;
