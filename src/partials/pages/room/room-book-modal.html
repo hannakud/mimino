@@ -1,1 +1,75 @@
-<div class="room-book-modal"></div>
+<div class="modal-window-entry-room">
+  <div class="modal-table">
+    <button type="button" class="modal-room__icon close-entry-room">
+      <svg width="24" height="24">
+        <use href="./images/icons/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <!--  тут пишеш те що всередині модалки -->
+
+    <form class="form-room">
+      <h2 class="form__title">Забронювати номер</h2>
+      <div class="form__container">
+        <label class="form__label">
+          <input
+            required
+            type="text"
+            placeholder="Ваше ім’я"
+            class="form-room__input"
+          />
+          На кого забронювати номер?
+        </label>
+        <label class="form__label">
+            <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="+38(000)000-00-00"
+            class="form-room__input"
+          />
+          Номер телефону
+        </label>
+      </div>
+      <div class="form__container">
+        <label class="form__label form__label--select">
+          <select name="room" class="form-room__input">
+            <option value="Двомісний люкс" selected>Двомісний люкс</option>
+            <option value="Троьхмісний номер">Троьхмісний номер</option>
+            <option value="Двохмісний номер">Двохмісний номер</option>
+          </select>
+          Категорія номеру
+        </label>
+      </div>
+
+      <div class="form__container">
+
+        <label class="form__label form__label--select">
+          <select name="date" class="form-room__input">
+            <option value="16.12.2022" selected>Сьогодні</option>
+            <option value="17.12.2022">Завтра</option>
+            <option value="18.12.2022">18.12.2022</option>
+            <option value="19.12.2022">19.12.2022</option>
+            <option value="20.12.2022">20.12.2022</option>
+            <option value="21.12.2022">21.12.2022</option>
+            <option value="22.12.2022">22.12.2022</option>
+          </select>
+          Дата заїзду
+        </label>
+        <label class="form__label form__label--select">
+          <select name="date" class="form-room__input">
+            <option value="16.12.2022" selected>Сьогодні</option>
+            <option value="17.12.2022">Завтра</option>
+            <option value="18.12.2022">18.12.2022</option>
+            <option value="19.12.2022">19.12.2022</option>
+            <option value="20.12.2022">20.12.2022</option>
+            <option value="21.12.2022">21.12.2022</option>
+            <option value="22.12.2022">22.12.2022</option>
+          </select>
+          Дата виїзду
+        </label>
+      </div>
+      <button type="submit" class="form-button">Оформити бронювання</button>
+    </form>
+  </div>
+</div>
