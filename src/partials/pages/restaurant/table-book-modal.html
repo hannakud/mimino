@@ -1,3 +1,80 @@
-<div class="table-book-modal">
-  
+<div class="modal-window-entry-table">
+  <div class="modal-table">
+    <button type="button" class="modal-table__icon close-entry">
+      <svg width="24" height="24">
+        <use href="./images/icons/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="modal-table__title">Забронювати столик</h2>
+    <form class="modal-table__form" name="table-form" autocomplete="on">
+      <ul class="modal-table__list">
+        <li class="modal-table__item">
+          <input
+            type="text"
+            class="modal-table__input"
+            name="user_name"
+            id="user_name"
+            pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,}"
+            required
+            title="Введіть ваше ім'я літерами"
+            placeholder="Ваше ім'я"
+          />
+          <label for="user_name" class="modal-table__label"
+            >На кого забронювати столик?</label
+          >
+        </li>
+        <li class="modal-table__item">
+          <input
+            type="tel"
+            class="modal-table__input tel-input"
+            name="phone_number"
+            id="phone_number"
+            required
+            pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){12}(\s*)?"
+            title="Введіть номер телефону"
+            placeholder="+38 (___) ___-__-__"
+          />
+          <label for="phone_number" class="modal-table__label"
+            >Номер телефону</label
+          >
+        </li>
+        <li class="modal-table__item">
+          <select name="people" class="modal-table__input">
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8 +</option>
+          </select>
+          <label
+            for="number_of_persons"
+            class="modal-table__label modal-table__label--select"
+            >Столик на яку кількість осіб?</label
+          >
+        </li>
+        <li class="modal-table__item">
+          <select name="date" class="modal-table__input">
+            <option value="06.12.22" selected>Сьогодні</option>
+            <option value="07.12.22">07.12.22</option>
+            <option value="08.12.22">08.12.22</option>
+            <option value="09.12.22">09.12.22</option>
+            <option value="10.12.22">10.12.22</option>
+            <option value="11.12.22">11.12.22</option>
+          </select>
+          <label
+            for="booking_date"
+            class="modal-table__label modal-table__label--select"
+            >На яку дату бронювати?</label
+          >
+        </li>
+      </ul>
+      <button type="submit" class="modal-table__button">
+        Оформити бронювання
+      </button>
+    </form>
+  </div>
 </div>
