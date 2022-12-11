@@ -11,10 +11,7 @@ footer {
 .logo-footer {
   display: block;
   font-family: 'Film P3';
-  font-weight: 700;
-  font-size: 40px;
-  line-height: calc(43 / 40);
-  letter-spacing: 0.3em;
+  @include font(700, 40px, 1.08, 0.3em);
 
   color: $c-main-accent;
 
@@ -75,7 +72,6 @@ footer {
     flex-direction: column;
     align-items: center;
     color: $c-main-accent;
-    
   }
 }
 
@@ -121,5 +117,3 @@ footer {
     gap: 200px;
   }
 }
-
-

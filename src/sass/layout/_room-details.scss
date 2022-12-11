@@ -30,3 +30,29 @@
   margin-bottom: 16px;
   // display: block;
 }
+// .room-details-box {
+//   align-items: center;
+// }
+.room-details-link {
+  @include font(500, 16px, 1.25, 0.02em);
+  color: $c-second-accent;
+  @extend %justify-center;
+  transition: color $transition-cubic;
+  &:hover,
+  &:focus {
+    color: $c-main-accent;
+  }
+  &:hover .room-details-icon,
+  &:focus .room-details-icon {
+    fill: $c-main-accent;
+  }
+}
+
+.button-book {
+  margin: 0 auto 20px;
+}
+.room-details-icon {
+  fill: $c-second-accent;
+  transition: fill $transition-cubic;
+  margin-left: 12px;
+}
