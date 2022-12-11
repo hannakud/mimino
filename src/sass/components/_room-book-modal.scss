@@ -164,7 +164,7 @@
 }
 
 .form__label--select::after {
-  // background-image: url('../images/svg/arrow-down.svg');
+  background-image: url('../images/svg/arrow-down.svg');
   content: '';
   position: absolute;
   width: 24px;
@@ -185,7 +185,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  $transition-cubic{
+  @media screen and (min-width: 1024px)  {
     @include font(null, 40px, 1.15, null);
      font-size: 40px;
      line-height: 1.15;
