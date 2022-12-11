@@ -2,6 +2,7 @@
   .hotel-room-container {
     padding-top: 32px;
     padding-bottom: 32px;
+    overflow-x: hidden;
   }
 
   .hotel-room-info {
@@ -66,5 +67,32 @@
       margin-bottom: 188px;
     }
   }
-}
 
+  .slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    .slider-room_item {
+      margin-right: 16px;
+    }
+  }
+  .hotel-room-slider {
+    width: 404px;
+    padding-bottom: 60px;
+  }
+  .slick-prev-arrow,
+  .slick-next-arrow {
+    background-color: transparent;
+    z-index: 228;
+    border: 0;
+  }
+  .slick-prev-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .slick-next-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+  }
+}

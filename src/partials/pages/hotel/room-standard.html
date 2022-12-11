@@ -43,18 +43,18 @@
     </div>
     <div class="down-wrapper">
       <div class="slider-wrapper">
-        <div class="hotel-room-slider">
-          <div class="slider-photo">
+        <div class="hotel-room-slider slider-room-standard">
+          <div class="slider-photo slider-room_item">
             <picture>
               <source
-                media="(min-width: 415px )"
+                media="(max-width: 1024px)"
                 srcset="
                   ./images/tablet/hotel/slider-1.jpg    1x,
                   ./images/tablet/hotel/slider-1-2x.jpg 2x
                 "
               />
               <source
-                media="(min-width: 415px )"
+                media="(min-width: 1280px)"
                 srcset="
                   ./images/desktop/hotel/slider-1.jpg    1x,
                   ./images/desktop/hotel/slider-1-2x.jpg 2x
@@ -63,17 +63,19 @@
               <img src="./images/tablet/hotel/slider-1.jpg" alt="" />
             </picture>
           </div>
-          <div class="slider-photo">
+          <div class="slider-photo slider-room_item">
             <picture>
               <source
-                media="(min-width: 415px )"
+                media="(max-width: 1024px)"
+                type="image/jpg"
                 srcset="
                   ./images/tablet/hotel/slider-2.jpg    1x,
                   ./images/tablet/hotel/slider-2-2x.jpg 2x
                 "
               />
               <source
-                media="(min-width: 415px )"
+                media="(min-width: 1280px)"
+                type="image/jpg"
                 srcset="
                   ./images/desktop/hotel/slider-2.jpg    1x,
                   ./images/desktop/hotel/slider-2-2x.jpg 2x
@@ -82,10 +84,46 @@
               <img src="./images/tablet/hotel/slider-2.jpg" alt="" />
             </picture>
           </div>
-        </div>
-        <div class="slider-arrows">
-          <button class="arrow left-arrow"></button>
-          <button class="arrow right-arrow"></button>
+          <div class="slider-photo slider-room_item">
+            <picture>
+              <source
+                media="(max-width: 1024px)"
+                srcset="
+                  ./images/tablet/hotel/slider-1.jpg    1x,
+                  ./images/tablet/hotel/slider-1-2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/desktop/hotel/slider-1.jpg    1x,
+                  ./images/desktop/hotel/slider-1-2x.jpg 2x
+                "
+              />
+              <img src="./images/tablet/hotel/slider-1.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="slider-photo slider-room_item">
+            <picture>
+              <source
+                media="(max-width: 1024px)"
+                type="image/jpg"
+                srcset="
+                  ./images/tablet/hotel/slider-2.jpg    1x,
+                  ./images/tablet/hotel/slider-2-2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 1280px)"
+                type="image/jpg"
+                srcset="
+                  ./images/desktop/hotel/slider-2.jpg    1x,
+                  ./images/desktop/hotel/slider-2-2x.jpg 2x
+                "
+              />
+              <img src="./images/tablet/hotel/slider-2.jpg" alt="" />
+            </picture>
+          </div>
         </div>
       </div>
       <div class="buttons-wrapper">
