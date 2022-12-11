@@ -1,4 +1,3 @@
-
 .modal-window-entry-room {
   position: fixed;
   top: 0;
@@ -8,14 +7,13 @@
   background-color: $c-buttons-background;
   opacity: 0;
   visibility: hidden;
-  transition: visibility $transition-cubic,
-     opacity $transition-cubic;
+  transition: visibility $transition-cubic, opacity $transition-cubic;
   overflow: scroll;
   z-index: 999;
 
   &.show-entry {
-     opacity: 1;
-     visibility: visible;
+    opacity: 1;
+    visibility: visible;
   }
 }
 .modal-room__icon {
@@ -28,8 +26,8 @@
   padding: 0;
 
   @media screen and (min-width: 1024px) {
-     margin-top: -44px;
-     margin-right: -44px;
+    margin-top: -44px;
+    margin-right: -44px;
   }
 }
 
@@ -65,10 +63,10 @@
   z-index: 3;
 
   @media screen and (min-width: 1024px) {
-     width: 712px;
-     max-width: 712px;
-     padding: 60px;
-     transform: translate(-50% -50%);
+    width: 712px;
+    max-width: 712px;
+    padding: 60px;
+    transform: translate(-50% -50%);
   }
 }
 
@@ -129,11 +127,11 @@
   gap: 20px;
 
   @media screen and (min-width: 1024px) {
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     gap: 16px;
-     justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: flex-end;
   }
 }
 
@@ -152,10 +150,10 @@
   cursor: pointer;
 
   @media screen and (min-width: 1024px) {
-     width: 288px;
-     @include font(null, 16px, 1.25, null);
-     font-size: 16;
-     line-height: 1.25;
+    width: 288px;
+    @include font(null, 16px, 1.25, null);
+    font-size: 16;
+    line-height: 1.25;
   }
 }
 
@@ -164,7 +162,7 @@
 }
 
 .form__label--select::after {
-  background-image: url('/src/images/arrow-down-bold.svg');
+  background-image: url('/src/images/icons/arrow-down-bold.svg');
   content: '';
   position: absolute;
   width: 24px;
@@ -185,10 +183,10 @@
   text-align: center;
   text-transform: uppercase;
 
-  @media screen and (min-width: 1024px)  {
+  @media screen and (min-width: 1024px) {
     @include font(null, 40px, 1.15, null);
-     font-size: 40px;
-     line-height: 1.15;
+    font-size: 40px;
+    line-height: 1.15;
   }
 }
 
@@ -213,7 +211,7 @@
 
   &:hover,
   &:focus {
-      background-color: $c-modal-hover;
-      color: $c-modal-black;
+    background-color: $c-modal-hover;
+    color: $c-modal-black;
   }
 }

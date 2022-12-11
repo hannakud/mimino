@@ -1,21 +1,20 @@
 .modal-window-entry-table {
   position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $c-buttons-background;
-    opacity: 0;
-    visibility: hidden;
-    transition: visibility $transition-cubic,
-      opacity $transition-cubic;
-    overflow: scroll;
-    z-index: 999;
-  
-    &.show-entry {
-      opacity: 1;
-      visibility: visible;
-    }
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $c-buttons-background;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility $transition-cubic, opacity $transition-cubic;
+  overflow: scroll;
+  z-index: 999;
+
+  &.show-entry {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .modal-table {
@@ -140,8 +139,7 @@
   @include font(500, 20px, 1.2, 0.02em);
   text-transform: uppercase;
   cursor: pointer;
-  transition: background-color $transition-cubic,
-    color $transition-cubic;
+  transition: background-color $transition-cubic, color $transition-cubic;
 
   &:hover,
   &:focus {
@@ -178,7 +176,7 @@
 }
 
 .modal-table__label--select::after {
-  background-image: url('/src/images/arrow-down-bold.svg');
+  background-image: url('/src/images/icons/arrow-down-bold.svg');
   content: '';
   position: absolute;
   width: 24px;
@@ -188,5 +186,3 @@
   background-color: $c-bgc-light;
   pointer-events: none;
 }
-
-
