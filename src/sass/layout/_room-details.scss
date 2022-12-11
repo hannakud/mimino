@@ -1,4 +1,4 @@
-.room-details {
+.room-details-container {
   padding: 32px 15px;
 }
 
@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-bottom: 32px;
 }
 
 .room-details-title {
@@ -33,6 +32,10 @@
 // .room-details-box {
 //   align-items: center;
 // }
+
+.room-details-button-wrapper {
+  padding-top: 32px;
+}
 .room-details-link {
   @include font(500, 16px, 1.25, 0.02em);
   color: $c-second-accent;
