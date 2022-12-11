@@ -18,9 +18,7 @@
     "url": "https://github.com/hannakud/mimino/issues"
   },
   "dependencies": {
-    "jquery": "^3.6.1",
-    "modern-normalize": "^1.1.0",
-    "slick-carousel": "^1.8.1"
+    "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.6.0",
