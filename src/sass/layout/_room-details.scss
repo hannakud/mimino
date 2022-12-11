@@ -1,5 +1,8 @@
 .room-details-container {
   padding: 32px 15px;
+  @include tablet {
+    padding: 48px 97px 40px 47px;
+  }
 }
 
 .room-detail-list {
@@ -27,11 +30,7 @@
   @include font(700, 24px, 1.17, normal);
   text-transform: uppercase;
   margin-bottom: 16px;
-  // display: block;
 }
-// .room-details-box {
-//   align-items: center;
-// }
 
 .room-details-button-wrapper {
   padding-top: 32px;
