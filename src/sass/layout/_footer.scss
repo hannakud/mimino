@@ -1,134 +1,133 @@
 footer {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: $c-bgc-footer;
-   
-    // @media screen and (min-width: 414px){
-    //     height: 240px;
-    // }
-    
-    @media screen and (min-width: 1024px) {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $c-bgc-footer;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 .logo-footer {
-    display: block;
-    font-family: 'Film P3';
-    font-weight: 700;
-    font-size: 40px;
-    line-height: calc(43 / 40);
-    letter-spacing: 0.3em;
+  display: block;
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
 
-    color: $c-main-accent;
+  color: $c-main-accent;
 
-    @media screen and (min-width: 1024px) {
-        font-size: 64px;
-        line-height: 1.07;
-    }
-    transition: color $transition-cubic;
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+    line-height: 1.07;
+  }
+  transition: color $transition-cubic;
 }
 
-.logo-footer:hover, .logo-footer:focus{
-    color: $c-second-accent;
+.logo-footer:hover,
+.logo-footer:focus {
+  color: $c-second-accent;
 }
 
 .footer-nav-list {
-    margin-bottom: 32px;
-    @media screen and (min-width: 1024px) {
-        margin-bottom: 0;
-    }
+  margin-bottom: 32px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+  }
 }
 
 .footer-nav-item:not(:last-child) {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
-
 
 .footer-nav-link {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 
-    color: $c-main-accent;
-    transition: color $transition-cubic;
+  color: $c-main-accent;
+  transition: color $transition-cubic;
 }
-.footer-nav-link:hover, .footer-nav-link:focus{
-    color: $c-second-accent;
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: $c-second-accent;
 }
 .footer-soc-list {
-    display: flex;
-    gap: 21px;
-    @media screen and (min-width: 1024px){
-        flex-direction: column;
-        gap: 12px;
-    }
+  display: flex;
+  gap: 21px;
+  @media screen and (min-width: 1024px) {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
-.footer-soc-item{
-    tab-size: 0;
+.footer-soc-item {
+  tab-size: 0;
 }
 
 .footer-name-soc {
-    display: none;
+  display: none;
 
-    @media screen and (min-width: 1024px) {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.25;
+  @media screen and (min-width: 1024px) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        letter-spacing: 0.02em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0.02em;
 
-        color: #F3C653;
-    }
+    color: #f3c653;
+  }
 }
 
 .footer-soc-link {
-    @media screen and (min-width: 1024px) {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 143px;
-        height: 40px;
-        border: 0.5px solid #F3C653;
-        border-radius: 2px;
-        align-items: center;
-    }
-    transition: border-color $transition-cubic;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 143px;
+    height: 40px;
+    border: 0.5px solid #f3c653;
+    border-radius: 2px;
+    align-items: center;
+  }
+  transition: border-color $transition-cubic;
 }
 
-.footer-soc-link:hover, .footer-soc-link:focus{
-    border-color: $c-second-accent;
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  border-color: $c-second-accent;
 }
 
 .footer-soc-icon {
-    fill: $c-icons-footer;
+  fill: $c-icons-footer;
 }
 
 .footer-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    @media screen and (min-width: 414px) {
-        padding: 0;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @media screen and (min-width: 414px) {
+    padding: 0;
+  }
 }
 
 .footer-nav {
-    @media screen and (min-width: 1024px) {
-        display: flex;
-        gap: 149px;
-    }
-    @media screen and (min-width: 1280px){
-        display: flex;
-        gap: 200px;
-    }
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    gap: 149px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    gap: 200px;
+  }
 }
+
+
