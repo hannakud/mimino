@@ -1,7 +1,13 @@
 .room-details-container {
-  padding: 32px 15px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   @include tablet {
-    padding: 48px 97px 40px 47px;
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+  @include desktop {
+    padding-top: 48px;
+    padding-bottom: 40px;
   }
 }
 
@@ -9,13 +15,24 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  flex-wrap: wrap;
 }
 
-.item-left {
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  @include tablet {
+    flex-direction: row;
+    gap: 80px;
+  }
   @include desktop {
-    display: block;
+    flex-direction: row;
+    gap: 159px;
   }
 }
+
 .room-details-main-title {
   font-family: 'Times New Roman', serif;
   color: $c-black-main;
@@ -29,41 +46,19 @@
   font-family: 'Montserrat';
   color: $c-text-hotel;
   @include font(700, 16px, 1.25, 0.02em);
+  @include tablet {
+    width: 400px;
+  }
   @include desktop {
     width: 400px;
   }
 }
-.room-details-text-up,
-.room-details-text-bottom {
-  font-family: 'Montserrat';
-  @include font(700, 16px, 1.25, 0.02em);
-  color: $c-text-hotel;
-}
-.text-container-first {
+.main-text {
   @include tablet {
-    display: flex;
-    gap: 80px;
+    width: 757px;
   }
   @include desktop {
-    display: flex;
-    gap: 159px;
-  }
-}
-
-.text-container-second {
-  @include tablet {
-    display: flex;
-    gap: 30px;
-  }
-  @include desktop {
-    display: flex;
-    gap: 159px;
-  }
-}
-.text-container {
-  @include desktop {
-    display: flex;
-    gap: 159px;
+    width: 757px;
   }
 }
 
@@ -76,16 +71,19 @@
 }
 
 .room-details-button-wrapper {
-  padding-top: 32px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
   @include tablet {
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
+    gap: 32px;
   }
   @include desktop {
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
+    gap: 32px;
+    margin-right: 0;
   }
 }
 
@@ -102,10 +100,25 @@
   &:focus .room-details-icon {
     fill: $c-main-accent;
   }
+  @include tablet {
+    @include font(500, 20px, 1.2, 0.02em);
+  }
+  @include desktop {
+    @include font(500, 20px, 1.2, 0.02em);
+  }
 }
 
 .button-book {
-  margin: 0 auto 20px;
+  @include font(500, 20px, 1.2, normal);
+  margin-top: 32px;
+  @include tablet {
+    @include font(500, 24px, 1.2, normal);
+    margin-top: 40px;
+  }
+  @include desktop {
+    margin-top: 40px;
+    padding: 18px 38px;
+  }
 }
 .room-details-icon {
   fill: $c-second-accent;
@@ -113,60 +126,60 @@
   margin-left: 12px;
 }
 
-.gradient-room {
-  max-width: 414px;
-  background-image: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 140px,
-    rgba(186, 186, 186, 0.4) 140px,
-    rgba(186, 186, 186, 0.4) 141px,
-    rgba(0, 0, 0, 0) 141px,
-    rgba(0, 0, 0, 0) 274px,
-    rgba(186, 186, 186, 0.4) 274px,
-    rgba(186, 186, 186, 0.4) 275px,
-    rgba(0, 0, 0, 0) 275px
-  );
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 16px;
-  padding-bottom: 20px;
-  @include tablet {
-    max-width: 1024px;
-    background-image: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0) 277px,
-      rgba(186, 186, 186, 0.4) 277px,
-      rgba(186, 186, 186, 0.4) 278px,
-      rgba(0, 0, 0, 0) 278px,
-      rgba(0, 0, 0, 0) 511px,
-      rgba(186, 186, 186, 0.4) 511px,
-      rgba(186, 186, 186, 0.4) 512px,
-      rgba(0, 0, 0, 0) 512px,
-      rgba(0, 0, 0, 0) 746px,
-      rgba(186, 186, 186, 0.4) 746px,
-      rgba(186, 186, 186, 0.4) 747px,
-      rgba(0, 0, 0, 0) 747px
-    );
-    padding-top: 120px;
-    padding-bottom: 32px;
-  }
-  @include desktop {
-    max-width: 1280px;
-    background-image: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0) 338px,
-      rgba(186, 186, 186, 0.4) 338px,
-      rgba(186, 186, 186, 0.4) 339px,
-      rgba(0, 0, 0, 0) 338px,
-      rgba(0, 0, 0, 0) 640px,
-      rgba(186, 186, 186, 0.4) 640px,
-      rgba(186, 186, 186, 0.4) 641px,
-      rgba(0, 0, 0, 0) 641px,
-      rgba(0, 0, 0, 0) 942px,
-      rgba(186, 186, 186, 0.4) 942px,
-      rgba(186, 186, 186, 0.4) 943px,
-      rgba(0, 0, 0, 0) 943px
-    );
-    padding-bottom: 50px;
-  }
-}
+// .gradient-room {
+//   max-width: 414px;
+//   background-image: linear-gradient(
+//     90deg,
+//     rgba(0, 0, 0, 0) 140px,
+//     rgba(186, 186, 186, 0.4) 140px,
+//     rgba(186, 186, 186, 0.4) 141px,
+//     rgba(0, 0, 0, 0) 141px,
+//     rgba(0, 0, 0, 0) 274px,
+//     rgba(186, 186, 186, 0.4) 274px,
+//     rgba(186, 186, 186, 0.4) 275px,
+//     rgba(0, 0, 0, 0) 275px
+//   );
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-top: 16px;
+//   padding-bottom: 20px;
+//   @include tablet {
+//     max-width: 1024px;
+//     background-image: linear-gradient(
+//       90deg,
+//       rgba(0, 0, 0, 0) 277px,
+//       rgba(186, 186, 186, 0.4) 277px,
+//       rgba(186, 186, 186, 0.4) 278px,
+//       rgba(0, 0, 0, 0) 278px,
+//       rgba(0, 0, 0, 0) 511px,
+//       rgba(186, 186, 186, 0.4) 511px,
+//       rgba(186, 186, 186, 0.4) 512px,
+//       rgba(0, 0, 0, 0) 512px,
+//       rgba(0, 0, 0, 0) 746px,
+//       rgba(186, 186, 186, 0.4) 746px,
+//       rgba(186, 186, 186, 0.4) 747px,
+//       rgba(0, 0, 0, 0) 747px
+//     );
+//     padding-top: 120px;
+//     padding-bottom: 32px;
+//   }
+//   @include desktop {
+//     max-width: 1280px;
+//     background-image: linear-gradient(
+//       90deg,
+//       rgba(0, 0, 0, 0) 338px,
+//       rgba(186, 186, 186, 0.4) 338px,
+//       rgba(186, 186, 186, 0.4) 339px,
+//       rgba(0, 0, 0, 0) 338px,
+//       rgba(0, 0, 0, 0) 640px,
+//       rgba(186, 186, 186, 0.4) 640px,
+//       rgba(186, 186, 186, 0.4) 641px,
+//       rgba(0, 0, 0, 0) 641px,
+//       rgba(0, 0, 0, 0) 942px,
+//       rgba(186, 186, 186, 0.4) 942px,
+//       rgba(186, 186, 186, 0.4) 943px,
+//       rgba(0, 0, 0, 0) 943px
+//     );
+//     padding-bottom: 50px;
+//   }
+// }
