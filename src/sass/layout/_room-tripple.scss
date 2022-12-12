@@ -16,9 +16,32 @@
     }
   }
 
+  .hotel-room-description {
+    width: 242px;
+
+    @include tablet {
+      width: 400px;
+    }
+
+    @include desktop {
+      width: 400px;
+    }
+  }
+
   .hotel-room-photo {
-    width: 244px;
     margin-right: auto;
+
+    @include tablet {
+      position: absolute;
+      top: -32px;
+      right: 512px;
+    }
+  }
+
+  .down-wrapper {
+    @include tablet {
+      flex-direction: row-reverse;
+    }
   }
 
   .slider-wrapper {

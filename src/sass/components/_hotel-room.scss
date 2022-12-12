@@ -2,7 +2,20 @@
   .hotel-room-container {
     padding-top: 32px;
     padding-bottom: 32px;
+    position: relative;
     overflow-x: hidden;
+
+    @include tablet {
+      padding-top: 62px;
+      padding-bottom: 62px;
+      overflow-x: visible;
+    }
+
+    @include desktop {
+      padding-top: 72px;
+      padding-bottom: 72px;
+      overflow-x: visible;
+    }
   }
 
   .hotel-room-info {
@@ -58,6 +71,7 @@
     width: 258px;
     margin-right: 39px;
     margin-bottom: 32px;
+
     @include tablet {
       @include font(600, 16px, 1.25, 0.02em);
       width: 440px;
@@ -71,16 +85,24 @@
   }
 
   .hotel-room-photo {
-    max-width: 244px;
-    width: 100%;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
+    margin-bottom: 32px;
+
+    @include mobile-small {
+      max-width: 244px;
+      width: 100%;
+    }
 
     @include mobile {
       width: 244px;
     }
 
-    margin-bottom: 32px;
+    @include tablet {
+      width: 400px;
+      height: 524px;
+      margin-bottom: 0;
+    }
   }
 
   .slider-wrapper {
@@ -102,10 +124,12 @@
 
     @include tablet {
       width: 422px;
+      padding-bottom: 64px;
     }
 
     @include desktop {
       width: 548px;
+      padding-bottom: 64px;
     }
   }
   .slick-prev-arrow,
@@ -121,6 +145,12 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .buttons-wrapper {

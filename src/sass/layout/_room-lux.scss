@@ -1,9 +1,26 @@
 .room-lux {
   background-color: $c-bgc-light;
 
+  .hotel-room-description {
+    width: 258px;
+
+    @include tablet {
+      width: 440px;
+    }
+
+    @include desktop {
+      width: 400px;
+    }
+  }
+
   .hotel-room-photo {
-    width: 244px;
     margin-left: auto;
+
+    @include tablet {
+      position: absolute;
+      top: -32px;
+      left: 512px;
+    }
   }
 
   .slider-wrapper {
