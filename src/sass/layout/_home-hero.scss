@@ -1,5 +1,267 @@
-section {
+.home-hero {
+  padding-top: 64px;
+  padding-bottom: 20px;
+  text-align: center;
+
+  background-image:
+    linear-gradient($c-bgc-gradient-homepage-main,
+      $c-bgc-gradient-homepage-main),
+    url(/src/images/mobile/home/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+
+  @include retina {
+    background-image: linear-gradient($c-bgc-gradient-homepage-main,
+        $c-bgc-gradient-homepage-main),
+      url(/src/images/mobile/home/hero-bg.jpg),
+      url(/src/images/mobile/home/hero-bg-2x.jpg);
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 188px;
+    background-image:
+      linear-gradient($c-bgc-gradient-homepage-main,
+        $c-bgc-gradient-homepage-main),
+      url(/src/images/tablet/home/hero-bg.jpg);
+
+    @include retina {
+      background-image: linear-gradient($c-bgc-gradient-homepage-main,
+          $c-bgc-gradient-homepage-main),
+        url(/src/images/tablet/home/hero-bg.jpg),
+        url(/src/images/tablet/home/hero-bg-2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image:
+      linear-gradient($c-bgc-gradient-homepage-main,
+        $c-bgc-gradient-homepage-main),
+      url(/src/images/desktop/home/hero-bg.jpg);
+  }
+
+  @include retina {
+    background-image: linear-gradient($c-bgc-gradient-homepage-main,
+        $c-bgc-gradient-homepage-main),
+      url(/src/images/desktop/home/hero-bg.jpg),
+      url(/src/images/desktop/home/hero-bg-2x.jpg);
+  }
+}
+
+.hero-container {
+  margin: 0 auto;
+}
+
+.nav {
+
+  @media screen and (min-width: 1024px) {
+    padding: 0 47px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contact-mob {
+  margin: 0 15px 70px auto;
+  display: flex;
+  padding-left: 3px;
+  width: 210px;
+  height: 47px;
+  border: 1px solid $c-icons-footer;
+  border-radius: 2px;
+
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.contact-mob-link {
+  @include font(400, 12px, 1.25, 0.01em);
+  font-family: 'Montserrat';
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  padding-left: 6px;
+
+  color: $c-address-homepage;
+}
+
+.icon-map-mob,
+.icon-map-tab {
+  fill: $c-main-accent;
+}
+
+.hero-home-title {
+  @include font(700, 96px, 1.07, 0.03em);
   font-family: 'Film P3';
-  font-weight: 700;
-  font-size: 64px;
+  margin-bottom: 24px;
+
+  color: $c-white-main;
+
+  @media screen and (min-width: 414px) {
+    font-size: 96px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 16px;
+    font-size: 128px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
+    font-size: 128px;
+  }
+}
+
+.hero-home-subtitle {
+  margin-bottom: 40px;
+  @include font(600, 16px, 1.25, 0.03em);
+
+  font-family: 'Montserrat';
+  color: $c-white-main;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 56px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 64px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.hero-home-sec-title {
+  margin-bottom: 113px;
+  @include font(700, 32px, 1.15, 0.05em);
+
+  font-family: 'Times New Roman';
+
+  color: $c-white-main;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 144px;
+    font-size: 36px;
+    line-height: calc(41 / 36);
+  }
+}
+
+.hero-button-wrap-home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 24px;
+  margin-bottom: 58px;
+
+  @media screen and (min-width: 1024px){
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.container-tab {
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    padding: 0 47px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contact-tab {
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 25px;
+    padding-left: 10px;
+
+    display: flex;
+    text-align-last: left;
+
+    width: 285px;
+    height: 50px;
+    border: 1px solid $c-icons-footer;
+    border-radius: 2px;
+  }
+}
+
+.hero-wrap-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 58px;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 25px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    gap: 60px;
+  }
+}
+
+.contact-tab-link {
+  @include font(400, 16px, 1.25, 0.01em);
+  font-family: 'Montserrat';
+
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+
+  color: $c-address-homepage;
+}
+
+.restaurant-hero-button {
+  display: flex;
+  align-items: center;
+  min-width: 236px;
+  height: 48px;
+  padding: 15px 24px 13px 24px;
+
+  color: $c-main-accent;
+
+  @media screen and (min-width: 1024px) {
+    height: 49px;
+  }
+}
+
+.rest-soc-list {
+  display: flex;
+  gap: 20px;
+  padding-left: 15px;
+
+  @media screen and (min-width: 1024px) {
+    padding-left: 47px;
+    padding-bottom: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.rest-soc-icon {
+  fill: $c-main-accent;
+
+  transform: fill $transition-cubic;
+}
+
+.rest-soc-icon:focus,
+.rest-soc-icon:hover {
+  fill: $c-second-accent;
 }

@@ -1,5 +1,8 @@
 body {
   font-family: 'Montserrat';
+  background-color: $c-bgc-light;
+  min-width: 340px;
+  overflow-x: hidden;
 }
 
 img {

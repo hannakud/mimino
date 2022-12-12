@@ -1,0 +1,172 @@
+.room-details-container {
+  padding: 32px 15px;
+  @include tablet {
+    padding: 48px 97px 40px 47px;
+  }
+}
+
+.room-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.item-left {
+  @include desktop {
+    display: block;
+  }
+}
+.room-details-main-title {
+  font-family: 'Times New Roman', serif;
+  color: $c-black-main;
+  @include font(400, 32px, 1.15, normal);
+  text-transform: uppercase;
+}
+.room-details-main-title {
+  margin-bottom: 16px;
+}
+.room-details-text {
+  font-family: 'Montserrat';
+  color: $c-text-hotel;
+  @include font(700, 16px, 1.25, 0.02em);
+  @include desktop {
+    width: 400px;
+  }
+}
+.room-details-text-up,
+.room-details-text-bottom {
+  font-family: 'Montserrat';
+  @include font(700, 16px, 1.25, 0.02em);
+  color: $c-text-hotel;
+}
+.text-container-first {
+  @include tablet {
+    display: flex;
+    gap: 80px;
+  }
+  @include desktop {
+    display: flex;
+    gap: 159px;
+  }
+}
+
+.text-container-second {
+  @include tablet {
+    display: flex;
+    gap: 30px;
+  }
+  @include desktop {
+    display: flex;
+    gap: 159px;
+  }
+}
+.text-container {
+  @include desktop {
+    display: flex;
+    gap: 159px;
+  }
+}
+
+.room-details-subtitle {
+  font-family: 'Times New Roman', serif;
+  color: $c-black-main;
+  @include font(700, 24px, 1.17, normal);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.room-details-button-wrapper {
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  @include desktop {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
+
+.room-details-link {
+  @include font(500, 16px, 1.25, 0.02em);
+  color: $c-second-accent;
+  @extend %justify-center;
+  transition: color $transition-cubic;
+  &:hover,
+  &:focus {
+    color: $c-main-accent;
+  }
+  &:hover .room-details-icon,
+  &:focus .room-details-icon {
+    fill: $c-main-accent;
+  }
+}
+
+.button-book {
+  margin: 0 auto 20px;
+}
+.room-details-icon {
+  fill: $c-second-accent;
+  transition: fill $transition-cubic;
+  margin-left: 12px;
+}
+
+.gradient-room {
+  max-width: 414px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 140px,
+    rgba(186, 186, 186, 0.4) 140px,
+    rgba(186, 186, 186, 0.4) 141px,
+    rgba(0, 0, 0, 0) 141px,
+    rgba(0, 0, 0, 0) 274px,
+    rgba(186, 186, 186, 0.4) 274px,
+    rgba(186, 186, 186, 0.4) 275px,
+    rgba(0, 0, 0, 0) 275px
+  );
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 16px;
+  padding-bottom: 20px;
+  @include tablet {
+    max-width: 1024px;
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 277px,
+      rgba(186, 186, 186, 0.4) 277px,
+      rgba(186, 186, 186, 0.4) 278px,
+      rgba(0, 0, 0, 0) 278px,
+      rgba(0, 0, 0, 0) 511px,
+      rgba(186, 186, 186, 0.4) 511px,
+      rgba(186, 186, 186, 0.4) 512px,
+      rgba(0, 0, 0, 0) 512px,
+      rgba(0, 0, 0, 0) 746px,
+      rgba(186, 186, 186, 0.4) 746px,
+      rgba(186, 186, 186, 0.4) 747px,
+      rgba(0, 0, 0, 0) 747px
+    );
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
+  @include desktop {
+    max-width: 1280px;
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 338px,
+      rgba(186, 186, 186, 0.4) 338px,
+      rgba(186, 186, 186, 0.4) 339px,
+      rgba(0, 0, 0, 0) 338px,
+      rgba(0, 0, 0, 0) 640px,
+      rgba(186, 186, 186, 0.4) 640px,
+      rgba(186, 186, 186, 0.4) 641px,
+      rgba(0, 0, 0, 0) 641px,
+      rgba(0, 0, 0, 0) 942px,
+      rgba(186, 186, 186, 0.4) 942px,
+      rgba(186, 186, 186, 0.4) 943px,
+      rgba(0, 0, 0, 0) 943px
+    );
+    padding-bottom: 50px;
+  }
+}
