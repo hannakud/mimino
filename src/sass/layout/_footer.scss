@@ -3,7 +3,7 @@ footer {
   padding-bottom: 40px;
   background-color: $c-bgc-footer;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) {
     padding-top: 80px;
     padding-bottom: 80px;
   }
@@ -15,7 +15,7 @@ footer {
 
   color: $c-main-accent;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) {
     font-size: 64px;
     line-height: 1.07;
   }
@@ -29,7 +29,7 @@ footer {
 
 .footer-nav-list {
   margin-bottom: 32px;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) {
     margin-bottom: 0;
   }
 }
@@ -51,7 +51,7 @@ footer {
 }
 .footer-soc-list {
     display: none;
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: 1025px){
         display: flex;
         gap: 21px;
         flex-direction: column;
@@ -65,7 +65,7 @@ footer {
 .footer-name-soc {
   display: none;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) {
     font-family: 'Montserrat';
     font-style: normal;
     @include font(400, 16px, 1.25, 0.02em);
@@ -77,7 +77,7 @@ footer {
 }
 
 .footer-soc-link {
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -110,13 +110,16 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  @media screen and (min-width: 414px) {
+  @media screen and (min-width: 415px) {
     padding: 0;
+  }
+  @media screen and (min-width: 1025px){
+    gap: 163px;
   }
 }
 
 .footer-nav {
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1025px) {
         display: flex;
         gap: 149px;
     }
@@ -129,7 +132,7 @@ footer {
 .footer-soc-list-mob{
     display: flex;
     gap: 20px;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1025px) {
         display: none;
     }
     @media screen and (min-width: 1280px){
