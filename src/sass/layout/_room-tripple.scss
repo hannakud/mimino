@@ -64,6 +64,10 @@
     @include mobile {
       right: 195px;
     }
+    @include tablet {
+      right: unset;
+      left: 0;
+    }
   }
 
   .slick-next-arrow {
@@ -73,6 +77,10 @@
 
     @include mobile {
       right: 131px;
+    }
+    @include tablet {
+      right: unset;
+      left: 64px;
     }
   }
 }
