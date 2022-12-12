@@ -116,8 +116,8 @@
     overflow: hidden;
 
     .slider-room_item {
-      margin-right: 16px;
-      margin-left: 1px;
+      margin-left: 13px;
+      margin-right: 4px;
     }
   }
 
@@ -126,17 +126,17 @@
     padding-bottom: 52px;
 
     @include mobile {
-      width: 404px;
+      width: 420px;
     }
 
     @include tablet {
-      width: 422px;
+      width: 468px;
       padding-bottom: 64px;
     }
 
     @include desktop {
-      width: 548px;
-      padding-bottom: 64px;
+      width: 568px;
+      padding-bottom: 72px;
     }
   }
   .slick-prev-arrow,

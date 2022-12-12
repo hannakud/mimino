@@ -21,6 +21,12 @@
       top: -32px;
       left: 512px;
     }
+
+    @include desktop {
+      position: absolute;
+      top: -32px;
+      left: 640px;
+    }
   }
 
   .slider-wrapper {
@@ -40,6 +46,10 @@
       left: unset;
       right: 77px;
     }
+    @include desktop {
+      left: unset;
+      right: 77px;
+    }
   }
 
   .slick-next-arrow {
@@ -50,6 +60,10 @@
       left: 172px;
     }
     @include tablet {
+      left: unset;
+      right: 13px;
+    }
+    @include desktop {
       left: unset;
       right: 13px;
     }

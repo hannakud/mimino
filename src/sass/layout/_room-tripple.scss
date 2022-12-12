@@ -48,6 +48,9 @@
     @include tablet {
       flex-direction: row-reverse;
     }
+    @include desktop {
+      flex-direction: row-reverse;
+    }
   }
 
   .slider-wrapper {
@@ -68,6 +71,10 @@
       right: unset;
       left: 0;
     }
+    @include desktop {
+      right: unset;
+      left: 0;
+    }
   }
 
   .slick-next-arrow {
@@ -79,6 +86,10 @@
       right: 131px;
     }
     @include tablet {
+      right: unset;
+      left: 64px;
+    }
+    @include desktop {
       right: unset;
       left: 64px;
     }
