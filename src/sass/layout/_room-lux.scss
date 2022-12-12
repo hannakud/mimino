@@ -1,25 +1,71 @@
 .room-lux {
   background-color: $c-bgc-light;
 
+  .hotel-room-description {
+    width: 258px;
+
+    @include tablet {
+      width: 440px;
+    }
+
+    @include desktop {
+      width: 400px;
+    }
+  }
+
   .hotel-room-photo {
-    width: 244px;
     margin-left: auto;
+
+    @include tablet {
+      position: absolute;
+      top: -32px;
+      left: 512px;
+    }
+
+    @include desktop {
+      position: absolute;
+      top: -32px;
+      left: 640px;
+    }
   }
 
   .slider-wrapper {
-    position: relative;
-    transform: translateX(-113px);
+    @include mobile {
+      transform: translateX(-113px);
+    }
   }
 
   .slick-prev-arrow {
     position: absolute;
     bottom: 0;
-    left: 108px;
+    left: 0px;
+    @include mobile {
+      left: 108px;
+    }
+    @include tablet {
+      left: unset;
+      right: 77px;
+    }
+    @include desktop {
+      left: unset;
+      right: 77px;
+    }
   }
 
   .slick-next-arrow {
     position: absolute;
     bottom: 0;
-    left: 172px;
+    left: 64px;
+    @include mobile {
+      left: 172px;
+    }
+    @include tablet {
+      left: unset;
+      right: 13px;
+    }
+    @include desktop {
+      left: unset;
+      right: 13px;
+    }
   }
 }
