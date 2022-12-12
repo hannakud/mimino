@@ -7,6 +7,12 @@
 .header-container {
   display: flex;
   align-items: center;
+  @include mobile-small {
+    justify-content: space-between;
+  }
+  @include mobile {
+    justify-content: space-between;
+  }
 }
 
 .header-item {
@@ -33,7 +39,12 @@
   align-items: center;
   padding-top: 16px;
   padding-bottom: 10px;
+  @include mobile-small {
+    justify-content: space-between;
+    width: 100%;
+  }
   @include mobile {
+    justify-content: space-between;
     width: 100%;
   }
 
@@ -48,7 +59,7 @@
   color: $c-logo-header-restaurant;
 
   @include mobile-small {
-    margin-right: 52px;
+    //margin-right: 52px;
   }
   @include tablet {
     font-size: 40px;
@@ -133,7 +144,6 @@
     display: flex;
     align-items: center;
 
-
     @include desktop {
       border: 1px solid $c-icons-footer;
       border-radius: 2px;
@@ -180,4 +190,3 @@
     }
   }
 }
-
