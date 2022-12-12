@@ -20,6 +20,12 @@
       top: -32px;
       left: 512px;
     }
+
+    @include desktop {
+      position: absolute;
+      top: -32px;
+      left: 640px;
+    }
   }
 
   .slider-wrapper {

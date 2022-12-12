@@ -36,6 +36,12 @@
       top: -32px;
       right: 512px;
     }
+
+    @include desktop {
+      position: absolute;
+      top: -32px;
+      right: 640px;
+    }
   }
 
   .down-wrapper {
