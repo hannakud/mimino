@@ -199,6 +199,9 @@
         border: 1px solid $c-icons-footer;
         border-radius: 2px;
     }
+    @media screen and (min-width: 1280px){
+        margin-bottom: 0;
+    }
 }
 
 .hero-wrap-tab {
@@ -206,6 +209,7 @@
         flex-direction: column;
         align-items: center;
         gap: 24px;
+        margin-bottom: 58px;
 
     @media screen and (min-width: 1024px) {
         flex-direction: row;
@@ -214,6 +218,7 @@
     }
 
     @media screen and (min-width: 1280px) {
+        margin-bottom: 0;
         flex-direction: row;
         gap: 60px;
     }
