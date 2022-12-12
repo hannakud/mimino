@@ -28,8 +28,8 @@
 }
 
 .button-dark {
+  border: 2px solid $c-white-main;
   background-color: $c-black-main;
-  border: 2px solid $c-logo-header-room;
 
   &:hover,
   &:focus,
