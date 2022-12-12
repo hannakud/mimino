@@ -91,9 +91,22 @@
       margin-right: 16px;
     }
   }
+
   .hotel-room-slider {
-    width: 404px;
+    width: 100%;
     padding-bottom: 52px;
+
+    @include mobile {
+      width: 404px;
+    }
+
+    @include tablet {
+      width: 422px;
+    }
+
+    @include desktop {
+      width: 548px;
+    }
   }
   .slick-prev-arrow,
   .slick-next-arrow {

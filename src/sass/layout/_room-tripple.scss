@@ -22,18 +22,28 @@
   }
 
   .slider-wrapper {
-    transform: translateX(115px);
+    @include mobile {
+      transform: translateX(113px);
+    }
   }
 
   .slick-prev-arrow {
     position: absolute;
     bottom: 0;
-    right: 195px;
+    right: 64px;
+
+    @include mobile {
+      right: 195px;
+    }
   }
 
   .slick-next-arrow {
     position: absolute;
     bottom: 0;
-    right: 131px;
+    right: 0;
+
+    @include mobile {
+      right: 131px;
+    }
   }
 }
