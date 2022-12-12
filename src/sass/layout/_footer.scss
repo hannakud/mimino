@@ -117,12 +117,12 @@ footer {
 
 .footer-nav {
     @media screen and (min-width: 1024px) {
-        display: flex;
-        gap: 149px;
+      display: flex;
+      gap: 149px;
     }
     @media screen and (min-width: 1280px){
-        display: flex;
-        gap: 200px;
+      display: flex;
+      gap: 200px;
     }
 }
 
@@ -130,9 +130,9 @@ footer {
     display: flex;
     gap: 20px;
     @media screen and (min-width: 1024px) {
-        display: none;
+      display: none;
     }
     @media screen and (min-width: 1280px){
-        display: none;
+      display: none;
     }
 }
