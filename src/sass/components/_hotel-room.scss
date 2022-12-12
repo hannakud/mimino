@@ -110,7 +110,11 @@
     overflow: hidden;
 
     .slider-room_item {
-      margin-right: 16px;
+      margin-right: 17px;
+
+      & + .right {
+        margin-left: 17px;
+      }
     }
   }
 
