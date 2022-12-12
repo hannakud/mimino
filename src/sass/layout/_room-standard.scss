@@ -1,1 +1,25 @@
+.room-standard {
+  background-color: $c-bgc-light;
 
+  .hotel-room-photo {
+    width: 244px;
+    margin-left: auto;
+  }
+
+  .slider-wrapper {
+    position: relative;
+    transform: translateX(-115px);
+  }
+
+  .slick-prev-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 108px;
+  }
+
+  .slick-next-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 172px;
+  }
+}

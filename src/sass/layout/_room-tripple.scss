@@ -1,0 +1,39 @@
+.room-tripple {
+  background-color: $c-bgc-biege;
+
+  .hotel-room-info {
+    align-items: flex-end;
+  }
+
+  .hotel-label {
+    position: relative;
+    right: -10px;
+    @include tablet {
+      right: -18px;
+    }
+    @include desktop {
+      right: -18px;
+    }
+  }
+
+  .hotel-room-photo {
+    width: 244px;
+    margin-right: auto;
+  }
+
+  .slider-wrapper {
+    transform: translateX(115px);
+  }
+
+  .slick-prev-arrow {
+    position: absolute;
+    bottom: 0;
+    right: 195px;
+  }
+
+  .slick-next-arrow {
+    position: absolute;
+    bottom: 0;
+    right: 131px;
+  }
+}

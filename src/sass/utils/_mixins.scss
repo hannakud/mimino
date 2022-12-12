@@ -1,6 +1,6 @@
 // шаблон розмірів шрифта
 
-@mixin font($weight, $size, $height, $spacing) {
+@mixin font($weight, $size, $height, $spacing: normal) {
   font-weight: $weight;
   font-size: $size;
   line-height: $height;
@@ -9,17 +9,22 @@
 // Приклад підключення
 // @include font(700, 36px, 1.17, 0.03em);
 
-
 // шаблон для точок перелому адаптивних сторінок
 
+@mixin mobile-small {
+  @media screen and (max-width: 414px) {
+    @content;
+  }
+}
+
 @mixin mobile {
-  @media screen and (min-width: 414px) {
+  @media screen and (min-width: 415px) and (max-width: 1024px) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) and (max-width: 1279px) {
     @content;
   }
 }
@@ -30,10 +35,12 @@
   }
 }
 
-// шаблон для підключення растрових зображень з щільністью 
+// шаблон для підключення растрових зображень з щільністью
 
 @mixin retina {
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     @content;
   }
 }
@@ -47,7 +54,7 @@
 //   }
 // }
 
-// @include desktop {
+// @include deskt1280op {
 //   max-height: 600px;
 //   background-image: $gradient, url('../images/desktop/hero-backgraund-desk.jpg');
 //   @include retina {
