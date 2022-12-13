@@ -13,9 +13,14 @@
        max-width: 1280px;
     }
 }
-
+.about-hotel-wrapper {
+    overflow: visible;
+}
 .about-hotel-container {
     text-align: right;
+    margin-bottom: 28px;
+    flex-direction: column;
+    display: flex
 }
 
 /*     Скриває заголовок  */
@@ -73,6 +78,7 @@
 
 /*  Позіціонує текст і зображення в колонку*/
 .hotel-about .hotel-room {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -103,57 +109,57 @@
         @include font (600, 16px, 1.25, 0.02em);
         min-width: 488px;
         min-height: 88px;
-        position: relative;
-        left: 50px;
-        top: 24px;
-        left: 242px;
+        margin-left: 630px;
     }
 }
 
 .image-room {
-    position: relative;
+  position: absolute;
 
     @include mobile {
-        left: 180;
-        max-width: 244px;
-        transform: translateX(-250px);
+     max-width: 244px;
+      
     }
 
     @include tablet {
-        max-width: 400px;
-        left: 65px;
-        top: -548px;
-        transform: translateX(-250px);
+    max-width: 400px;
+    left: 65px;
+    margin-top: -530px;
     }
 
     @include desktop {
-        top: -380px;
-        left: -220px;
-        max-width: 100%;
+     left: 95px;
+     margin-top: -390px;
+     max-width: 100%;
     }
 }
 
 .hotel-about .hotel-reception {
+    p {
+        margin-top: 102px;
+        margin-bottom: 120px;
+    }
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 21px;
+ 
 }
 
 .hotel-reception-text {
     @include font (600, 8px, 1.25, 0.02em);
-    position: relative;
+
     font-family: Montserrat;
     color: $c-second-accent;
     margin-top: 102px;
-    margin-bottom: 120px;
     text-align: left;
     max-width: 163px;
  
 
     @include mobile {
         font-size: 12px;
+        margin-top: 350px;
     }
 
     @include tablet {
@@ -163,36 +169,35 @@
         font-size: 16px;
         margin-top: 172px;
         margin-left: 220px;
-        transform: translateY(-562px);
-    }
+        }
 
     @include desktop {
         font-size: 16px;
-        left: 294px;
-        margin: 0;
+        margin-left: 205px;
         max-width: 311px;
-        top: -490px;
+   
     }
 }
 
 
 .image {
-    position: relative;
-
+    margin-top: 295px;
+   
     @include mobile {
         width: 200px;
         height: 278px;
     }
 
     @include tablet {
-        transform: translateY(-562px);
+ 
         right: 0;
         width: 100%;
         height: auto;
+        margin-top: -24px;
     }
 
     @include desktop {
-        transform: translateY(-504px);
+   
     }
 }
 
