@@ -88,7 +88,11 @@
   @include font(500, 14px, 1.25, 0.02em);
   color: $c-main-accent;
   display: block;
-
+  transition: color $transition-cubic;
+  &:hover,
+  &:focus {
+    color: $c-second-accent;
+  }
   @include tablet {
     font-size: 20px;
     line-height: 1.2;
