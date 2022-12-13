@@ -1,1 +1,184 @@
+.hotel-hero{
+    position: relative;
+    margin: 0 auto;
 
+    padding-top: 181px;
+    padding-bottom: 102px;
+    text-align: center;
+    background-image:
+        linear-gradient($c-bgc-gradient-homepage-main,
+            $c-bgc-gradient-homepage-main),
+        url(/src/images/mobile/hotel/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    
+    @include mobile{
+        padding-top: 181px;
+        margin-bottom: 178px;
+        @include retina {
+            background-image: linear-gradient($c-bgc-gradient-homepage-main,
+             $c-bgc-gradient-homepage-main),
+            url(/src/images/mobile/hotel/hero-bg.jpg),
+         url(/src/images/mobile/hotel/hero-bg-2x.jpg);
+        }
+    }
+    @media screen and (min-width: 1025px){
+        padding-top: 188px;
+        padding-bottom: 64px;
+        @include retina {
+            background-image: linear-gradient($c-bgc-gradient-homepage-main,
+                $c-bgc-gradient-homepage-main),
+         url(/src/images/tablet/hotel/hero-bg.jpg),
+            url(/src/images/tablet/hotel/hero-bg-2x.jpg);
+        }
+    }
+
+    @include desktop {
+        padding-top: 188px;
+        padding-bottom: 65px;
+        @include retina {
+        background-image: linear-gradient($c-bgc-gradient-homepage-main,
+                $c-bgc-gradient-homepage-main),
+            url(/src/images/desktop/hotel/hero-bg.jpg),
+            url(/src/images/desktop/hotel/hero-bg-2x.jpg);
+        }
+    }
+}
+
+.hotel-hero-title{
+    @include font(700, 96px, 1.07, 0.3em);
+    color: white;
+    margin-bottom: 32px;
+    font-family: 'Film P3';
+    @media screen and (min-width: 1025px) {
+      @include font(700, 128px, 1.07, 0.3em);
+      margin-bottom: 32px;
+    }
+    @include desktop {
+        @include font(700, 128px, 1.07, 0.3em);
+      margin-bottom: 32px;
+    }
+}
+
+.hotel-hero-subtitle{
+    @include font(600, 20px, 1.25, 0.02em);
+    color: white;
+    margin-bottom: 178px;
+    font-family: 'Montserrat';
+    @media screen and (min-width: 1025px) {
+      @include font(600, 20px, 1.25, 0.02em);
+      margin-bottom: 226px;
+    }
+    @include desktop {
+      @include font(700, 36px, 1.25, 0.05em);
+      margin-bottom: 249px;
+    }
+}
+
+
+.hotel-hero-button{
+    width: 236px;
+    font-family: 'Montserrat';
+    @include font(700, 16px, 1.25, 0.02em);
+
+    color: #F3C653;
+}
+
+.hotel-soc-list{
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    left: 15px;
+    top: auto;
+    bottom: 20px;
+    @media screen and (min-width: 1025px){
+        left: 47px;
+        bottom: 15px;
+    }
+    @include desktop{
+      display: none;
+    }
+}
+
+.contact-map{
+    position: absolute;
+    top: 64px;
+    right: 15px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 1025px){
+        top: auto;
+        left: 47px;
+        bottom: 64px;
+    }
+
+    @include desktop{
+        top: auto;
+        left: 85px;
+        bottom: 64px;
+    }
+}
+
+.contact-map-thumb{
+    width: 210px;
+    height: 47px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    @media screen and (min-width: 1025px){
+        width: 285px;
+        height: 56px;
+    }
+    @include desktop{
+        width: 285px;
+        height: 56px;
+    }
+}
+.contact-link-hotel{
+    @include font(400, 12px, 1.25, 0.01em);
+        font-family: 'Montserrat';
+        display: flex;
+        gap: 8px;
+        text-align: start;
+    
+    color: $c-address-homepage;
+    @media screen and (min-width: 1025px){
+        @include font(400, 16px, 1.25, 0.01em);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    @include desktop{
+        @include font(400, 16px, 1.25, 0.01em);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+.hero-wrap-hotel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    @media screen and (min-width: 1025px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: 47px;
+        gap: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        flex-direction: row;
+        gap: 60px;
+        justify-content: flex-end;
+        padding-right: 85px;
+    }
+}
