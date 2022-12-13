@@ -119,23 +119,23 @@ footer {
 }
 
 .footer-nav {
-    @media screen and (min-width: 1025px) {
-        display: flex;
-        gap: 149px;
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      gap: 149px;
     }
     @media screen and (min-width: 1280px){
-        display: flex;
-        gap: 200px;
+      display: flex;
+      gap: 200px;
     }
 }
 
 .footer-soc-list-mob{
     display: flex;
     gap: 20px;
-    @media screen and (min-width: 1025px) {
-        display: none;
+    @media screen and (min-width: 1024px) {
+      display: none;
     }
     @media screen and (min-width: 1280px){
-        display: none;
+      display: none;
     }
 }

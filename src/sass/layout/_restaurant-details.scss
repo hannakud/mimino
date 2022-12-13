@@ -1,12 +1,9 @@
 .restaurant-details {
   max-width: 1600px;
   height: 100%;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.65)
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(../images/mobile/home/details-rest-bg.jpg);
-      @include retina {
+  @include retina {
     background-image: url('../images/mobile/home/details-rest-bg-2x.jpg');
   }
   background-repeat: no-repeat;
@@ -15,25 +12,21 @@
   margin: 0 auto;
 
   @include tablet {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.65)
-    ), url('../images/tablet/home/details-rest-bg.jpg');
-  @include retina {
-    background-image: url('../images/tablet/home/details-rest-bg-2x.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('../images/tablet/home/details-rest-bg.jpg');
+    @include retina {
+      background-image: url('../images/tablet/home/details-rest-bg-2x.jpg');
+    }
   }
-}
 
-@include desktop {
-  max-height: 600px;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.65)
-    ), url('../images/desktop/home/details-rest-bg.jpg');
-  @include retina {
-    background-image: url('../images/desktop/home/details-rest-bg-2x.jpg');
+  @include desktop {
+    max-height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('../images/desktop/home/details-rest-bg.jpg');
+    @include retina {
+      background-image: url('../images/desktop/home/details-rest-bg-2x.jpg');
+    }
   }
-}
 }
 .restaurant {
   color: #ffffff;
@@ -92,61 +85,58 @@
   }
 }
 
-.restaurant-slic-tab {
-  @media screen and (min-width: 1024px) {
+.restaurant-slick-buttons-wrapper {
+  @include tablet-s {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-end;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
 
-// Слайдер
+.restaurant-slic-tab {
+  overflow: hidden;
+  margin-right: -15px;
+  padding-left: 25px;
+  @include tablet-s {
+    margin-right: 0;
+  }
+}
 
 .restaurant-slic {
-  margin-left: 30px;
-  margin-bottom: 40px;
-  margin-right: -15px;
-
-  overflow: hidden;
-  @include tablet {
-    margin-bottom: 0;
-  }
-
-  @include desktop {
-    margin-bottom: 0;
-  }
-}
-
-.restaurant-slic-img {
-  display: flex;
-  gap: 20px;
+  width: 665px;
   position: relative;
-  left: 0;
-  @media screen and (min-width: 1024px) {
-    gap: 32px;
-    margin-bottom: 24px;
+  padding-bottom: 46px;
+  margin-bottom: 14px;
+  .restaurant-slic-img {
+    margin-right: 16px;
   }
-  @media screen and (min-width: 1280px) {
-    gap: 87px;
-    padding-left: 0;
+  .slick-prev-arrow,
+  .slick-next-arrow {
+    background-color: transparent;
+    position: absolute;
+    z-index: 228;
+    border: 0;
+    padding: 0;
+    bottom: 0;
+  }
+
+  .slick-prev-arrow {
+    left: 0;
+  }
+  .slick-next-arrow {
+    left: 60px;
   }
 }
 
 .restaurant-slic-img img:not(:first-child) {
-  // display: block;
-  //   max-width: 100%;
-  //   height: auto;
-  
   max-height: 270px;
-max-width: 274px;
-}
-.restaurant-slic-img picture:first-child {
-// max-width: 274px;
-// max-height: 270px;
+  max-width: 274px;
 }
 .button-arrow-left,
 .button-arrow-right {
-  // position: absolute;
   width: 32px;
   height: 32px;
   padding: 0;
@@ -160,21 +150,15 @@ max-width: 274px;
 
 .button-arrow-right {
   margin-left: 33px;
-  //  @include tablet {
-  //     margin-bottom: 40px;
-
-  // }
 }
 
 // Кнопки
 
 .restaurant-buttons {
   @include font(700, 16px, 1.25, 0.02em);
-  // padding: 14px 24px;
   text-align: center;
 
   @include font(700, 16px, 1.25, 0.02em);
-  // padding: 14px 24px;
   width: 100%;
   text-align: center;
   margin: 0 auto;
@@ -183,7 +167,6 @@ max-width: 274px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    // margin-bottom: 96px;
     width: 330px;
     padding-bottom: 60px;
   }
