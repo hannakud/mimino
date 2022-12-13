@@ -2,15 +2,15 @@
     background-color: $c-bgc-light;
 
     @include mobile {
-        max-width: 414px;
+        
     }
 
     @include tablet {
-        max-width: 1024px;
+       
     }
 
     @include desktop {
-        max-width: 1280px;
+        
     }
 }
 
@@ -82,21 +82,15 @@
 
 /*     Стилі тексту     */
 .about-hotel-text {
-    // font-family: Montserrat;
-    color: $c-text-rest-homepage;
-    font-size: 8px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-    font-weight: 600;
+   color: $c-text-rest-homepage;
     margin-left: 153px;
     text-align: left;
     max-width: 242px;
-
-    @include mobile {
+   @include font (600, 8px, 1.22, 0.02em);
+   @include mobile {
         font-size: 12px;
     }
-
-    @include tablet {
+    @include tablet { 
         min-width: 439px;
         min-height: 80px;
         font-size: 16px;
@@ -105,13 +99,10 @@
         margin-bottom: 142px;
         right: 0;
     }
-
     @include desktop {
+        @include font (600, 16px, 1.25, 0.02em);
         min-width: 488px;
         min-height: 88px;
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.02em;
         position: relative;
         left: 50px;
         top: 24px;
@@ -151,17 +142,15 @@
 }
 
 .hotel-reception-text {
+    @include font (600, 8px, 1.25, 0.02em);
     position: relative;
     font-family: Montserrat;
     color: $c-second-accent;
-    font-size: 8px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
     margin-top: 102px;
     margin-bottom: 120px;
     text-align: left;
     max-width: 163px;
-    font-weight: 600;
+ 
 
     @include mobile {
         font-size: 12px;
@@ -179,8 +168,6 @@
 
     @include desktop {
         font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.02em;
         left: 294px;
         margin: 0;
         max-width: 311px;
