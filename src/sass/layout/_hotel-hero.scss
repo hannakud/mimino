@@ -6,13 +6,14 @@
     padding-bottom: 102px;
     text-align: center;
     background-image:
-            linear-gradient($c-bgc-gradient-homepage-main,
-                $c-bgc-gradient-homepage-main),
-            url(/src/images/mobile/hotel/hero-bg.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        margin: 0 auto;
+        linear-gradient($c-bgc-gradient-homepage-main,
+            $c-bgc-gradient-homepage-main),
+        url(/src/images/mobile/hotel/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    
     @include mobile{
         padding-top: 181px;
         margin-bottom: 178px;
