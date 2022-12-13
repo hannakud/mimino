@@ -1,1 +1,118 @@
+.reastaurant-menu{
+    background-color:#F0ECD6;;
+}
+
+.reastaurant-menu__wrapper-card{
+    @include tablet{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 100%;
+    }
+    
+}
+
+.reastaurant-menu__wrapper-card--bottom {
+    margin-bottom: 32px;
+}
+
+.reastaurant-menu__card{
+    // max-width: calc(50% - 88px - 30px);
+    @include tablet{
+        width: calc(50% - 74px);
+    }
+}
+
+.reastaurant-menu__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reastaurant-menu__wrapper{
+    @include mobile-small{
+        max-width: 180px;
+    }
+    
+    @include mobile{
+        max-width: 225px;
+    }
+
+        @include tablet {
+            width: 280px;
+        }
+    
+}
+
+.reastaurant-menu__pretitle{
+    margin-bottom: 32px;
+}
+
+.reastaurant-menu__title{
+    font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        
+        margin-bottom: 16px;
+}
+
+.reastaurant-menu__after-title{
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.21;
+        /* identical to box height */
+    
+        letter-spacing: 0.02em;
+
+        margin-bottom: 4px;
+}
+
+.reastaurant-menu__text{
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.02em;    
+}
+
+.reastaurant-menu__massa{
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        margin-left: auto;
+    
+        letter-spacing: 0.02em;
+    
+        color: #000000;
+}
+
+.reastaurant-menu__price{
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        letter-spacing: 0.02em;
+        color: #000000;
+
+        padding-left: 5px;
+
+        @include mobile{
+            padding-left: 32px;
+        }
+                @include tablet {
+                 padding-left: 15px;
+                }
+        
+}
 
