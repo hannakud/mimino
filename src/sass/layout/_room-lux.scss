@@ -1,7 +1,7 @@
 .room-lux {
   background-color: $c-bgc-light;
 
-  @include tablet {
+  @include tablet-s {
     background-image: linear-gradient(
       to right,
       $c-bgc-light 278px,
@@ -19,7 +19,7 @@
   .hotel-room-description {
     width: 258px;
 
-    @include tablet {
+    @include tablet-s {
       width: 440px;
     }
 
@@ -37,7 +37,7 @@
       margin-left: auto;
     }
 
-    @include tablet {
+    @include tablet-s {
       position: absolute;
       top: -104px;
       left: 512px;
@@ -63,7 +63,7 @@
     @include mobile {
       left: 108px;
     }
-    @include tablet {
+    @include tablet-s {
       left: unset;
       right: 77px;
     }
@@ -80,7 +80,7 @@
     @include mobile {
       left: 172px;
     }
-    @include tablet {
+    @include tablet-s {
       left: unset;
       right: 13px;
     }

@@ -3,7 +3,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
-  @include tablet {
+  @include tablet-s {
     padding-top: 62px;
     padding-bottom: 62px;
   }
@@ -41,7 +41,7 @@
       width: 415px;
     }
 
-    @include tablet {
+    @include tablet-s {
       padding-right: 47px;
       padding-left: 47px;
       overflow-x: visible;
@@ -68,7 +68,7 @@
     font-family: 'Times New Roman';
     color: $c-subtitles;
     margin-bottom: 8px;
-    @include tablet {
+    @include tablet-s {
       @include font(400, 32px, 1.15, normal);
       margin-bottom: 4px;
     }
@@ -82,7 +82,7 @@
     font-family: Film P3, sans-serif;
     color: $c-logo-restaurant-hotel;
     margin-bottom: 32px;
-    @include tablet {
+    @include tablet-s {
       @include font(700, 64px, 1.08, 0.3em);
       margin-bottom: 62px;
     }
@@ -95,7 +95,7 @@
     font-family: 'Times New Roman';
     @include font(700, 24px, 1.17, 0.05em);
     margin-bottom: 12px;
-    @include tablet {
+    @include tablet-s {
       @include font(700, 30px, 1.13, 0.05em);
       margin-bottom: 16px;
     }
@@ -112,7 +112,7 @@
     margin-right: 39px;
     margin-bottom: 32px;
 
-    @include tablet {
+    @include tablet-s {
       @include font(600, 16px, 1.25, 0.02em);
       width: 440px;
       margin-bottom: 176px;
@@ -139,7 +139,7 @@
       width: 244px;
     }
 
-    @include tablet {
+    @include tablet-s {
       width: 400px;
       height: 524px;
       margin-bottom: 0;
@@ -171,7 +171,7 @@
       width: 420px;
     }
 
-    @include tablet {
+    @include tablet-s {
       width: 468px;
       padding-bottom: 64px;
     }
@@ -195,7 +195,7 @@
   flex-direction: column;
   gap: 20px;
 
-  @include tablet {
+  @include tablet-s {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -215,7 +215,7 @@
   gap: 16px;
   align-items: center;
 
-  @include tablet {
+  @include tablet-s {
     position: relative;
     transform: translateY(-36px);
   }
