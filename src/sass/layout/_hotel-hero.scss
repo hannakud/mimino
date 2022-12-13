@@ -16,35 +16,34 @@
     @include mobile{
         padding-top: 181px;
         margin-bottom: 178px;
+        @include retina {
+            background-image: linear-gradient($c-bgc-gradient-homepage-main,
+             $c-bgc-gradient-homepage-main),
+            url(/src/images/mobile/hotel/hero-bg.jpg),
+         url(/src/images/mobile/hotel/hero-bg-2x.jpg);
+        }
     }
-     @include retina {
-    background-image: linear-gradient($c-bgc-gradient-homepage-main,
-        $c-bgc-gradient-homepage-main),
-      url(/src/images/mobile/hotel/hero-bg.jpg),
-      url(/src/images/mobile/hotel/hero-bg-2x.jpg);
-  }
-    @include tablet{
+    @media screen and (min-width: 1025px){
         padding-top: 188px;
         padding-bottom: 64px;
+        @include retina {
+            background-image: linear-gradient($c-bgc-gradient-homepage-main,
+                $c-bgc-gradient-homepage-main),
+         url(/src/images/tablet/hotel/hero-bg.jpg),
+            url(/src/images/tablet/hotel/hero-bg-2x.jpg);
+        }
     }
-    @include retina {
-    background-image: linear-gradient($c-bgc-gradient-homepage-main,
-        $c-bgc-gradient-homepage-main),
-      url(/src/images/tablet/hotel/hero-bg.jpg),
-      url(/src/images/tablet/hotel/hero-bg-2x.jpg);
-  }
 
-  @include desktop {
-      padding-top: 188px;
-      padding-bottom: 65px;
-  }
-
-  @include retina {
-      background-image: linear-gradient($c-bgc-gradient-homepage-main,
-              $c-bgc-gradient-homepage-main),
-          url(/src/images/desktop/hotel/hero-bg.jpg),
-          url(/src/images/desktop/hotel/hero-bg-2x.jpg);
-  }
+    @include desktop {
+        padding-top: 188px;
+        padding-bottom: 65px;
+        @include retina {
+        background-image: linear-gradient($c-bgc-gradient-homepage-main,
+                $c-bgc-gradient-homepage-main),
+            url(/src/images/desktop/hotel/hero-bg.jpg),
+            url(/src/images/desktop/hotel/hero-bg-2x.jpg);
+        }
+    }
 }
 
 .hotel-hero-title{
@@ -52,7 +51,7 @@
     color: white;
     margin-bottom: 32px;
     font-family: 'Film P3';
-    @include tablet {
+    @media screen and (min-width: 1025px) {
       @include font(700, 128px, 1.07, 0.3em);
       margin-bottom: 32px;
     }
@@ -66,8 +65,8 @@
     @include font(600, 20px, 1.25, 0.02em);
     color: white;
     margin-bottom: 178px;
-    font-family: 'Film P3';
-    @include tablet {
+    font-family: 'Montserrat';
+    @media screen and (min-width: 1025px) {
       @include font(600, 20px, 1.25, 0.02em);
       margin-bottom: 226px;
     }
@@ -93,7 +92,7 @@
     left: 15px;
     top: auto;
     bottom: 20px;
-    @include tablet{
+    @media screen and (min-width: 1025px){
         left: 47px;
         bottom: 15px;
     }
@@ -111,7 +110,7 @@
     align-items: center;
     justify-content: center;
 
-    @include tablet{
+    @media screen and (min-width: 1025px){
         top: auto;
         left: 47px;
         bottom: 64px;
@@ -119,7 +118,6 @@
 
     @include desktop{
         top: auto;
-        right: auto;
         left: 85px;
         bottom: 64px;
     }
@@ -130,7 +128,7 @@
     height: 47px;
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
-    @include tablet{
+    @media screen and (min-width: 1025px){
         width: 285px;
         height: 56px;
     }
@@ -147,7 +145,7 @@
         text-align: start;
     
     color: $c-address-homepage;
-    @include tablet{
+    @media screen and (min-width: 1025px){
         @include font(400, 16px, 1.25, 0.01em);
         display: flex;
         align-items: center;
@@ -168,7 +166,7 @@
     align-items: center;
     gap: 24px;
 
-    @include tablet {
+    @media screen and (min-width: 1025px) {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
