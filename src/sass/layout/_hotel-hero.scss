@@ -3,7 +3,7 @@
     margin: 0 auto;
 
     padding-top: 181px;
-    padding-bottom: 20px;
+    padding-bottom: 102px;
     text-align: center;
     background-image:
             linear-gradient($c-bgc-gradient-homepage-main,
@@ -25,7 +25,7 @@
   }
     @include tablet{
         padding-top: 188px;
-        margin-bottom: 15px;
+        padding-bottom: 64px;
     }
     @include retina {
     background-image: linear-gradient($c-bgc-gradient-homepage-main,
@@ -36,7 +36,7 @@
 
   @include desktop {
       padding-top: 188px;
-      margin-bottom: 15px;
+      padding-bottom: 65px;
   }
 
   @include retina {
@@ -87,14 +87,23 @@
 }
 
 .hotel-soc-list{
-    position: relative;
+    position: absolute;
     display: flex;
     gap: 20px;
     left: 15px;
+    top: auto;
+    bottom: 20px;
+    @include tablet{
+        left: 47px;
+        bottom: 15px;
+    }
+    @include desktop{
+      display: none;
+    }
 }
 
 .contact-map{
-    position:relative;
+    position: absolute;
     top: 64px;
     right: 15px;
     
@@ -103,11 +112,16 @@
     justify-content: center;
 
     @include tablet{
+        top: auto;
         left: 47px;
+        bottom: 64px;
     }
 
     @include desktop{
+        top: auto;
+        right: auto;
         left: 85px;
+        bottom: 64px;
     }
 }
 
@@ -153,7 +167,6 @@
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    margin-bottom: 58px;
 
     @include tablet {
         display: flex;
@@ -166,5 +179,7 @@
     @media screen and (min-width: 1280px) {
         flex-direction: row;
         gap: 60px;
+        justify-content: flex-end;
+        padding-right: 85px;
     }
 }
