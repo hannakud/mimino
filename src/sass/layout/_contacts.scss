@@ -1,3 +1,32 @@
+.contacts-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+  max-width: 415px;
+
+  @include mobile {
+    max-width: unset;
+    width: 415px;
+  }
+
+  @include tablet {
+    padding-right: 47px;
+    padding-left: 47px;
+    width: 1024px;
+    max-width: unset;
+  }
+
+  @include desktop {
+    padding-right: 85px;
+    padding-left: 85px;
+
+    width: 1280px;
+    max-width: unset;
+  }
+}
+
 .logo {
   font-family: 'Film P3', sans-serif;
 
@@ -10,6 +39,7 @@
 
   @include desktop {
     color: $c-logo-homepage;
+    @include font(700, 64px, 1.08, 0.3em);
   }
 }
 
@@ -18,15 +48,48 @@
   padding-bottom: 32px;
 
   background-color: $c-bgc-light;
+  background-image: linear-gradient(
+    to right,
+    $c-bgc-light 138px,
+    $c-bg-gradient-footer 139px,
+    $c-bgc-light 140px,
+    $c-bgc-light 273px,
+    $c-bg-gradient-footer 274px,
+    $c-bgc-light 275px
+  );
 
   @include tablet {
     padding-top: 56px;
     padding-bottom: 40px;
+    background-image: linear-gradient(
+      to right,
+      $c-bgc-light 278px,
+      $c-bg-gradient-footer 279px,
+      $c-bgc-light 280px,
+      $c-bgc-light 511px,
+      $c-bg-gradient-footer 512px,
+      $c-bgc-light 513px,
+      $c-bgc-light 745px,
+      $c-bg-gradient-footer 746px,
+      $c-bgc-light 747px
+    );
   }
 
   @include desktop {
     padding-top: 64px;
     padding-bottom: 73px;
+    background-image: linear-gradient(
+      to right,
+      $c-bgc-light 338px,
+      $c-bg-gradient-footer 339px,
+      $c-bgc-light 340px,
+      $c-bgc-light 639px,
+      $c-bg-gradient-footer 640px,
+      $c-bgc-light 641px,
+      $c-bgc-light 941px,
+      $c-bg-gradient-footer 942px,
+      $c-bgc-light 943px
+    );
   }
 }
 
@@ -77,11 +140,19 @@
     @include tablet {
       margin-bottom: 24px;
     }
+    @include desktop {
+      margin-bottom: 24px;
+    }
   }
 
   &:nth-child(2) {
     justify-content: space-between;
+
     @include tablet {
+      margin-bottom: 48px;
+    }
+
+    @include desktop {
       margin-bottom: 48px;
     }
   }
@@ -93,9 +164,17 @@
     @include tablet {
       margin-bottom: 0;
     }
+
+    @include desktop {
+      margin-bottom: 0;
+    }
   }
 
   @include tablet {
+    display: block;
+  }
+
+  @include desktop {
     display: block;
   }
 }
@@ -109,6 +188,12 @@
   }
 
   @include tablet {
+    @include font(500, 20px, 1.2, 0.02em);
+    margin-bottom: 8px;
+  }
+
+  @include desktop {
+    @include font(500, 20px, 1.2, 0.02em);
     margin-bottom: 8px;
   }
 }
@@ -137,6 +222,10 @@
     @include tablet {
       width: 264px;
     }
+
+    @include desktop {
+      width: 264px;
+    }
   }
 
   &-address {
@@ -146,6 +235,11 @@
     padding-right: 16px;
 
     @include tablet {
+      width: 285px;
+      height: 56px;
+    }
+
+    @include desktop {
       width: 285px;
       height: 56px;
     }
@@ -175,8 +269,13 @@
     @include font(400, 14px, 1.21, 0.02em);
   }
 
+  @include tablet {
+    @include font(400, 14px, 1.21, 0.02em);
+  }
+
   @include desktop {
     color: $c-logo-homepage;
+    @include font(400, 14px, 1.21, 0.02em);
   }
 }
 
@@ -192,7 +291,12 @@
     @include font(400, 16px, 1.25, 0.01em);
   }
 
+  @include tablet {
+    @include font(400, 16px, 1.25, 0.01em);
+  }
+
   @include desktop {
+    @include font(400, 16px, 1.25, 0.01em);
     color: $c-logo-homepage;
   }
 }
@@ -216,13 +320,9 @@
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
   @include desktop {
-    max-width: 535px;
+    max-width: 634px;
     height: 412px;
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-  }
-
-  @include desktop {
-    max-width: 634px;
   }
 }
 

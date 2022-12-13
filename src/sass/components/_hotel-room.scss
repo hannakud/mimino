@@ -1,17 +1,52 @@
+/* Секція*/
 .hotel-room {
   padding-top: 32px;
   padding-bottom: 32px;
+  background-image: linear-gradient(
+    to right,
+    $c-bgc-light 138px,
+    $c-bg-gradient-footer 139px,
+    $c-bgc-light 140px,
+    $c-bgc-light 273px,
+    $c-bg-gradient-footer 274px,
+    $c-bgc-light 275px
+  );
 
   @include tablet {
     padding-top: 62px;
     padding-bottom: 62px;
+    background-image: linear-gradient(
+      to right,
+      $c-bgc-light 278px,
+      $c-bg-gradient-footer 279px,
+      $c-bgc-light 280px,
+      $c-bgc-light 511px,
+      $c-bg-gradient-footer 512px,
+      $c-bgc-light 513px,
+      $c-bgc-light 745px,
+      $c-bg-gradient-footer 746px,
+      $c-bgc-light 747px
+    );
   }
 
   @include desktop {
     padding-top: 72px;
     padding-bottom: 72px;
+    background-image: linear-gradient(
+      to right,
+      $c-bgc-light 338px,
+      $c-bg-gradient-footer 339px,
+      $c-bgc-light 340px,
+      $c-bgc-light 639px,
+      $c-bg-gradient-footer 640px,
+      $c-bgc-light 641px,
+      $c-bgc-light 941px,
+      $c-bg-gradient-footer 942px,
+      $c-bgc-light 943px
+    );
   }
 
+  /* Контейнер */
   .hotel-room-container {
     margin-right: auto;
     margin-left: auto;
@@ -110,6 +145,7 @@
     }
   }
 
+  /* Спозиціоноване фото */
   .hotel-room-photo {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
@@ -137,6 +173,7 @@
     }
   }
 
+  /* слайдер */
   .slider-wrapper {
     position: relative;
     overflow: hidden;
@@ -192,6 +229,7 @@
   }
 }
 
+/* Кнопки */
 .buttons-wrapper {
   display: flex;
   flex-direction: column;
