@@ -109,6 +109,7 @@
 .hero-sec-title {
     margin-bottom: 113px;
     @include font(700, 32px, 1.15, 0.05em);
+    font-family: 'Times New Roman';
 
     color: $c-white-main;
 
@@ -248,87 +249,3 @@
         justify-content: flex-end;
     }
 }
-
-// .container-tab {
-//     display: none;
-
-//     @media screen and (min-width: 1024px) {
-//         justify-content: space-between;
-//     }
-// }
-
-// .contact-tab {
-//     display: none;
-
-//     @media screen and (min-width: 1024px) {
-//         margin-bottom: 25px;
-//         padding-left: 10px;
-
-//         display: flex;
-//         text-align-last: left;
-
-//         width: 285px;
-//         height: 50px;
-//         border: 1px solid $c-icons-footer;
-//         border-radius: 2px;
-//     }
-//     @media screen and (min-width: 1280px){
-//         margin-bottom: 0;
-//     }
-// }
-
-// .hero-wrap-tab {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         gap: 24px;
-//         margin-bottom: 58px;
-
-//     @media screen and (min-width: 1024px) {
-//         flex-direction: row;
-//         gap: 40px;
-//         margin-bottom: 25px;
-//     }
-
-//     @media screen and (min-width: 1280px) {
-//         margin-bottom: 0;
-//         flex-direction: row;
-//         gap: 60px;
-//     }
-// }
-
-// .contact-tab-link {
-//     @include font(400, 16px, 1.25, 0.01em);
-//     font-family: 'Montserrat';
-
-//     display: flex;
-//     gap: 16px;
-//     align-items: center;
-//     justify-content: center;
-
-//     color: $c-address-homepage;
-// }
-
-
-
-// .hero-wrap-rest {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     gap: 24px;
-
-//     @media screen and (min-width: 1025px) {
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: flex-end;
-//         padding-right: 47px;
-//         gap: 40px;
-//     }
-
-//     @media screen and (min-width: 1280px) {
-//         flex-direction: row;
-//         gap: 60px;
-//         justify-content: flex-end;
-//         padding-right: 85px;
-//     }
-// }
