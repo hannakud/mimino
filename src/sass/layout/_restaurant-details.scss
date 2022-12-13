@@ -122,6 +122,7 @@
   gap: 20px;
   position: relative;
   left: 0;
+  transition: all ease 1000ms;
   @media screen and (min-width: 1024px) {
     gap: 32px;
     margin-bottom: 24px;
