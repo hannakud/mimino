@@ -6,11 +6,11 @@
     }
 
     @include tablet {
-       
+       max-width: 1024px;
     }
 
     @include desktop {
-        
+       max-width: 1280px;
     }
 }
 
@@ -196,8 +196,8 @@
     }
 }
 
-/*     Прибирає колір кнопок зі стрілочками*/
+/*     Прибирає колір кнопок зі стрілочками
 .hotel-about-arrow {
     background-color: transparent;
     border: transparent;
-}
+}*/
