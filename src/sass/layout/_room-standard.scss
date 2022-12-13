@@ -15,6 +15,13 @@
 
   .hotel-room-photo {
     margin-left: auto;
+    margin-right: auto;
+
+    @include mobile {
+      margin-left: unset;
+      margin-right: auto;
+    }
+
     @include tablet {
       position: absolute;
       top: -104px;
