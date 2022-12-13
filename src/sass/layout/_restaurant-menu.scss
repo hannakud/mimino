@@ -1,1 +1,407 @@
+.restaurant-menu {
+  width: 100%;
+  margin: 0 auto;
+  background-color: $c-bgc-biege;
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+  }
+}
 
+.menu {
+  width: 100%;
+  max-width: 384px;
+  @media screen and (min-width: 1024px) {
+    max-width: 414px;
+    &:nth-child(1) {
+      order: 1;
+    }
+    &:nth-child(2) {
+      order: 3;
+    }
+    &:nth-child(3) {
+      order: 2;
+    }
+    &:nth-child(4) {
+      order: 4;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 485px;
+  }
+}
+
+.menu-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @media screen and (min-width: 414px) {
+    max-width: 414px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 1024px;
+    padding: 58px 47px 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    padding: 58px 85px 60px;
+  }
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  row-gap: 16px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 60px;
+    row-gap: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+}
+.menu-title {
+  font-family: 'Times New Roman';
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 1.16;
+  margin-bottom: 32px;
+  @include mobile-small {
+    font-size: 32px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 40px;
+  }
+}
+
+.menu-subtitle {
+  font-family: 'Times New Roman';
+  display: inline-block;
+  @include font(700, 16px, 1.15, normal);
+  @media screen and (min-width: 413px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 20px;
+  }
+}
+.food {
+  @include font(500, 12px, 1.5, 0.02em);
+  max-width: 187px;
+  display: inline-block;
+  @media screen and (min-width: 413px) {
+    font-size: 14px;
+  }
+  &:not(:last-child) {
+    padding: 0 0 8px 0;
+  }
+  @media screen and (min-width: 414px) {
+    max-width: 221px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 226px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 291px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.food-weight {
+  @include font(300, 10px, 1.21, 0.02em);
+  text-align: center;
+  padding: 0;
+  padding-right: 15px;
+  @media screen and (min-width: 413px) {
+    font-size: 14px;
+  }
+}
+
+.food-description {
+  @include font(400, 10px, 1.2, 0.02em);
+  display: block;
+  max-width: 210px;
+}
+
+.food-price {
+  @include font(700, 10px, 1.21, 0.02em);
+  padding: 0;
+  max-width: 27px;
+  text-align: right;
+  min-width: 43px;
+  @media screen and (min-width: 413px) {
+    max-width: none;
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+.food-container {
+  &:last-child {
+    margin-bottom: 16px;
+  }
+}
+.appetizers {
+  @include font(500, 12px, 1.5, 0.02em);
+  max-width: 187px;
+  word-wrap: break-word;
+  display: inline-block;
+  @media screen and (min-width: 413px) {
+    font-size: 14px;
+  }
+  &:not(:last-child) {
+    padding: 0 0 8px 0;
+  }
+  @media screen and (min-width: 414px) {
+    max-width: 221px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 226px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 291px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+.appetizers-container {
+  &:last-child {
+    margin-bottom: 16px;
+  }
+}
+
+.appetizers-description {
+  @include font(400, 10px, 1.2, 0.02em);
+  display: block;
+  max-width: 210px;
+}
+
+.appetizers-weight {
+  @include font(300, 10px, 1.21, 0.02em);
+  text-align: center;
+  padding: 0;
+  padding-right: 15px;
+  @media screen and (min-width: 413px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-right: 28px;
+  }
+}
+.appetizers-price {
+  @include font(700, 10px, 1.21, 0.02em);
+  padding: 0;
+  max-width: 27px;
+  text-align: right;
+  min-width: 43px;
+  @media screen and (min-width: 413px) {
+    max-width: none;
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1024px) {
+    padding-right: 5px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+.salad {
+  @include font(500, 12px, 1.5, 0.02em);
+  max-width: 187px;
+  word-wrap: break-word;
+  display: inline-block;
+  @media screen and (min-width: 413px) {
+    font-size: 14px;
+  }
+  &:not(:last-child) {
+    padding: 0 0 8px 0;
+  }
+  @media screen and (min-width: 414px) {
+    max-width: 221px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 226px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 291px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.salad-container {
+  &:last-child {
+    margin-bottom: 16px;
+  }
+}
+
+.sweets__container {
+  &:last-child .sweets {
+    padding: 16px;
+  }
+}
+
+.salad-weight {
+  @include font(300, 10px, 1.21, 0.02em);
+  text-align: center;
+  padding: 0;
+  padding-right: 15px;
+  @media screen and (min-width: 413px) {
+    font-size: 14px;
+  }
+}
+
+.salad-price {
+  @include font(700, 10px, 1.21, 0.02em);
+  padding: 0;
+  max-width: 27px;
+  text-align: right;
+  min-width: 43px;
+  @media screen and (min-width: 413px) {
+    max-width: none;
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+.salad-description {
+  @include font(400, 10px, 1.2, 0.02em);
+  display: block;
+  max-width: 225px;
+}
+
+.sweets {
+  @include font(500, 12px, 1.5, 0.02em);
+  min-width: 166px;
+  word-wrap: break-word;
+  padding: 0 0 8px 0;
+  display: inline-block;
+  @media screen and (min-width: 413px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 414px) {
+    min-width: 197px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.sweets-container {
+  &:last-child {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+  }
+}
+.sweets-weight {
+  @include font(300, 10px, 1.21, 0.02em);
+  text-align: center;
+  padding: 0;
+  @media screen and (min-width: 413px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 414px) {
+    padding-right: 0;
+  }
+}
+
+.sweets-price {
+  @include font(700, 10px, 1.21, 0.02em);
+  padding: 0;
+  max-width: 27px;
+  text-align: right;
+  min-width: 43px;
+  @media screen and (min-width: 413px) {
+    max-width: none;
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.sweets-last {
+  padding-bottom: 16px;
+}
+.beverages {
+  @include font(500, 12px, 1.5, 0.02em);
+  max-width: 187px;
+  word-wrap: break-word;
+  display: inline-block;
+  @media screen and (min-width: 413px) {
+    font-size: 14px;
+  }
+  .beverages-container &:not(:last-child) {
+    padding: 0 0 8px 0;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.beverages-container {
+  &:last-child {
+    margin-bottom: 16px;
+  }
+}
+
+.beverages-weight {
+  @include font(300, 10px, 1.21, 0.02em);
+  text-align: center;
+  padding: 0;
+  @media screen and (min-width: 413px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 414px) {
+    padding-right: 0;
+  }
+}
+
+.beverages-price {
+  @include font(700, 10px, 1.21, 0.02em);
+  padding: 0;
+  max-width: 27px;
+  text-align: right;
+  @media screen and (min-width: 413px) {
+    max-width: none;
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 1024px) {
+    justify-content: end;
+  }
+}
+
+.btn {
+  width: auto;
+  height: auto;
+  padding: 15px 24px 14px;
+  cursor: pointer;
+}
+
+.menu-button {
+  @include font(700, 16px, 1.25, 0.02em);
+  color: $c-main-accent;
+  text-transform: none;
+  padding: 15px 24px 14px;
+}
