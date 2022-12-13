@@ -125,6 +125,12 @@
   @include font(400, 10px, 1.2, 0.02em);
   display: block;
   max-width: 210px;
+  @media screen and (min-width: 1024px) {
+    max-width: 220px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 257px;
+  }
 }
 
 .food-price {
@@ -180,6 +186,12 @@
   @include font(400, 10px, 1.2, 0.02em);
   display: block;
   max-width: 210px;
+  @media screen and (min-width: 1024px) {
+    max-width: 220px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 257px;
+  }
 }
 
 .appetizers-weight {
@@ -242,7 +254,7 @@
   }
 }
 
-.sweets__container {
+.sweets-container {
   &:last-child .sweets {
     padding: 16px;
   }
@@ -277,6 +289,12 @@
   @include font(400, 10px, 1.2, 0.02em);
   display: block;
   max-width: 225px;
+  @media screen and (min-width: 1024px) {
+    max-width: 220px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 257px;
+  }
 }
 
 .sweets {
