@@ -18,13 +18,13 @@
 
     @include tablet {
       position: absolute;
-      top: -32px;
+      top: -104px;
       left: 512px;
     }
 
     @include desktop {
       position: absolute;
-      top: -32px;
+      top: -104px;
       left: 640px;
     }
   }

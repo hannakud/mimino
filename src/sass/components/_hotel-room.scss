@@ -1,20 +1,46 @@
 .hotel-room {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include tablet {
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+
+  @include desktop {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
   .hotel-room-container {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
     position: relative;
     overflow-x: hidden;
+    width: 100%;
+    max-width: 415px;
+
+    @include mobile {
+      max-width: unset;
+      width: 415px;
+    }
 
     @include tablet {
-      padding-top: 62px;
-      padding-bottom: 62px;
+      padding-right: 47px;
+      padding-left: 47px;
       overflow-x: visible;
+      width: 1024px;
+      max-width: unset;
     }
 
     @include desktop {
-      padding-top: 72px;
-      padding-bottom: 72px;
+      padding-right: 85px;
+      padding-left: 85px;
       overflow-x: visible;
+      width: 1280px;
+      max-width: unset;
     }
   }
 
@@ -171,6 +197,16 @@
   flex-direction: column;
   gap: 16px;
   align-items: center;
+
+  @include tablet {
+    position: relative;
+    transform: translateY(-36px);
+  }
+
+  @include desktop {
+    position: relative;
+    transform: translateY(-36px);
+  }
 
   .button-dark {
     width: 236px;
