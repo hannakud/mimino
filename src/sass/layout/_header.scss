@@ -7,11 +7,16 @@
 .header-container {
   display: flex;
   align-items: center;
-  @include mobile-small {
+  @include mobile-small-s {
     justify-content: space-between;
   }
-  @include mobile {
+  @include mobile-s {
     justify-content: space-between;
+  }
+  @include tablet-s {
+    max-width: 1279px;
+    padding-left: 47px;
+    padding-right: 47px;
   }
 }
 
@@ -20,7 +25,7 @@
   gap: 12px;
   align-items: center;
 
-  @include tablet {
+  @include tablet-s {
     gap: 32px;
   }
 
@@ -39,11 +44,11 @@
   align-items: center;
   padding-top: 16px;
   padding-bottom: 10px;
-  @include mobile-small {
+  @include mobile-small-s {
     justify-content: space-between;
     width: 100%;
   }
-  @include mobile {
+  @include mobile-s {
     justify-content: space-between;
     width: 100%;
   }
@@ -58,10 +63,10 @@
   @include font(700, 36px, 1.08, 0.3em);
   color: $c-logo-header-restaurant;
 
-  @include mobile-small {
+  @include mobile-small-s {
     //margin-right: 52px;
   }
-  @include tablet {
+  @include tablet-s {
     font-size: 40px;
     line-height: 1.07;
     margin-right: 87px;
@@ -77,7 +82,7 @@
   display: flex;
   align-items: center;
   gap: 26px;
-  @include mobile {
+  @include mobile-s {
     margin-left: auto;
   }
 }
@@ -88,8 +93,12 @@
   @include font(500, 14px, 1.25, 0.02em);
   color: $c-main-accent;
   display: block;
-
-  @include tablet {
+  transition: color $transition-cubic;
+  &:hover,
+  &:focus {
+    color: $c-second-accent;
+  }
+  @include tablet-s {
     font-size: 20px;
     line-height: 1.2;
   }
@@ -107,7 +116,7 @@
 .tel-wrapper {
   display: flex;
   gap: 16px;
-  @include tablet {
+  @include tablet-s {
     border: 1px solid $c-icons-footer;
     border-radius: 2px;
     padding: 11px 8px 12px 14px;
@@ -133,10 +142,10 @@
     color: $c-main-accent;
   }
 
-  @include mobile-small {
+  @include mobile-small-s {
     display: none;
   }
-  @include mobile {
+  @include mobile-s {
     display: none;
   }
 
@@ -151,7 +160,7 @@
   }
 
   .hotel-tel {
-    @include tablet {
+    @include tablet-s {
       margin-right: 16px;
     }
 
@@ -162,10 +171,10 @@
 
   .header-item-tel:not(:last-child) {
     margin-right: 15px;
-    @include mobile-small {
+    @include mobile-small-s {
       margin-right: 26px;
     }
-    @include tablet {
+    @include tablet-s {
       margin-right: 72px;
     }
 
