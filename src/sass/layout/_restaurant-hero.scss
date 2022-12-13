@@ -1,6 +1,9 @@
 .restaurant-hero {
-    padding-top: 64px;
-    padding-bottom: 20px;
+    position: relative;
+    margin: 0 auto;
+
+    padding-top: 181px;
+    padding-bottom: 102px;
     text-align: center;
 
     background-image:
@@ -21,6 +24,7 @@
 
     @media screen and (min-width: 1024px) {
         padding-top: 188px;
+        padding-bottom: 64px;
         background-image:
             linear-gradient($c-bgc-gradient-homepage-main,
                 $c-bgc-gradient-homepage-main),
@@ -49,50 +53,18 @@
     }
 }
 
-.hero-container {
-    margin: 0 auto;
-}
-.nav{
-
+.hero-container{
+    padding: 0 10px;
     @media screen and (min-width: 1024px){
         padding: 0 47px;
-        display: flex;
-        justify-content: space-between;
     }
-}
-
-.contact-mob {
-    margin: 0 15px 70px auto;
-    display: flex;
-    padding-left: 3px;
-    width: 210px;
-    height: 47px;
-    border: 1px solid $c-icons-footer;
-    border-radius: 2px;
-
-    @media screen and (min-width: 1024px) {
-        display: none;
+    @media screen and (min-width: 1280px){
+        padding: 0 85px;
     }
-}
-
-.contact-mob-link {
-    @include font(400, 12px, 1.25, 0.01em);
-    font-family: 'Montserrat';
-    display: flex;
-    gap: 13px;
-    align-items: center;
-    justify-content: center;
-
-    color: $c-address-homepage;
-}
-
-.icon-map-mob,
-.icon-map-tab {
-    fill: $c-main-accent;
 }
 
 .hero-title {
-    @include font(700, 96px, 1.07, 0.03em);
+    @include font(700, 96px, 1.07, 0.3em);
     font-family: 'Film P3';
     margin-bottom: 20px;
 
@@ -100,7 +72,6 @@
 
     @media screen and (min-width: 414px) {
         font-size: 96px;
-
     }
 
     @media screen and (min-width: 1024px) {
@@ -117,11 +88,8 @@
 .hero-subtitle {
     margin-bottom: 44px;
 
+    @include font(600, 16px, 1.25, 0.02em);
     font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
 
     color: $c-white-main;
 
@@ -140,13 +108,8 @@
 
 .hero-sec-title {
     margin-bottom: 113px;
-
+    @include font(700, 32px, 1.15, 0.05em);
     font-family: 'Times New Roman';
-    font-weight: 700;
-    font-size: 32px;
-    line-height: calc(37 / 32);
-
-    letter-spacing: 0.05em;
 
     color: $c-white-main;
 
@@ -157,88 +120,10 @@
     }
 }
 
-.hero-button-wrap {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    gap: 20px;
-    margin-bottom: 58px;
-
-    @media screen and (min-width: 1025px) and (max-width: 1279px) {
-        display: none;
-    }
-
-    @media screen and (min-width: 1280px) {
-        display: none;
-    }
-}
-
-.container-tab {
-    display: none;
-
-    @media screen and (min-width: 1024px) {
-        padding: 0 47px;
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-.contact-tab {
-    display: none;
-
-    @media screen and (min-width: 1024px) {
-        margin-bottom: 25px;
-        padding-left: 10px;
-
-        display: flex;
-        text-align-last: left;
-
-        width: 285px;
-        height: 50px;
-        border: 1px solid $c-icons-footer;
-        border-radius: 2px;
-    }
-    @media screen and (min-width: 1280px){
-        margin-bottom: 0;
-    }
-}
-
-.hero-wrap-tab {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-        margin-bottom: 58px;
-
-    @media screen and (min-width: 1024px) {
-        flex-direction: row;
-        gap: 40px;
-        margin-bottom: 25px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 0;
-        flex-direction: row;
-        gap: 60px;
-    }
-}
-
-.contact-tab-link {
-    @include font(400, 16px, 1.25, 0.01em);
-    font-family: 'Montserrat';
-
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    justify-content: center;
-
-    color: $c-address-homepage;
-}
-
 .restaurant-hero-button {
     display: flex;
     align-items: center;
+    justify-content: center;
     min-width: 236px;
     height: 48px;
     padding: 15px 24px 13px 24px;
@@ -250,17 +135,20 @@
     }
 }
 
-.rest-soc-list {
+.restaurant-soc-list {
+    position: absolute;
     display: flex;
     gap: 20px;
-    padding: 0 15px;
+    left: 15px;
+    top: auto;
+    bottom: 20px;
 
     @media screen and (min-width: 1024px) {
-        padding: 0 47px;
-        padding-bottom: 15px;
+        left: 47px;
+        bottom: 15px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include desktop {
         display: none;
     }
 }
@@ -274,4 +162,90 @@
 .rest-soc-icon:focus,
 .rest-soc-icon:hover {
     fill: $c-second-accent;
+}
+
+.contact-map {
+    position: absolute;
+    top: 64px;
+    right: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 1024px) {
+        top: auto;
+        left: 47px;
+        bottom: 64px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        top: auto;
+        left: 85px;
+        bottom: 64px;
+    }
+}
+
+.contact-map-thumb {
+    width: 210px;
+    height: 47px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+
+    @media screen and (min-width: 1024px) {
+        width: 285px;
+        height: 56px;
+    }
+
+    @media screen and (min-width: 1280px){
+        width: 285px;
+        height: 56px;
+    }
+}
+
+.contact-link-rest{
+    @include font(400, 12px, 1.25, 0.01em);
+        font-family: 'Montserrat';
+        display: flex;
+        gap: 8px;
+        text-align: start;
+    
+    color: $c-address-homepage;
+    @media screen and (min-width: 1024px){
+        @include font(400, 16px, 1.25, 0.01em);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    @media screen and (min-width: 1280px){
+        @include font(400, 16px, 1.25, 0.01em);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+.icon-map-tab {
+    fill: $c-main-accent;
+}
+
+.hero-wrap-rest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        flex-direction: row;
+        gap: 60px;
+        justify-content: flex-end;
+    }
 }
