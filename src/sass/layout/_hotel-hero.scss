@@ -16,7 +16,7 @@
     
     @include mobile{
         padding-top: 181px;
-        margin-bottom: 178px;
+        padding-bottom: 102px;
         @include retina {
             background-image: linear-gradient($c-bgc-gradient-homepage-main,
              $c-bgc-gradient-homepage-main),
