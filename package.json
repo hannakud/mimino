@@ -4,15 +4,16 @@
   "description": "",
   "homepage": "https://hannakud.github.io/mimino",
   "scripts": {
-    "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /mimino/"
+    "start": "parcel src/*.html --no-cache",
+    "build": "parcel build src/*.html --public-url /mimino/",
+    "dev": "parcel src/index.html --no-cache"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/hannakud/mimino.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Hanna Kudraishova <anyarasp@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hannakud/mimino/issues"

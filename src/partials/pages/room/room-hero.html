@@ -1,1 +1,121 @@
-<section class="room-hero">room-hero</section>
+<section class="room-hero">
+  <div class="room-hero-container container">
+    <div class="hero-top-gradient"></div>
+    <div class="room-hero-slider">
+      <div class="room-hero-slider_item">
+        <picture>
+          <source
+            media="(max-width: 1024px)"
+            type="image/jpg"
+            srcset="
+              ./images/mobile/room/hero-bg-1.jpg    1x,
+              ./images/mobile/room/hero-bg-1-2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 1025px)"
+            type="image/jpg"
+            srcset="
+              ./images/desktop/room/hero-bg-1.jpg    1x,
+              ./images/desktop/room/hero-bg-1-2x.jpg 2x
+            "
+          />
+          <img
+            src="./images/desktop/room/hero-bg-1.jpg"
+            alt="двомісний номер люкс"
+          />
+        </picture>
+      </div>
+      <div class="room-hero-slider_item">
+        <picture>
+          <source
+            media="(max-width: 1024px)"
+            type="image/jpg"
+            srcset="
+              ./images/mobile/room/hero-bg-2.jpg    1x,
+              ./images/mobile/room/hero-bg-2-2x.jpg 2x
+            "
+          />
+          <source
+            media="(max-width: 1280px)"
+            type="image/jpg"
+            srcset="
+              ./images/desktop/room/hero-bg-2.jpg    1x,
+              ./images/desktop/room/hero-bg-2-2x.jpg 2x
+            "
+          />
+          <img
+            src="./images/desktop/room/hero-bg-2.jpg"
+            alt="двомісний номер люкс"
+          />
+        </picture>
+      </div>
+      <div class="room-hero-slider_item">
+        <picture>
+          <source
+            media="(max-width: 1024px)"
+            type="image/jpg"
+            srcset="
+              ./images/mobile/room/hero-bg-3.jpg    1x,
+              ./images/mobile/room/hero-bg-3-2x.jpg 2x
+            "
+          />
+          <source
+            media="(max-width: 1280px)"
+            type="image/jpg"
+            srcset="
+              ./images/desktop/room/hero-bg-3.jpg    1x,
+              ./images/desktop/room/hero-bg-3-2x.jpg 2x
+            "
+          />
+          <img
+            src="./images/desktop/room/hero-bg-3.jpg"
+            alt="двомісний номер люкс"
+          />
+        </picture>
+      </div>
+    </div>
+    <div class="hero-content container">
+      <h2 class="room-title">ДВОМІСНИЙ НОМЕР люкс</h2>
+      <p class="room-info">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+      <div class="contacts-holder">
+        <div class="contact-thumb contact-thumb-address room-address">
+          <a
+            href="https://goo.gl/maps/3QhkwfqdRxgBBafZ7"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="contact-address-link link"
+          >
+            <svg class="contacts-icon-map">
+              <use href="/src/images/icons/sprite.svg#icon-map"></use>
+            </svg>
+            Україна, м. Полтава,<br />вул. Маршала Бірюзова, 15
+          </a>
+        </div>
+        <div class="social-list-room-hero">
+          <include src="./partials/social-list.html"></include>
+        </div>
+      </div>
+      <button id="price" class="button button-light button-price btn_sign">
+        Переглянути ціни
+      </button>
+    </div>
+    <div class="contact-thumb contact-thumb-address room-address-mobile">
+      <a
+        href="https://goo.gl/maps/3QhkwfqdRxgBBafZ7"
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        class="contact-address-link link"
+      >
+        <svg class="contacts-icon-map">
+          <use href="/src/images/icons/sprite.svg#icon-map"></use>
+        </svg>
+        Україна, м. Полтава вул. Маршала Бірюзова, 15
+      </a>
+    </div>
+  </div>
+</section>

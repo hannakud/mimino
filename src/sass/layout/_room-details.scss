@@ -1,0 +1,185 @@
+.room-details-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include tablet {
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+  @include desktop {
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+}
+
+.room-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  @include tablet {
+    flex-direction: row;
+    gap: 80px;
+  }
+  @include desktop {
+    flex-direction: row;
+    gap: 159px;
+  }
+}
+
+.room-details-main-title {
+  font-family: 'Times New Roman', serif;
+  color: $c-black-main;
+  @include font(400, 32px, 1.15, normal);
+  text-transform: uppercase;
+}
+.room-details-main-title {
+  margin-bottom: 16px;
+}
+.room-details-text {
+  font-family: 'Montserrat';
+  color: $c-text-hotel;
+  @include font(700, 16px, 1.25, 0.02em);
+  @include tablet {
+    width: 400px;
+  }
+  @include desktop {
+    width: 400px;
+  }
+}
+.main-text {
+  @include tablet {
+    width: 757px;
+  }
+  @include desktop {
+    width: 757px;
+  }
+}
+
+.room-details-subtitle {
+  font-family: 'Times New Roman', serif;
+  color: $c-black-main;
+  @include font(700, 24px, 1.17, normal);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.room-details-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @include tablet {
+    justify-content: center;
+    align-items: flex-end;
+    gap: 32px;
+  }
+  @include desktop {
+    justify-content: center;
+    align-items: flex-end;
+    gap: 32px;
+    margin-right: 0;
+  }
+}
+
+.room-details-link {
+  @include font(500, 16px, 1.25, 0.02em);
+  color: $c-second-accent;
+  @extend %justify-center;
+  transition: color $transition-cubic;
+  &:hover,
+  &:focus {
+    color: $c-main-accent;
+  }
+  &:hover .room-details-icon,
+  &:focus .room-details-icon {
+    fill: $c-main-accent;
+  }
+  @include tablet {
+    @include font(500, 20px, 1.2, 0.02em);
+  }
+  @include desktop {
+    @include font(500, 20px, 1.2, 0.02em);
+  }
+}
+
+.button-book {
+  @include font(500, 20px, 1.2, normal);
+  margin-top: 32px;
+  @include tablet {
+    @include font(500, 24px, 1.2, normal);
+    margin-top: 40px;
+  }
+  @include desktop {
+    margin-top: 40px;
+    padding: 18px 38px;
+  }
+}
+.room-details-icon {
+  fill: $c-second-accent;
+  transition: fill $transition-cubic;
+  margin-left: 12px;
+}
+
+// .gradient-room {
+//   max-width: 414px;
+//   background-image: linear-gradient(
+//     90deg,
+//     rgba(0, 0, 0, 0) 140px,
+//     rgba(186, 186, 186, 0.4) 140px,
+//     rgba(186, 186, 186, 0.4) 141px,
+//     rgba(0, 0, 0, 0) 141px,
+//     rgba(0, 0, 0, 0) 274px,
+//     rgba(186, 186, 186, 0.4) 274px,
+//     rgba(186, 186, 186, 0.4) 275px,
+//     rgba(0, 0, 0, 0) 275px
+//   );
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-top: 16px;
+//   padding-bottom: 20px;
+//   @include tablet {
+//     max-width: 1024px;
+//     background-image: linear-gradient(
+//       90deg,
+//       rgba(0, 0, 0, 0) 277px,
+//       rgba(186, 186, 186, 0.4) 277px,
+//       rgba(186, 186, 186, 0.4) 278px,
+//       rgba(0, 0, 0, 0) 278px,
+//       rgba(0, 0, 0, 0) 511px,
+//       rgba(186, 186, 186, 0.4) 511px,
+//       rgba(186, 186, 186, 0.4) 512px,
+//       rgba(0, 0, 0, 0) 512px,
+//       rgba(0, 0, 0, 0) 746px,
+//       rgba(186, 186, 186, 0.4) 746px,
+//       rgba(186, 186, 186, 0.4) 747px,
+//       rgba(0, 0, 0, 0) 747px
+//     );
+//     padding-top: 120px;
+//     padding-bottom: 32px;
+//   }
+//   @include desktop {
+//     max-width: 1280px;
+//     background-image: linear-gradient(
+//       90deg,
+//       rgba(0, 0, 0, 0) 338px,
+//       rgba(186, 186, 186, 0.4) 338px,
+//       rgba(186, 186, 186, 0.4) 339px,
+//       rgba(0, 0, 0, 0) 338px,
+//       rgba(0, 0, 0, 0) 640px,
+//       rgba(186, 186, 186, 0.4) 640px,
+//       rgba(186, 186, 186, 0.4) 641px,
+//       rgba(0, 0, 0, 0) 641px,
+//       rgba(0, 0, 0, 0) 942px,
+//       rgba(186, 186, 186, 0.4) 942px,
+//       rgba(186, 186, 186, 0.4) 943px,
+//       rgba(0, 0, 0, 0) 943px
+//     );
+//     padding-bottom: 50px;
+//   }
+// }

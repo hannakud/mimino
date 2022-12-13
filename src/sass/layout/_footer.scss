@@ -1,0 +1,141 @@
+footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $c-bgc-footer;
+
+  @media screen and (min-width: 1025px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+.logo-footer {
+  display: block;
+  font-family: 'Film P3';
+  @include font(700, 40px, 1.08, 0.3em);
+
+  color: $c-main-accent;
+
+  @media screen and (min-width: 1025px) {
+    font-size: 64px;
+    line-height: 1.07;
+  }
+  transition: color $transition-cubic;
+}
+
+.logo-footer:hover,
+.logo-footer:focus {
+  color: $c-second-accent;
+}
+
+.footer-nav-list {
+  margin-bottom: 32px;
+  @media screen and (min-width: 1025px) {
+    margin-bottom: 0;
+  }
+}
+
+.footer-nav-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.footer-nav-link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  @include font(500, 20px, 1.2, 0.02em);
+  color: $c-main-accent;
+  transition: color $transition-cubic;
+}
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: $c-second-accent;
+}
+.footer-soc-list {
+    display: none;
+    @media screen and (min-width: 1025px){
+        display: flex;
+        gap: 21px;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+.footer-soc-item {
+  tab-size: 0;
+}
+
+.footer-name-soc {
+  display: none;
+
+  @media screen and (min-width: 1025px) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    @include font(400, 16px, 1.25, 0.02em);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $c-main-accent;
+  }
+}
+
+.footer-soc-link {
+  @media screen and (min-width: 1025px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 143px;
+    height: 40px;
+    border: 0.5px solid $c-main-accent;
+    border-radius: 2px;
+    align-items: center;
+  }
+  transition: border-color $transition-cubic;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  border-color: $c-second-accent;
+}
+.footer-soc-link:hover .footer-soc-icon,
+.footer-soc-link:focus .footer-soc-icon{
+    fill: $c-second-accent;
+}
+
+.footer-soc-icon {
+    fill: $c-icons-footer;
+    transition: fill $transition-cubic;
+}
+.footer-soc-icon:hover, .footer-soc-icon:focus{
+    fill: $c-second-accent;
+}
+.footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @media screen and (min-width: 415px) {
+    padding: 0;
+  }
+  @media screen and (min-width: 1025px){
+    gap: 163px;
+  }
+}
+
+.footer-nav {
+    @media screen and (min-width: 1025px) {
+        display: flex;
+        gap: 149px;
+    }
+    @media screen and (min-width: 1280px){
+        display: flex;
+        gap: 200px;
+    }
+}
+
+.footer-soc-list-mob{
+    display: flex;
+    gap: 20px;
+    @media screen and (min-width: 1025px) {
+        display: none;
+    }
+    @media screen and (min-width: 1280px){
+        display: none;
+    }
+}
