@@ -16,7 +16,7 @@
     
     @include mobile{
         padding-top: 181px;
-        margin-bottom: 178px;
+        padding-bottom: 102px;
         @include retina {
             background-image: linear-gradient($c-bgc-gradient-homepage-main,
              $c-bgc-gradient-homepage-main),
@@ -24,7 +24,7 @@
          url(/src/images/mobile/hotel/hero-bg-2x.jpg);
         }
     }
-    @media screen and (min-width: 1025px){
+    @media screen and (min-width: 1024px){
         padding-top: 188px;
         padding-bottom: 64px;
         @include retina {
