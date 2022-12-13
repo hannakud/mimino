@@ -2,31 +2,10 @@
 .hotel-room {
   padding-top: 32px;
   padding-bottom: 32px;
-  background-image: linear-gradient(
-    to right,
-    $c-bgc-light 138px,
-    $c-bg-gradient-footer 139px,
-    $c-bgc-light 140px,
-    $c-bgc-light 273px,
-    $c-bg-gradient-footer 274px,
-    $c-bgc-light 275px
-  );
 
   @include tablet {
     padding-top: 62px;
     padding-bottom: 62px;
-    background-image: linear-gradient(
-      to right,
-      $c-bgc-light 278px,
-      $c-bg-gradient-footer 279px,
-      $c-bgc-light 280px,
-      $c-bgc-light 511px,
-      $c-bg-gradient-footer 512px,
-      $c-bgc-light 513px,
-      $c-bgc-light 745px,
-      $c-bg-gradient-footer 746px,
-      $c-bgc-light 747px
-    );
   }
 
   @include desktop {

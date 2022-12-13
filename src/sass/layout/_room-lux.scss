@@ -1,6 +1,21 @@
 .room-lux {
   background-color: $c-bgc-light;
 
+  @include tablet {
+    background-image: linear-gradient(
+      to right,
+      $c-bgc-light 278px,
+      $c-bg-gradient-footer 279px,
+      $c-bgc-light 280px,
+      $c-bgc-light 511px,
+      $c-bg-gradient-footer 512px,
+      $c-bgc-light 513px,
+      $c-bgc-light 745px,
+      $c-bg-gradient-footer 746px,
+      $c-bgc-light 747px
+    );
+  }
+
   .hotel-room-description {
     width: 258px;
 
