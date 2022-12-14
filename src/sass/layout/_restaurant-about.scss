@@ -134,7 +134,6 @@
 }
 
 .restaurant-about__info-second {
-
   @include font(600, 12px, 1.25, 0.02em);
   color: $c-modal-brown;
   width: 163px;
@@ -186,7 +185,7 @@
 
   @include tablet-s {
     position: absolute;
-    bottom: 102px;
+    bottom: -310px;
     right: 60px;
 
     .slick-prev-arrow {
@@ -214,4 +213,3 @@
     }
   }
 }
-
