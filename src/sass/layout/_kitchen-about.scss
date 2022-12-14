@@ -102,24 +102,20 @@
 
   .about-kitchen__times {
     font-family: 'Times New Roman', sans-serif;
-    font-size: 20px;
-    line-height: 1.15;
+    @include font(400, 20px, 1.15);
     color: $c-subtitles;
     text-align: left;
     margin-bottom: 12px;
 
     @media screen and (min-width: 1024px) {
-      font-size: 32px;
-      line-height: 1/16;
+      @include font(400, 32px, 1.16);
       margin-bottom: 4px;
     }
   }
 
   .about-kitchen__logo {
     font-family: 'Film P3';
-    font-size: 40px;
-    line-height: 1.08;
-    letter-spacing: 0.3em;
+    @include font(700, 40px, 1.08, 0.03em);
     margin-bottom: 12px;
     color: $c-logo-restaurant-hotel;
 
@@ -130,27 +126,19 @@
   }
 
   .about-kitchen__text {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
+    @include font(600, 12px, 1.25, 0.02em);
     color: $c-text-rest-homepage;
 
     &--brown {
-      font-weight: 600;
-      font-size: 12px;
-      line-height: 1.25;
-      letter-spacing: 0.02em;
+      @include font(600, 12px, 1.25, 0.02em);
       color: $c-modal-brown;
     }
 
     @media screen and (min-width: 1024px) {
-      font-size: 16px;
-      line-height: 1.25;
+      @include font(600, 16px, 1.25, 0.02em);
 
       &--brown {
-        font-size: 16px;
-        line-height: 1.25;
+        @include font(600, 12px, 1.25, 0.02em);
       }
     }
   }
