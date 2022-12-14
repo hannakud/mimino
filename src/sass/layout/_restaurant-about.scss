@@ -5,44 +5,44 @@
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
-  background-color: $c-bgc-light;
 
   @include tablet-s {
     padding-right: 47px;
     padding-left: 47px;
-    background-image: linear-gradient(
-      to right,
-      $c-bgc-light 278px,
-      $c-bg-gradient-footer 279px,
-      $c-bgc-light 280px,
-      $c-bgc-light 511px,
-      $c-bg-gradient-footer 512px,
-      $c-bgc-light 513px,
-      $c-bgc-light 745px,
-      $c-bg-gradient-footer 746px,
-      $c-bgc-light 747px
-    );
   }
   @include desktop {
     padding-right: 85px;
     padding-left: 85px;
     max-width: 1280px;
-    background: linear-gradient(
-      to right,
-      $c-bgc-biege 338px,
-      $c-bg-gradient-footer 339px,
-      $c-bgc-biege 340px,
-      $c-bgc-biege 639px,
-      $c-bg-gradient-footer 640px,
-      $c-bgc-biege 641px,
-      $c-bgc-biege 941px,
-      $c-bg-gradient-footer 942px,
-      $c-bgc-biege 943px
-    );
   }
 }
 
+.restaurant-about__container {
+  @include mobile-s {
+    max-width: 414px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  @include tablet-s {
+    padding-right: 47px;
+    padding-left: 47px;
+  }
+  @include desktop {
+    padding-right: 85px;
+    padding-left: 85px;
+    max-width: 1280px;
+  }
+}
+
+.restaurant-about__first-image-wrapper {
+  z-index: 200;
+}
+
 .restaurant-about {
+  @extend %light-bg-lines;
   @media screen and (min-width: 1024px) {
     padding-top: 0;
   }
@@ -114,9 +114,11 @@
 .restaurant-about__wrapper-second {
   @include tablet-s {
     margin-top: -32px;
+    margin-bottom: 262px;
   }
   @include desktop {
     margin-top: -70px;
+    margin-bottom: 175px;
   }
 }
 
@@ -131,6 +133,7 @@
 }
 
 .restaurant-about__info-second {
+
   @include font(600, 12px, 1.25, 0.02em);
   color: $c-modal-brown;
   width: 163px;
@@ -141,54 +144,69 @@
 }
 
 .restaurant-about__slider-wrapper {
-  margin-top: 20px;
-  overflow: hidden;
-
+  margin-top: 32px;
   margin-left: 70px;
-  @include tablet-s {
-    width: 523px;
-    margin-right: 0;
-    margin-left: auto;
-    margin-top: -42px;
-  }
+
   @include desktop {
-    width: 523px;
-    margin-right: 0;
-    margin-left: auto;
-    margin-top: -130px;
+    position: absolute;
+    right: 85px;
+    bottom: 118px;
+  }
+
+  @include tablet-s {
+    .image-slider {
+      margin: 0;
+      width: 428px;
+    }
+
+    .image-slider-item {
+      margin: 0 20px;
+    }
+  }
+
+  @include desktop {
+    .image-slider {
+      margin: 0;
+      width: 548px;
+    }
+
+    .image-slider-item {
+      margin: 0 20px;
+    }
   }
 }
 
 .restaurant-about__slider {
-  display: flex;
-  gap: 20px;
-  position: relative;
-  left: 0;
-  height: 254px;
-  transition: all ease 1000ms;
+  right: -20px;
 
-  margin-bottom: 20px;
-  @media screen and (min-width: 1024px) {
-    width: 2172px;
+  @include tablet-s {
+    position: absolute;
+    bottom: 102px;
+    right: 60px;
+
+    .slick-prev-arrow {
+      left: unset;
+      right: 60px;
+      bottom: -27px;
+    }
+    .slick-next-arrow {
+      left: unset;
+      right: 0;
+      bottom: -27px;
+    }
   }
-  @media screen and (min-width: 1280px) {
+
+  @include desktop {
+    .slick-prev-arrow {
+      left: unset;
+      right: 60px;
+      bottom: -27px;
+    }
+    .slick-next-arrow {
+      left: unset;
+      right: 0;
+      bottom: -27px;
+    }
   }
 }
 
-.restaurant-about__slider img {
-  max-height: 254px;
-  max-width: 254px;
-}
-.restaurant-about__buttons {
-  display: flex;
-  justify-content: end;
-  gap: 33px;
-}
-.restaurant-about__button-arrow-left,
-.restaurant-about__button-arrow-right {
-  width: 32px;
-  height: 32px;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-}
