@@ -90,20 +90,22 @@
 .menu-title {
   font-family: 'Times New Roman';
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 32px;
   line-height: 1.16;
   margin-bottom: 32px;
-  @include mobile-small {
-    font-size: 32px;
-  }
+  // @include mobile-small {
+  //   font-size: 32px;
+  // }
   @media screen and (min-width: 1024px) {
     margin-bottom: 40px;
+    
   }
 }
 
 .menu-subtitle {
   font-family: 'Times New Roman';
   display: inline-block;
+  margin-bottom: 16px;
   @include font(700, 16px, 1.15, normal);
   @media screen and (min-width: 413px) {
     font-size: 20px;
@@ -146,6 +148,7 @@
 }
 
 .food-description {
+  margin-top: 4px;
   @include font(400, 10px, 1.2, 0.02em);
   display: block;
   max-width: 210px;
@@ -393,11 +396,11 @@
   }
 }
 
-.beverages-container {
-  &:last-child {
-    margin-bottom: 16px;
-  }
-}
+// .beverages-container {
+//   &:last-child {
+//     margin-bottom: 16px;
+//   }
+// }
 
 .beverages-weight {
   @include font(300, 10px, 1.21, 0.02em);
