@@ -102,13 +102,13 @@
 
   .about-kitchen__times {
     font-family: 'Times New Roman', sans-serif;
-    @include font(400, 20px, 1.15);
+    @include font(400, 20px, 1.15, normal);
     color: $c-subtitles;
     text-align: left;
     margin-bottom: 12px;
 
     @media screen and (min-width: 1024px) {
-      @include font(400, 32px, 1.16);
+      @include font(400, 32px, 1.16, normal);
       margin-bottom: 4px;
     }
   }
@@ -138,7 +138,7 @@
       @include font(600, 16px, 1.25, 0.02em);
 
       &--brown {
-        @include font(600, 12px, 1.25, 0.02em);
+        @include font(600, 16px, 1.25, 0.02em);
       }
     }
   }
