@@ -3,7 +3,7 @@
   padding-top: 16px;
   padding-bottom: 20px;
 
-  @include tablet {
+  @include tablet-s {
     padding-top: 120px;
     padding-bottom: 32px;
   }
@@ -14,7 +14,7 @@
   padding-top: 24px;
   padding-bottom: 40px;
 
-  @include tablet {
+  @include tablet-s {
     padding-top: 48px;
   }
 }

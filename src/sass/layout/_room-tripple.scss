@@ -1,6 +1,23 @@
 .room-tripple {
   background-color: $c-bgc-biege;
 
+  @include desktop {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background: linear-gradient(
+      to right,
+      $c-bgc-biege 338px,
+      $c-bg-gradient-footer 339px,
+      $c-bgc-biege 340px,
+      $c-bgc-biege 639px,
+      $c-bg-gradient-footer 640px,
+      $c-bgc-biege 641px,
+      $c-bgc-biege 941px,
+      $c-bg-gradient-footer 942px,
+      $c-bgc-biege 943px
+    );
+  }
+
   .hotel-room-info {
     align-items: flex-end;
   }
@@ -8,7 +25,7 @@
   .hotel-label {
     position: relative;
     right: -10px;
-    @include tablet {
+    @include tablet-s {
       right: -18px;
     }
     @include desktop {
@@ -19,7 +36,7 @@
   .hotel-room-description {
     width: 242px;
 
-    @include tablet {
+    @include tablet-s {
       width: 400px;
     }
 
@@ -29,23 +46,29 @@
   }
 
   .hotel-room-photo {
+    margin-left: auto;
     margin-right: auto;
 
-    @include tablet {
+    @include mobile {
+      margin-left: unset;
+      margin-right: auto;
+    }
+
+    @include tablet-s {
       position: absolute;
-      top: -32px;
+      top: -104px;
       right: 512px;
     }
 
     @include desktop {
       position: absolute;
-      top: -32px;
+      top: -104px;
       right: 640px;
     }
   }
 
   .down-wrapper {
-    @include tablet {
+    @include tablet-s {
       flex-direction: row-reverse;
     }
     @include desktop {
@@ -67,7 +90,7 @@
     @include mobile {
       right: 195px;
     }
-    @include tablet {
+    @include tablet-s {
       right: unset;
       left: 0;
     }
@@ -85,7 +108,7 @@
     @include mobile {
       right: 131px;
     }
-    @include tablet {
+    @include tablet-s {
       right: unset;
       left: 64px;
     }

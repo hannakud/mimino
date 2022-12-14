@@ -1,10 +1,25 @@
 .room-lux {
   background-color: $c-bgc-light;
 
+  @include tablet-s {
+    background-image: linear-gradient(
+      to right,
+      $c-bgc-light 278px,
+      $c-bg-gradient-footer 279px,
+      $c-bgc-light 280px,
+      $c-bgc-light 511px,
+      $c-bg-gradient-footer 512px,
+      $c-bgc-light 513px,
+      $c-bgc-light 745px,
+      $c-bg-gradient-footer 746px,
+      $c-bgc-light 747px
+    );
+  }
+
   .hotel-room-description {
     width: 258px;
 
-    @include tablet {
+    @include tablet-s {
       width: 440px;
     }
 
@@ -15,16 +30,22 @@
 
   .hotel-room-photo {
     margin-left: auto;
+    margin-right: auto;
 
-    @include tablet {
+    @include mobile {
+      margin-right: unset;
+      margin-left: auto;
+    }
+
+    @include tablet-s {
       position: absolute;
-      top: -32px;
+      top: -104px;
       left: 512px;
     }
 
     @include desktop {
       position: absolute;
-      top: -32px;
+      top: -104px;
       left: 640px;
     }
   }
@@ -42,7 +63,7 @@
     @include mobile {
       left: 108px;
     }
-    @include tablet {
+    @include tablet-s {
       left: unset;
       right: 77px;
     }
@@ -59,7 +80,7 @@
     @include mobile {
       left: 172px;
     }
-    @include tablet {
+    @include tablet-s {
       left: unset;
       right: 13px;
     }

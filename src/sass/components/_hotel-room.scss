@@ -1,20 +1,60 @@
+/* Секція*/
 .hotel-room {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include tablet-s {
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+
+  @include desktop {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background: linear-gradient(
+      to right,
+      $c-bgc-light 338px,
+      $c-bg-gradient-footer 339px,
+      $c-bgc-light 340px,
+      $c-bgc-light 639px,
+      $c-bg-gradient-footer 640px,
+      $c-bgc-light 641px,
+      $c-bgc-light 941px,
+      $c-bg-gradient-footer 942px,
+      $c-bgc-light 943px
+    );
+  }
+
+  /* Контейнер */
   .hotel-room-container {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
     position: relative;
     overflow-x: hidden;
+    width: 100%;
+    max-width: 415px;
 
-    @include tablet {
-      padding-top: 62px;
-      padding-bottom: 62px;
+    @include mobile {
+      max-width: unset;
+      width: 415px;
+    }
+
+    @include tablet-s {
+      padding-right: 47px;
+      padding-left: 47px;
       overflow-x: visible;
+      width: 1024px;
+      max-width: unset;
     }
 
     @include desktop {
-      padding-top: 72px;
-      padding-bottom: 72px;
+      padding-right: 85px;
+      padding-left: 85px;
       overflow-x: visible;
+      width: 1280px;
+      max-width: unset;
     }
   }
 
@@ -28,7 +68,7 @@
     font-family: 'Times New Roman';
     color: $c-subtitles;
     margin-bottom: 8px;
-    @include tablet {
+    @include tablet-s {
       @include font(400, 32px, 1.15, normal);
       margin-bottom: 4px;
     }
@@ -42,7 +82,7 @@
     font-family: Film P3, sans-serif;
     color: $c-logo-restaurant-hotel;
     margin-bottom: 32px;
-    @include tablet {
+    @include tablet-s {
       @include font(700, 64px, 1.08, 0.3em);
       margin-bottom: 62px;
     }
@@ -55,7 +95,7 @@
     font-family: 'Times New Roman';
     @include font(700, 24px, 1.17, 0.05em);
     margin-bottom: 12px;
-    @include tablet {
+    @include tablet-s {
       @include font(700, 30px, 1.13, 0.05em);
       margin-bottom: 16px;
     }
@@ -72,7 +112,7 @@
     margin-right: 39px;
     margin-bottom: 32px;
 
-    @include tablet {
+    @include tablet-s {
       @include font(600, 16px, 1.25, 0.02em);
       width: 440px;
       margin-bottom: 176px;
@@ -84,6 +124,7 @@
     }
   }
 
+  /* Спозиціоноване фото */
   .hotel-room-photo {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
@@ -98,7 +139,7 @@
       width: 244px;
     }
 
-    @include tablet {
+    @include tablet-s {
       width: 400px;
       height: 524px;
       margin-bottom: 0;
@@ -111,6 +152,7 @@
     }
   }
 
+  /* слайдер */
   .slider-wrapper {
     position: relative;
     overflow: hidden;
@@ -129,7 +171,7 @@
       width: 420px;
     }
 
-    @include tablet {
+    @include tablet-s {
       width: 468px;
       padding-bottom: 64px;
     }
@@ -153,7 +195,7 @@
   flex-direction: column;
   gap: 20px;
 
-  @include tablet {
+  @include tablet-s {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -166,11 +208,22 @@
   }
 }
 
+/* Кнопки */
 .buttons-wrapper {
   display: flex;
   flex-direction: column;
   gap: 16px;
   align-items: center;
+
+  @include tablet-s {
+    position: relative;
+    transform: translateY(-36px);
+  }
+
+  @include desktop {
+    position: relative;
+    transform: translateY(-36px);
+  }
 
   .button-dark {
     width: 236px;
