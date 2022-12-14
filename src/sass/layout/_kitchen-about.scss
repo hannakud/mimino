@@ -3,275 +3,275 @@
   margin: 0 auto;
   overflow-x: clip;
   background-color: $c-logo-header-room;
-}
 
-.about-kitchen__wrapper {
-  margin: 0 auto;
-  max-width: 414px;
-  height: 1191px;
-  background-image: linear-gradient(
-    to right,
-    $c-bgc-light 138px,
-    $c-bg-gradient-footer 139px,
-    $c-bgc-light 140px,
-    $c-bgc-light 273px,
-    $c-bg-gradient-footer 274px,
-    $c-bgc-light 275px
-  );
-
-  @media screen and (min-width: 1024px) {
-    max-width: 1024px;
-    height: 1238px;
+  .about-kitchen__wrapper {
+    margin: 0 auto;
+    max-width: 414px;
+    height: 1191px;
     background-image: linear-gradient(
       to right,
-      $c-bgc-light 278px,
-      $c-bg-gradient-footer 279px,
-      $c-bgc-light 280px,
-      $c-bgc-light 511px,
-      $c-bg-gradient-footer 512px,
-      $c-bgc-light 513px,
-      $c-bgc-light 745px,
-      $c-bg-gradient-footer 746px,
-      $c-bgc-light 747px
+      $c-bgc-light 138px,
+      $c-bg-gradient-footer 139px,
+      $c-bgc-light 140px,
+      $c-bgc-light 273px,
+      $c-bg-gradient-footer 274px,
+      $c-bgc-light 275px
     );
+
+    @media screen and (min-width: 1024px) {
+      max-width: 1024px;
+      height: 1238px;
+      background-image: linear-gradient(
+        to right,
+        $c-bgc-light 278px,
+        $c-bg-gradient-footer 279px,
+        $c-bgc-light 280px,
+        $c-bgc-light 511px,
+        $c-bg-gradient-footer 512px,
+        $c-bgc-light 513px,
+        $c-bgc-light 745px,
+        $c-bg-gradient-footer 746px,
+        $c-bgc-light 747px
+      );
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 1280px;
+      height: 1257px;
+      background-image: linear-gradient(
+        to right,
+        $c-bgc-light 338px,
+        $c-bg-gradient-footer 339px,
+        $c-bgc-light 340px,
+        $c-bgc-light 639px,
+        $c-bg-gradient-footer 640px,
+        $c-bgc-light 641px,
+        $c-bgc-light 941px,
+        $c-bg-gradient-footer 942px,
+        $c-bgc-light 943px
+      );
+    }
   }
 
-  @media screen and (min-width: 1280px) {
-    max-width: 1280px;
-    height: 1257px;
-    background-image: linear-gradient(
-      to right,
-      $c-bgc-light 338px,
-      $c-bg-gradient-footer 339px,
-      $c-bgc-light 340px,
-      $c-bgc-light 639px,
-      $c-bg-gradient-footer 640px,
-      $c-bgc-light 641px,
-      $c-bgc-light 941px,
-      $c-bg-gradient-footer 942px,
-      $c-bgc-light 943px
-    );
-  }
-}
+  .about-kitchen__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 18px;
+    padding-bottom: 28px;
 
-.about-kitchen__container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 18px;
-  padding-bottom: 28px;
+    @media screen and (min-width: 1024px) {
+      padding: 120px 47px 0px;
+    }
 
-  @media screen and (min-width: 1024px) {
-    padding: 120px 47px 0px;
+    @media screen and (min-width: 1280px) {
+      padding: 120px 85px 0px;
+    }
   }
 
-  @media screen and (min-width: 1280px) {
-    padding: 120px 85px 0px;
+  .about-kitchen__text-wrapper {
+    width: 242px;
+    margin-right: auto;
+    margin-bottom: 28px;
+
+    @media screen and (min-width: 1024px) {
+      width: 439px;
+      margin-bottom: 142px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 518px;
+      margin-bottom: 162px;
+    }
   }
-}
 
-.about-kitchen__text-wrapper {
-  width: 242px;
-  margin-right: auto;
-  margin-bottom: 28px;
-
-  @media screen and (min-width: 1024px) {
-    width: 439px;
-    margin-bottom: 142px;
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
   }
 
-  @media screen and (min-width: 1280px) {
-    width: 518px;
-    margin-bottom: 162px;
+  .about-kitchen__times {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 20px;
+    line-height: 1.15;
+    color: $c-subtitles;
+    text-align: left;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 32px;
+      line-height: 1/16;
+      margin-bottom: 4px;
+    }
   }
-}
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
+  .about-kitchen__logo {
+    font-family: 'Film P3';
+    font-size: 40px;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+    margin-bottom: 12px;
+    color: $c-logo-restaurant-hotel;
 
-.about-kitchen__times {
-  font-family: 'Times New Roman', sans-serif;
-  font-size: 20px;
-  line-height: 1.15;
-  color: $c-subtitles;
-  text-align: left;
-  margin-bottom: 12px;
-
-  @media screen and (min-width: 1024px) {
-    font-size: 32px;
-    line-height: 1/16;
-    margin-bottom: 4px;
+    @media screen and (min-width: 1024px) {
+      font-size: 64px;
+      margin-bottom: 24px;
+    }
   }
-}
 
-.about-kitchen__logo {
-  font-family: 'Film P3';
-  font-size: 40px;
-  line-height: 1.08;
-  letter-spacing: 0.3em;
-  margin-bottom: 12px;
-  color: $c-logo-restaurant-hotel;
-
-  @media screen and (min-width: 1024px) {
-    font-size: 64px;
-    margin-bottom: 24px;
-  }
-}
-
-.about-kitchen__text {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  color: $c-text-rest-homepage;
-
-  &--brown {
+  .about-kitchen__text {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    color: $c-modal-brown;
-  }
-
-  @media screen and (min-width: 1024px) {
-    font-size: 16px;
-    line-height: 1.25;
+    color: $c-text-rest-homepage;
 
     &--brown {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.02em;
+      color: $c-modal-brown;
+    }
+
+    @media screen and (min-width: 1024px) {
       font-size: 16px;
       line-height: 1.25;
+
+      &--brown {
+        font-size: 16px;
+        line-height: 1.25;
+      }
     }
   }
-}
 
-.about-kitchen__kitchen {
-  display: block;
-  overflow: hidden;
-  max-width: 244px;
-  max-height: 322px;
-  margin-bottom: 32px;
-  margin-left: auto;
-  border-radius: 2px;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  .about-kitchen__kitchen {
+    display: block;
+    overflow: hidden;
+    max-width: 244px;
+    max-height: 322px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    border-radius: 2px;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 
-  @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1024px) {
+      position: absolute;
+      top: -32px;
+      right: 112px;
+      min-width: 400px;
+      min-height: 524px;
+      box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    }
+
+    @media screen and (min-width: 1280px) {
+      position: absolute;
+      top: -33px;
+      right: 180px;
+      min-width: 460px;
+      min-height: 574px;
+      box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .about-kitchen__meat-wrapper {
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 262px;
+      width: 710px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 207px;
+      width: 804px;
+    }
+  }
+
+  .about-kitchen__meat {
+    overflow: hidden;
+    min-width: 200px;
+    height: 278px;
+    margin-right: 20px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+
+    @media screen and (min-width: 1024px) {
+      min-width: 350px;
+      min-height: 500px;
+      margin-right: 48px;
+      box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    }
+
+    @media screen and (min-width: 1280px) {
+      min-width: 460px;
+      min-height: 574px;
+      margin-right: 32px;
+      box-shadow: none;
+    }
+  }
+
+  // ----------
+
+  .down-wrapper {
+    @include tablet {
+      flex-direction: row-reverse;
+    }
+    @include desktop {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .slider-wrapper {
+    @include mobile {
+      transform: translateX(113px);
+    }
+  }
+
+  .slick-prev-arrow {
     position: absolute;
-    top: -32px;
-    right: 112px;
-    min-width: 400px;
-    min-height: 524px;
-    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    bottom: 0;
+    right: 64px;
+
+    @include mobile {
+      right: 195px;
+    }
+    @include tablet {
+      right: unset;
+      left: 0;
+    }
+    @include desktop {
+      right: unset;
+      left: 0;
+    }
   }
 
-  @media screen and (min-width: 1280px) {
+  .slick-next-arrow {
     position: absolute;
-    top: -33px;
-    right: 180px;
-    min-width: 460px;
-    min-height: 574px;
-    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-  }
-}
+    bottom: 0;
+    right: 0;
 
-.about-kitchen__meat-wrapper {
-  display: flex;
-  align-items: center;
-
-  @media screen and (min-width: 1024px) {
-    margin-bottom: 262px;
-    width: 710px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 207px;
-    width: 804px;
-  }
-}
-
-.about-kitchen__meat {
-  overflow: hidden;
-  min-width: 200px;
-  height: 278px;
-  margin-right: 20px;
-  border-radius: 2px;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-
-  @media screen and (min-width: 1024px) {
-    min-width: 350px;
-    min-height: 500px;
-    margin-right: 48px;
-    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-  }
-
-  @media screen and (min-width: 1280px) {
-    min-width: 460px;
-    min-height: 574px;
-    margin-right: 32px;
-    box-shadow: none;
-  }
-}
-
-// ----------
-
-.down-wrapper {
-  @include tablet {
-    flex-direction: row-reverse;
-  }
-  @include desktop {
-    flex-direction: row-reverse;
-  }
-}
-
-.slider-wrapper {
-  @include mobile {
-    transform: translateX(113px);
-  }
-}
-
-.slick-prev-arrow {
-  position: absolute;
-  bottom: 0;
-  right: 64px;
-
-  @include mobile {
-    right: 195px;
-  }
-  @include tablet {
-    right: unset;
-    left: 0;
-  }
-  @include desktop {
-    right: unset;
-    left: 0;
-  }
-}
-
-.slick-next-arrow {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-
-  @include mobile {
-    right: 131px;
-  }
-  @include tablet {
-    right: unset;
-    left: 64px;
-  }
-  @include desktop {
-    right: unset;
-    left: 64px;
+    @include mobile {
+      right: 131px;
+    }
+    @include tablet {
+      right: unset;
+      left: 64px;
+    }
+    @include desktop {
+      right: unset;
+      left: 64px;
+    }
   }
 }
