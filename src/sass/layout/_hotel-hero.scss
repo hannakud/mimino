@@ -16,10 +16,10 @@
     margin: 0 auto;
     
     @include retina {
-            background-image: linear-gradient($c-bgc-gradient-homepage-main,
-                    $c-bgc-gradient-homepage-main),
-                url(/src/images/mobile/hotel/hero-bg.jpg),
-                url(/src/images/mobile/hotel/hero-bg-2x.jpg);
+        background-image: linear-gradient($c-bgc-gradient-homepage-main,
+                $c-bgc-gradient-homepage-main),
+            url(/src/images/mobile/hotel/hero-bg.jpg),
+            url(/src/images/mobile/hotel/hero-bg-2x.jpg);
     }
 
     @media screen and (min-width: 1024px){
