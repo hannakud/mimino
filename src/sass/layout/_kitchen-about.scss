@@ -1,55 +1,17 @@
 .about-kitchen {
-  max-width: 1280px;
+  @extend %light-bg-lines-light;
   margin: 0 auto;
-  overflow-x: clip;
-  background-color: $c-logo-header-room;
 
   .about-kitchen__wrapper {
     margin: 0 auto;
     max-width: 414px;
-    height: 1191px;
-    background-image: linear-gradient(
-      to right,
-      $c-bgc-light 138px,
-      $c-bg-gradient-footer 139px,
-      $c-bgc-light 140px,
-      $c-bgc-light 273px,
-      $c-bg-gradient-footer 274px,
-      $c-bgc-light 275px
-    );
-
     @media screen and (min-width: 1024px) {
       max-width: 1024px;
-      height: 1238px;
-      background-image: linear-gradient(
-        to right,
-        $c-bgc-light 278px,
-        $c-bg-gradient-footer 279px,
-        $c-bgc-light 280px,
-        $c-bgc-light 511px,
-        $c-bg-gradient-footer 512px,
-        $c-bgc-light 513px,
-        $c-bgc-light 745px,
-        $c-bg-gradient-footer 746px,
-        $c-bgc-light 747px
-      );
+      //height: 1238px;
     }
 
     @media screen and (min-width: 1280px) {
       max-width: 1280px;
-      height: 1257px;
-      background-image: linear-gradient(
-        to right,
-        $c-bgc-light 338px,
-        $c-bg-gradient-footer 339px,
-        $c-bgc-light 340px,
-        $c-bgc-light 639px,
-        $c-bg-gradient-footer 640px,
-        $c-bgc-light 641px,
-        $c-bgc-light 941px,
-        $c-bg-gradient-footer 942px,
-        $c-bgc-light 943px
-      );
     }
   }
 
@@ -175,6 +137,7 @@
   .about-kitchen__meat-wrapper {
     display: flex;
     align-items: center;
+    margin-bottom: 32px;
 
     @media screen and (min-width: 1024px) {
       margin-bottom: 262px;
@@ -210,56 +173,91 @@
     }
   }
 
-  // ----------
-
-  .down-wrapper {
-    @include tablet {
-      flex-direction: row-reverse;
+  .about-kitchen-slider-wrapper {
+    @include mobile-s {
+      overflow: hidden;
+      margin-right: -15px;
     }
+    @include tablet-s {
+      bottom: 50px;
+      position: absolute;
+      right: 47px;
+      width: 400px;
+    }
+
     @include desktop {
-      flex-direction: row-reverse;
+      width: 510px;
+      position: absolute;
+      right: 85px;
+      bottom: 50px;
+    }
+
+    .kitchen-about-slider {
+      @media screen and (max-width: 1023px) {
+        transform: translateX(95px);
+      }
+    }
+
+    .slick-prev-arrow {
+      @include tablet-s {
+
+        bottom: -16px;
+        left: 325px;
+      }
+    }
+
+    .slick-next-arrow {
+      @include tablet-s {
+
+        bottom: -16px;
+        left: 395px;
+      }
+    }
+
+    .slider-photo {
+      @include desktop {
+        img {
+          width: 245px;
+          height: 245px;
+        }
+      }
     }
   }
 
-  .slider-wrapper {
-    @include mobile {
-      transform: translateX(113px);
-    }
-  }
-
-  .slick-prev-arrow {
-    position: absolute;
-    bottom: 0;
-    right: 64px;
-
-    @include mobile {
-      right: 195px;
-    }
-    @include tablet {
-      right: unset;
-      left: 0;
-    }
-    @include desktop {
-      right: unset;
-      left: 0;
-    }
-  }
-
-  .slick-next-arrow {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-    @include mobile {
-      right: 131px;
-    }
-    @include tablet {
-      right: unset;
-      left: 64px;
-    }
-    @include desktop {
-      right: unset;
-      left: 64px;
-    }
-  }
+  //
+  //.slick-prev-arrow {
+  //  position: absolute;
+  //  bottom: 0;
+  //  right: 64px;
+  //
+  //  @include mobile {
+  //    right: 195px;
+  //  }
+  //  @include tablet {
+  //    right: unset;
+  //    left: 0;
+  //  }
+  //  @include desktop {
+  //    right: unset;
+  //    left: 0;
+  //  }
+  //}
+  //
+  //.slick-next-arrow {
+  //  position: absolute;
+  //  bottom: 0;
+  //  right: 0;
+  //
+  //  @include mobile {
+  //    right: 131px;
+  //  }
+  //  @include tablet {
+  //    right: unset;
+  //    left: 64px;
+  //  }
+  //  @include desktop {
+  //    right: unset;
+  //    left: 64px;
+  //  }
+  //}
 }
