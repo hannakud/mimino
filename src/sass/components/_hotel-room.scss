@@ -34,11 +34,11 @@
     position: relative;
     overflow-x: hidden;
     width: 100%;
-    max-width: 415px;
+    max-width: 414px;
 
-    @include mobile {
+    @include mobile-s {
       max-width: unset;
-      width: 415px;
+      width: 414px;
     }
 
     @include tablet-s {
@@ -68,6 +68,7 @@
     font-family: 'Times New Roman';
     color: $c-subtitles;
     margin-bottom: 8px;
+
     @include tablet-s {
       @include font(400, 32px, 1.15, normal);
       margin-bottom: 4px;
@@ -82,6 +83,7 @@
     font-family: Film P3, sans-serif;
     color: $c-logo-restaurant-hotel;
     margin-bottom: 32px;
+
     @include tablet-s {
       @include font(700, 64px, 1.08, 0.3em);
       margin-bottom: 62px;
@@ -130,12 +132,12 @@
     border-radius: 2px;
     margin-bottom: 32px;
 
-    @include mobile-small {
+    @include mobile-small-s {
       max-width: 244px;
       width: 100%;
     }
 
-    @include mobile {
+    @include mobile-s {
       width: 244px;
     }
 
@@ -167,7 +169,7 @@
     width: 100%;
     padding-bottom: 52px;
 
-    @include mobile {
+    @include mobile-s {
       width: 420px;
     }
 
