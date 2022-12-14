@@ -34,13 +34,14 @@
     }
 
     @media screen and (min-width: 1280px) {
+        width: 1280px;
         padding-top: 188px;
         padding-bottom: 65px;
         @include retina {
         background-image: linear-gradient($c-bgc-gradient-homepage-main,
                 $c-bgc-gradient-homepage-main),
-            url(/src/images/desktop/hotel/hero-bg.jpg),
-            url(/src/images/desktop/hotel/hero-bg-2x.jpg);
+        url(/src/images/desktop/hotel/hero-bg.jpg),
+        url(/src/images/desktop/hotel/hero-bg-2x.jpg);
         }
     }
 }
