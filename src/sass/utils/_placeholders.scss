@@ -28,13 +28,25 @@
   margin: -1px;
 }
 
+%light-bg-lines-mobile {
+
+}
+
 %light-bg-lines {
+  background-image: linear-gradient(to right, $c-bgc-light 33.4%, $c-bg-gradient-footer 33.7%, $c-bgc-light 33.8%, $c-bgc-light 65.95%, $c-bg-gradient-footer 66.2%, $c-bgc-light 66.4%);
   @include tablet-s {
-    background: linear-gradient(to right, $c-bgc-light 278px, $c-bg-gradient-footer 279px, $c-bgc-light 280px, $c-bgc-light 511px, $c-bg-gradient-footer 512px, $c-bgc-light 513px, $c-bgc-light 745px, $c-bg-gradient-footer 746px, $c-bgc-light 747px
-    );
+    background: linear-gradient(to right, $c-bgc-biege 26.4%, $c-bg-gradient-footer 26.5%, $c-bgc-biege 26.6%, $c-bgc-biege 49.9%, $c-bg-gradient-footer 50%, $c-bgc-biege 50.1%, $c-bgc-biege 73.5%, $c-bg-gradient-footer 73.6%, $c-bgc-biege 73.7%);
   }
   @include desktop {
-    background: linear-gradient(to right, $c-bgc-biege 338px, $c-bg-gradient-footer 339px, $c-bgc-biege 340px, $c-bgc-biege 639px, $c-bg-gradient-footer 640px, $c-bgc-biege 641px, $c-bgc-biege 941px, $c-bg-gradient-footer 942px, $c-bgc-biege 943px
-    );
+    background: linear-gradient(to right, $c-bgc-biege 26.4%, $c-bg-gradient-footer 26.5%, $c-bgc-biege 26.6%, $c-bgc-biege 49.9%, $c-bg-gradient-footer 50%, $c-bgc-biege 50.1%, $c-bgc-biege 73.5%, $c-bg-gradient-footer 73.6%, $c-bgc-biege 73.7%);
   }
 }
+
+
+
+
+
+
+
+
+
