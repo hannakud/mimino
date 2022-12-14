@@ -5,6 +5,7 @@
     padding-top: 181px;
     padding-bottom: 102px;
     text-align: center;
+
     background-image:
         linear-gradient($c-bgc-gradient-homepage-main,
             $c-bgc-gradient-homepage-main),
@@ -14,16 +15,13 @@
     background-size: cover;
     margin: 0 auto;
     
-    @include mobile{
-        padding-top: 181px;
-        padding-bottom: 102px;
-        @include retina {
-            background-image: linear-gradient($c-bgc-gradient-homepage-main,
-             $c-bgc-gradient-homepage-main),
+    @include retina {
+        background-image: linear-gradient($c-bgc-gradient-homepage-main,
+                $c-bgc-gradient-homepage-main),
             url(/src/images/mobile/hotel/hero-bg.jpg),
-         url(/src/images/mobile/hotel/hero-bg-2x.jpg);
-        }
+            url(/src/images/mobile/hotel/hero-bg-2x.jpg);
     }
+
     @media screen and (min-width: 1024px){
         padding-top: 188px;
         padding-bottom: 64px;
@@ -35,15 +33,27 @@
         }
     }
 
-    @include desktop {
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
         padding-top: 188px;
         padding-bottom: 65px;
         @include retina {
         background-image: linear-gradient($c-bgc-gradient-homepage-main,
                 $c-bgc-gradient-homepage-main),
-            url(/src/images/desktop/hotel/hero-bg.jpg),
-            url(/src/images/desktop/hotel/hero-bg-2x.jpg);
+        url(/src/images/desktop/hotel/hero-bg.jpg),
+        url(/src/images/desktop/hotel/hero-bg-2x.jpg);
         }
+    }
+}
+.hero-container {
+    padding: 0 10px;
+
+    @media screen and (min-width: 1024px) {
+        padding: 0 47px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 0 85px;
     }
 }
 
@@ -52,11 +62,11 @@
     color: white;
     margin-bottom: 32px;
     font-family: 'Film P3';
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1024px) {
       @include font(700, 128px, 1.07, 0.3em);
       margin-bottom: 32px;
     }
-    @include desktop {
+    @media screen and (min-width: 1280px){
         @include font(700, 128px, 1.07, 0.3em);
       margin-bottom: 32px;
     }
@@ -67,11 +77,11 @@
     color: white;
     margin-bottom: 178px;
     font-family: 'Montserrat';
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1024px) {
       @include font(600, 20px, 1.25, 0.02em);
       margin-bottom: 226px;
     }
-    @include desktop {
+    @media screen and (min-width: 1280px){
       @include font(700, 36px, 1.25, 0.05em);
       margin-bottom: 249px;
     }
@@ -79,11 +89,18 @@
 
 
 .hotel-hero-button{
-    width: 236px;
-    font-family: 'Montserrat';
-    @include font(700, 16px, 1.25, 0.02em);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 236px;
+    height: 48px;
+    padding: 15px 24px 13px 24px;
 
-    color: #F3C653;
+    color: $c-main-accent;
+
+    @media screen and (min-width: 1024px) {
+        height: 49px;
+    }
 }
 
 .hotel-soc-list{
@@ -93,11 +110,11 @@
     left: 15px;
     top: auto;
     bottom: 20px;
-    @media screen and (min-width: 1025px){
+    @media screen and (min-width: 1024px){
         left: 47px;
         bottom: 15px;
     }
-    @include desktop{
+    @media screen and (min-width: 1024px){
       display: none;
     }
 }
@@ -111,13 +128,13 @@
     align-items: center;
     justify-content: center;
 
-    @media screen and (min-width: 1025px){
+    @media screen and (min-width: 1024px){
         top: auto;
         left: 47px;
         bottom: 64px;
     }
 
-    @include desktop{
+    @media screen and (min-width: 1280px){
         top: auto;
         left: 85px;
         bottom: 64px;
@@ -129,11 +146,11 @@
     height: 47px;
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
-    @media screen and (min-width: 1025px){
+    @media screen and (min-width: 1024px){
         width: 285px;
         height: 56px;
     }
-    @include desktop{
+    @media screen and (min-width: 1280px){
         width: 285px;
         height: 56px;
     }
@@ -146,14 +163,14 @@
         text-align: start;
     
     color: $c-address-homepage;
-    @media screen and (min-width: 1025px){
+    @media screen and (min-width: 1024px){
         @include font(400, 16px, 1.25, 0.01em);
         display: flex;
         align-items: center;
         gap: 10px;
     }
 
-    @include desktop{
+    @media screen and (min-width: 1280px){
         @include font(400, 16px, 1.25, 0.01em);
         display: flex;
         align-items: center;
@@ -167,11 +184,10 @@
     align-items: center;
     gap: 24px;
 
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1024px) {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        padding-right: 47px;
         gap: 40px;
     }
 
@@ -179,6 +195,5 @@
         flex-direction: row;
         gap: 60px;
         justify-content: flex-end;
-        padding-right: 85px;
     }
 }
