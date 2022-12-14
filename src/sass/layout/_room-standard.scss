@@ -4,7 +4,7 @@
   .hotel-room-description {
     width: 242px;
 
-    @include tablet {
+    @include tablet-s {
       width: 400px;
     }
 
@@ -15,21 +15,28 @@
 
   .hotel-room-photo {
     margin-left: auto;
-    @include tablet {
+    margin-right: auto;
+
+    @include mobile-s {
+      margin-left: auto;
+      margin-right: unset;
+    }
+
+    @include tablet-s {
       position: absolute;
-      top: -32px;
+      top: -104px;
       left: 512px;
     }
 
     @include desktop {
       position: absolute;
-      top: -32px;
+      top: -104px;
       left: 640px;
     }
   }
 
   .slider-wrapper {
-    @include mobile {
+    @include mobile-s {
       transform: translateX(-113px);
     }
   }
@@ -39,10 +46,10 @@
     bottom: 0;
     left: 0px;
 
-    @include mobile {
+    @include mobile-s {
       left: 108px;
     }
-    @include tablet {
+    @include tablet-s {
       left: unset;
       right: 77px;
     }
@@ -57,10 +64,10 @@
     bottom: 0;
     left: 64px;
 
-    @include mobile {
+    @include mobile-s {
       left: 172px;
     }
-    @include tablet {
+    @include tablet-s {
       left: unset;
       right: 13px;
     }

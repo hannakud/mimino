@@ -5,6 +5,9 @@
   .room-hero-container {
     padding: 0;
     position: relative;
+    @include tablet-s {
+      max-width: 1279px;
+    }
   }
 
   .hero-top-gradient {
@@ -12,7 +15,11 @@
     z-index: 1;
     width: 100%;
     height: 138px;
-    background: linear-gradient(#000 0%, rgba(0, 0, 0, .55) 54.17%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(
+      #000 0%,
+      rgba(0, 0, 0, 0.55) 54.17%,
+      rgba(0, 0, 0, 0) 100%
+    );
   }
 
   .room-hero-slider_item {
@@ -24,7 +31,8 @@
     z-index: 1;
     width: 40px;
     height: 40px;
-    background: $c-arrows-background url(/src/images/icons/yellow_arrow-left.svg) center no-repeat;
+    background: $c-arrows-background
+      url(/src/images/icons/yellow_arrow-left.svg) center no-repeat;
     position: absolute;
     top: calc(50% - 20px);
     outline: none;
@@ -32,7 +40,8 @@
     transition: background $transition-cubic;
 
     &:hover {
-      background: $c-arrows-background url(../images/icons/hero-slider-arrow-hover.svg) center no-repeat;
+      background: $c-arrows-background
+        url(../images/icons/hero-slider-arrow-hover.svg) center no-repeat;
     }
 
     &::before {
@@ -41,7 +50,7 @@
 
     &.slick-prev {
       left: 15px;
-      @include tablet {
+      @include tablet-s {
         left: 47px;
       }
       @include desktop {
@@ -52,7 +61,7 @@
     &.slick-next {
       right: 15px;
       transform: rotate(180deg);
-      @include tablet {
+      @include tablet-s {
         right: 47px;
       }
       @include desktop {
@@ -63,11 +72,16 @@
 
   .hero-content {
     position: absolute;
+    max-width: unset;
     bottom: 0;
     padding-bottom: 18px;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .55) 54.17%, $c-black-main 100%);
-    @include tablet {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.55) 54.17%,
+      $c-black-main 100%
+    );
+    @include tablet-s {
       padding-bottom: 24px;
     }
     @include desktop {
@@ -112,7 +126,7 @@
     position: absolute;
     right: 74px;
     bottom: 40px;
-    @include tablet {
+    @include tablet-s {
       bottom: 64px;
     }
     @include desktop {
@@ -122,7 +136,7 @@
   }
 
   .room-address-mobile {
-    @include tablet() {
+    @include tablet-s() {
       display: none;
     }
     @include desktop() {
@@ -131,10 +145,10 @@
   }
 
   .room-address {
-    @include mobile {
+    @include mobile-s {
       display: none;
     }
-    @include mobile-small {
+    @include mobile-small-s {
       display: none;
     }
   }
@@ -164,17 +178,16 @@
     }
   }
 
-
   .room-address-mobile {
     position: absolute;
     z-index: 20;
 
-    @include mobile-small {
+    @include mobile-small-s {
       top: 65px;
       right: 15px;
     }
 
-    @include mobile {
+    @include mobile-s {
       top: 65px;
       right: 15px;
     }
@@ -191,11 +204,9 @@
 
   .social-list-room-hero {
     .social-list {
-      @include tablet {
+      @include tablet-s {
         flex-direction: row;
       }
     }
   }
 }
-
-

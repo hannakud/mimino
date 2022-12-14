@@ -1,30 +1,60 @@
+.restaurant-container {
+  max-width: unset;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  @include tablet-s {
+    padding-right: 47px;
+    padding-left: 47px;
+  }
+  @include desktop {
+    padding-right: 85px;
+    padding-left: 85px;
+  }
+}
 .restaurant-details {
   max-width: 1600px;
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(../images/mobile/home/details-rest-bg.jpg);
+  background-image: linear-gradient(
+      $c-bgc-gradient-rest-hotel,
+      $c-bgc-gradient-rest-hotel
+    ),
+    url('/src/images/mobile/home/details-rest-bg.jpg');
   @include retina {
-    background-image: url('../images/mobile/home/details-rest-bg-2x.jpg');
+    background-image: $c-bgc-gradient-rest-hotel, $c-bgc-gradient-rest-hotel,
+      url('/src/images/mobile/home/details-rest-bg.jpg'),
+      url('/src/images/mobile/home/details-rest-bg-2x.jpg');
   }
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0 auto;
 
-  @include tablet {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('../images/tablet/home/details-rest-bg.jpg');
+  @include tablet-s {
+    background-image: linear-gradient(
+        $c-bgc-gradient-rest-hotel,
+        $c-bgc-gradient-rest-hotel
+      ),
+      url('/src/images/tablet/home/details-rest-bg.jpg');
     @include retina {
-      background-image: url('../images/tablet/home/details-rest-bg-2x.jpg');
+      background-image: $c-bgc-gradient-rest-hotel, $c-bgc-gradient-rest-hotel,
+        url('/src/images/tablet/home/details-rest-bg.jpg'),
+        url('/src/images/tablet/home/details-rest-bg-2x.jpg');
     }
   }
 
   @include desktop {
-    max-height: 600px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('../images/desktop/home/details-rest-bg.jpg');
+    max-height: 620px;
+    background-image: linear-gradient(
+        $c-bgc-gradient-rest-hotel,
+        $c-bgc-gradient-rest-hotel
+      ),
+      url('/src/images/desktop/home/details-rest-bg.jpg');
     @include retina {
-      background-image: url('../images/desktop/home/details-rest-bg-2x.jpg');
+      background-image: $c-bgc-gradient-rest-hotel, $c-bgc-gradient-rest-hotel,
+        url('/src/images/desktop/home/details-rest-bg.jpg'),
+        url('/src/images/desktop/home/details-rest-bg-2x.jpg');
     }
   }
 }
@@ -33,7 +63,7 @@
   margin-left: 140px;
   margin-bottom: 48px;
 
-  @include tablet {
+  @include tablet-s {
     margin-left: 278px;
   }
   @include desktop {
@@ -42,12 +72,12 @@
   }
 }
 .restaurant-logo {
-  @include font(700, 40px, 1.08, 0.03em);
-  font-family: Film P3, sans-serif;
+  @include font(700, 40px, 1.07, 0.3em);
+  font-family: 'Film P3';
   color: #ffffff;
   margin-bottom: 12px;
 
-  @include tablet {
+  @include tablet-s {
     font-size: 64px;
     margin-bottom: 16px;
   }
@@ -61,7 +91,7 @@
   @include font(700, 20px, 1.2, 0.02em);
   margin-bottom: 12px;
 
-  @include tablet {
+  @include tablet-s {
     font-size: 24px;
     margin-bottom: 8px;
   }
@@ -76,7 +106,7 @@
   margin-bottom: 20px;
   color: #bababa;
 
-  @include tablet {
+  @include tablet-s {
     font-size: 16px;
   }
 
