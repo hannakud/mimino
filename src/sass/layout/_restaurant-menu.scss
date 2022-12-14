@@ -1,9 +1,33 @@
 .restaurant-menu {
   width: 100%;
   margin: 0 auto;
-  background-color: $c-bgc-biege;
+
+  @media screen and (min-width: 1240px) {
+    max-width: 1240px;
+    background-color: $c-bgc-biege;
+    background-image: linear-gradient(
+      to right,
+      $c-bgc-biege 759px,
+      $c-bg-gradient-footer 760px,
+      $c-bgc-biege 761px
+    );
+  }
+
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
+    background-color: $c-bgc-biege;
+    background: linear-gradient(
+      to right,
+      $c-bgc-biege 338px,
+      $c-bg-gradient-footer 339px,
+      $c-bgc-biege 340px,
+      $c-bgc-biege 639px,
+      $c-bg-gradient-footer 640px,
+      $c-bgc-biege 641px,
+      $c-bgc-biege 941px,
+      $c-bg-gradient-footer 942px,
+      $c-bgc-biege 943px
+    );
   }
 }
 
