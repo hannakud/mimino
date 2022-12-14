@@ -188,3 +188,8 @@
     background-position: 95%;
   }
 }
+.modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}

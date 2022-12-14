@@ -216,3 +216,8 @@
     color: $c-modal-black;
   }
 }
+.modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}

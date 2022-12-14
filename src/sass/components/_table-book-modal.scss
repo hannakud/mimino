@@ -187,3 +187,8 @@
   background-color: $c-bgc-light;
   pointer-events: none;
 }
+.modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
