@@ -14,6 +14,7 @@
     padding-right: 85px;
     padding-left: 85px;
     max-width: 1280px;
+    position: relative;
   }
 }
 
@@ -114,11 +115,11 @@
 .restaurant-about__wrapper-second {
   @include tablet-s {
     margin-top: -32px;
-    margin-bottom: 262px;
+    margin-bottom: 175px;
   }
   @include desktop {
     margin-top: -70px;
-    margin-bottom: 175px;
+    padding-bottom: 175px;
   }
 }
 
@@ -147,13 +148,11 @@
   margin-top: 32px;
   margin-left: 70px;
 
-  @include desktop {
-    position: absolute;
-    right: 85px;
-    bottom: 118px;
-  }
-
   @include tablet-s {
+    position: absolute;
+    right: 0;
+    bottom: -350px;
+
     .image-slider {
       margin: 0;
       width: 428px;
@@ -162,6 +161,12 @@
     .image-slider-item {
       margin: 0 20px;
     }
+  }
+
+  @include desktop {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
   }
 
   @include desktop {

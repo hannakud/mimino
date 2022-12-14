@@ -1,209 +1,233 @@
 .hotel-about {
-    background-color: $c-bgc-light;
-   
-    @include mobile {
-       // max-width: 414px;
-    }
+  @extend %light-bg-lines;
+  position: relative;
 
-    @include tablet {
-      // max-width: 1024px;
+  .about-hotel-wrapper {
+    overflow: hidden;
+    @include tablet-s {
+      max-width: 1024px;
+      padding-left: 47px;
+      padding-right: 47px;
+      overflow: visible;
     }
 
     @include desktop {
-    //  max-width: 1280px;
+      position: relative;
+      overflow: visible;
     }
-
-.about-hotel-wrapper {
-    overflow-x: visible;
-   
-}
-.about-hotel-info {
-    text-align: right;
-    margin-bottom: 28px;
-    flex-direction: column;
-    display: flex;
-}
-
-/*     Скриває заголовок  */
-.visually-hidden {
+  }
+  .about-title {
     @extend %visually-hidden;
-}
-
-/*      Стилі заголовку    */
-.about-hotel-title {
+  }
+  .about-hotel-info {
     padding-top: 18px;
+    @include tablet-s {
+      padding-top: 120px;
+      margin-bottom: 142px;
+    }
+    @include desktop {
+      padding-top: 120px;
+      margin-bottom: 162px;
+    }
+  }
+  .about-hotel-title {
     color: $c-subtitles;
     font-size: 20px;
     font-family: 'Times New Roman';
     text-align: right;
     line-height: 1.15;
     font-weight: 400;
+    margin-bottom: 6px;
 
-    @include tablet {
-        font-size: 32px;
-        padding-top: 120px;
+    @include tablet-s {
+      font-size: 32px;
     }
 
     @include desktop {
-        padding-top: 120px;
-        font-size: 32px;
-        margin-bottom: 4px;
+      font-size: 32px;
+      margin-bottom: 4px;
     }
-}
-
-/*     Стилі Лого  */
-.about-hotel-link {
+  }
+  .about-hotel-name {
     color: $c-logo-restaurant-hotel;
     font-size: 40px;
-    margin-right: 0;
     letter-spacing: 0.3em;
     font-family: Film P3, sans-serif;
+    text-align: right;
+    margin-right: -13px;
+    margin-bottom: 16px;
 
-    @include mobile {
-        margin-right: -12px;
-    }
-
-    @include tablet {
-        font-size: 64px;
-        font-weight: 700;
-        margin-right: -20px;
+    @include tablet-s {
+      font-size: 64px;
+      font-weight: 700;
+      margin-bottom: 24px;
     }
 
     @include desktop {
-        font-size: 64px;
-        font-weight: 700;
-        color: $c-logo-homepage;
-        margin-right: -20px;
+      font-size: 64px;
+      font-weight: 700;
+      color: $c-logo-homepage;
+      margin-bottom: 24px;
     }
-}
+  }
 
-
-/*     Стилі тексту     */
-.about-hotel-text {
-   color: $c-text-rest-homepage;
-    margin-left: 153px;
+  .about-hotel-text {
+    margin-left: auto;
+    color: $c-text-rest-homepage;
     text-align: left;
     max-width: 242px;
-   @include font (600, 8px, 1.22, 0.02em);
-   @include mobile {
-        font-size: 12px;
-        padding-top: 16px;
-    }
-    @include tablet { 
-        min-width: 439px;
-        min-height: 80px;
-        font-size: 16px;
-        margin-left: 540px;
-        margin-top: 24px;
-        margin-bottom: 142px;
-        right: 0;
+    @include font(600, 12px, 1.25, 0.02em);
+    margin-bottom: 26px;
+
+    @include tablet-s {
+      @include font(600, 16px, 1.25, 0.02em);
+      max-width: 419px;
     }
     @include desktop {
-        @include font (600, 16px, 1.25, 0.02em);
-        min-width: 488px;
-        min-height: 88px;
-        margin-left: 630px;
-        padding-top: 24px;
+      @include font(600, 16px, 1.25, 0.015  em);
+      max-width: 488px;
     }
-}
-.photo-room {
+  }
 
-    @include tablet {
-            position: absolute;
-            left: 65px;
-            margin-top: -530px;
-        }
-     @include desktop {
-    position: absolute;
-    margin-top: -390px;
-                     
-                 }
-                 }
-.image-room {
-     @include mobile {
-     max-width: 244px;
-      
+  .photo-room {
+    width: 244px;
+    height: 322px;
+    margin-bottom: 32px;
+
+    @include tablet-s {
+      position: absolute;
+      left: 112px;
+      top: -24px;
+      z-index: 100;
+      width: 400px;
+      height: 524px;
     }
-
-    @include tablet {
-    max-width: 400px;
-    
-    }
-
     @include desktop {
-     max-width: 460px;
+      position: absolute;
+      width: 480px;
+      height: 574px;
+      left: 180px;
+      top: -24px;
+      z-index: 100;
     }
-}
+  }
 
- .hotel-reception {
-     display: flex;
+  .hotel-reception {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    margin-bottom: 32px;
 
-@include mobile {
-     margin-top: 32px;
-     margin-bottom: 32px;
+    @include tablet-s {
+      margin-bottom: 262px;
     }
-  @include tablet {
-  margin-top: 24px;
-  margin-bottom: 24px;
-    
-        }
-  @include desktop {
-margin-top: 162px;
-        }
-}
 
-.hotel-reception-text {
-    @include font (600, 8px, 1.25, 0.02em);
+    @include desktop {
+      justify-content: flex-end;
+      gap: 45px;
+      margin-bottom: 197px;
+    }
+  }
 
+  .hotel-reception-text {
+    @include font(600, 12px, 1.25, 0.02em);
     font-family: Montserrat;
     color: $c-second-accent;
     text-align: left;
     max-width: 163px;
- 
 
-    @include mobile {
-        font-size: 12px;
-     
+    @include tablet-s {
+      max-width: 312px;
+      max-height: 122px;
+      font-size: 16px;
+      margin-left: 220px;
     }
-
-    @include tablet {
-        max-width: 312px;
-        max-height: 122px;
-        font-size: 16px;
-        margin-left: 220px;
-        }
 
     @include desktop {
-        font-size: 16px;
-        margin-left: 205px;
-        max-width: 311px;
-   
+      font-size: 16px;
+      margin-left: 205px;
+      max-width: 311px;
+      position: relative;
+      top: -50px;
     }
-}
+  }
 
+  .hotel-photo{
+    width: 200px;
+    height: 278px;
 
-.image {
-   
-    @include mobile {
-            max-width: 200px;
-            }
-    
-    @include tablet {
-            max-width: 350px;
-    
-        }
-    
-        @include desktop {
-            max-width: 460px;
-        }
-}
-.down-wrapper {
-    flex-direction: column;
-    gap: 20px;
-    display: flex;
-}
+    @include tablet-s {
+      width: 350px;
+      height: 500px;
+    }
 
+    @include desktop {
+      width: 460px;
+      height: 574px;
+    }
+  }
+
+  .hotel-about-slider-wrapper {
+    width: 528px;
+    margin-left: -15px;
+    overflow: hidden;
+    position: relative;
+    left: -170px;
+
+    @include tablet-s {
+      width: 412px;
+      overflow: visible;
+      position: absolute;
+      left: 100px;
+      bottom: 56px;
+    }
+
+    @include desktop {
+      width: 510px;
+      overflow: visible;
+      position: absolute;
+      left: 85px;
+      bottom: 82px;
+    }
+
+    .slider-photo {
+      @include tablet-s {
+        width: 194px;
+      }
+      @include desktop {
+        width: 245px;
+      }
+    }
+  }
+
+  .hotel-about-slider {
+    .slick-prev-arrow {
+      left: 210px;
+      bottom: -10px;
+      @include tablet-s {
+        left: 0;
+        bottom: -20px;
+      }
+      @include desktop {
+        left: 0;
+        bottom: -20px;
+      }
+    }
+    .slick-next-arrow {
+      left: 270px;
+      bottom: -10px;
+      @include tablet-s {
+        left: 60px;
+        bottom: -20px;
+      }
+      @include desktop {
+        left: 60px;
+        bottom: -20px;
+      }
+    }
+  }
+
+  .down-wrapper {
+    margin-bottom: 32px;
+  }
 }
