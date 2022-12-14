@@ -447,3 +447,10 @@
   text-transform: none;
   padding: 15px 24px 14px;
 }
+
+.button-dark:hover,
+.button-dark:focus,
+.button-dark:active {
+  background-color: $c-white-main;
+  border-color: $c-main-accent;
+}
