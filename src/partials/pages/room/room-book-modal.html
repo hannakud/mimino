@@ -1,9 +1,6 @@
 <div class="modal modal-window-entry-room" data-modal="2">
   <div class="modal-table">
-    <button
-      type="button"
-      class="modal-room__icon close-entry-room js-modal-close"
-    >
+    <button type="button" class="modal-room__icon js-modal-close">
       <svg width="24" height="24">
         <use href="./images/icons/sprite.svg#icon-close"></use>
       </svg>
@@ -23,12 +20,11 @@
           На кого забронювати номер?
         </label>
         <label class="form__label">
-          <input
-            pattern="^\+[0-9]{12}"
-            type="text"
-            name="phone"
-            id="phone"
-            placeholder="+38 (___)___-__-__"
+            <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="+38 (___)___-__-__" pattern="^\+[0-9]{12}"
             class="form-room__input"
           />
           Номер телефону
