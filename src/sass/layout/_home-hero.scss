@@ -94,9 +94,9 @@
 
 .hero-home-subtitle {
   margin-bottom: 40px;
-  @include font(600, 16px, 1.25, 0.03em);
+  @include font(600, 16px, 1.25, 0.02em);
 
-  font-family: 'Times New Roman';
+  font-family: 'Montserrat';
   color: $c-white-main;
 
   @media screen and (min-width: 1024px) {
