@@ -247,6 +247,11 @@
   
     .icon-map-tab {
       fill: $c-main-accent;
+      transform: fill $transition-cubic;
+    }
+    
+    .icon-map-tab:hover, .icon-map-tab:focus{
+      fill: $c-second-accent;
     }
   
     .hero-wrap-home {
