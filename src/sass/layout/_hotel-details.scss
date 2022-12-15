@@ -1,5 +1,60 @@
+.hotel-details {
+  .hotel-details-slider {
+    margin-bottom: 40px;
+    padding-bottom: 60px;
+    transform: scaleX(-1);
+    @include tablet-s {
+      margin-bottom: 0;
+    }
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+
+  .hotel-slider-buttons-wrapper {
+    position: relative;
+  }
+
+  .hotel-details-slider-wrapper {
+    padding-right: 60px;
+    @include tablet-s {
+      padding-right: 315px;
+    }
+    @include desktop {
+      padding-right: 315px;
+    }
+  }
+
+  .hotel-buttons {
+    @include tablet-s {
+      position: absolute;
+      right: 0;
+      bottom: 40px;
+    }
+    @include desktop {
+      position: absolute;
+      right: 0;
+      bottom: 62px;
+    }
+
+  }
+
+  .hotel-button {
+    @include tablet-s {
+      width: 236px;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    @include desktop {
+      width: 236px;
+      padding: 12px 8px;
+      font-size: 14px;
+    }
+  }
+}
+
 .hotel-container {
-  max-width: unset;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
@@ -13,22 +68,22 @@
     padding-left: 85px;
   }
 }
+
 .hotel-details {
-  max-width: 1600px;
   height: 100%;
   background-image: linear-gradient(
-      $c-bgc-gradient-homepage-main,
-      $c-bgc-gradient-homepage-main
-    ),
-    url('/src/images/mobile/home/details-hotel-bg-.jpg');
+                  $c-bgc-gradient-homepage-main,
+                  $c-bgc-gradient-homepage-main
+  ),
+  url('/src/images/mobile/home/details-hotel-bg-.jpg');
 
   @include retina {
     background-image: linear-gradient(
-        $c-bgc-gradient-homepage-main,
-        $c-bgc-gradient-homepage-main
-      ),
-      url('/src/images/mobile/home/details-hotel-bg-.jpg'),
-      url('/src/images/mobile/home/details-hotel-bg-2x.jpg');
+                    $c-bgc-gradient-homepage-main,
+                    $c-bgc-gradient-homepage-main
+    ),
+    url('/src/images/mobile/home/details-hotel-bg-.jpg'),
+    url('/src/images/mobile/home/details-hotel-bg-2x.jpg');
   }
   background-repeat: no-repeat;
   background-position: center;
@@ -36,32 +91,31 @@
   margin: 0 auto;
   @include tablet-s {
     background-image: linear-gradient(
-        $c-bgc-gradient-homepage-main,
-        $c-bgc-gradient-homepage-main
-      ),
-      url('/src/images/tablet/home/details-hotel-bg.jpg');
+                    $c-bgc-gradient-homepage-main,
+                    $c-bgc-gradient-homepage-main
+    ),
+    url('/src/images/tablet/home/details-hotel-bg.jpg');
 
     @include retina {
       background-image: linear-gradient(
-          $c-bgc-gradient-homepage-main,
-          $c-bgc-gradient-homepage-main
-        ),
-        url('/src/images/tablet/home/details-hotel-bg.jpg'),
-        url('/src/images/tablet/home/details-hotel-bg-2x.jpg');
+                      $c-bgc-gradient-homepage-main,
+                      $c-bgc-gradient-homepage-main
+      ),
+      url('/src/images/tablet/home/details-hotel-bg.jpg'),
+      url('/src/images/tablet/home/details-hotel-bg-2x.jpg');
     }
   }
   @include desktop {
-    max-height: 620px;
     background-image: linear-gradient(
-        $c-bgc-gradient-homepage-main,
-        $c-bgc-gradient-homepage-main
-      ),
-      url('/src/images/desktop/home/details-hotel-bg.jpg');
+                    $c-bgc-gradient-homepage-main,
+                    $c-bgc-gradient-homepage-main
+    ),
+    url('/src/images/desktop/home/details-hotel-bg.jpg');
     @include retina {
       background-image: $c-bgc-gradient-homepage-main,
-        $c-bgc-gradient-homepage-main,
-        url('/src/images/desktop/home/details-hotel-bg.jpg'),
-        url('/src/images/desktop/home/details-hotel-bg-2x.jpg');
+      $c-bgc-gradient-homepage-main,
+      url('/src/images/desktop/home/details-hotel-bg.jpg'),
+      url('/src/images/desktop/home/details-hotel-bg-2x.jpg');
     }
   }
 }
@@ -79,12 +133,16 @@
   @include tablet-s {
     max-width: 549px;
     gap: 8px;
-    margin-left: 182px;
+    margin-right: 290px;
   }
 
   @include desktop {
-    margin-right: 338px;
-    margin-bottom: 40px;
+    max-width: 595px;
+    margin-right: 290px;
+    margin-bottom: 0;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
 }
 
@@ -98,12 +156,19 @@
   @include tablet-s {
     @include font(700, 64px, 1.07, 0.3em);
     padding-left: 500px;
+    position: relative;
+    right: -20px;
+    margin-bottom: 16px;
   }
 
   @include desktop {
     @include font(700, 64px, 1.07, 0.3em);
+    position: relative;
+    right: -20px;
+    margin-bottom: 16px;
   }
 }
+
 .hotel-title-subtitle {
   @include font(700, 20px, 1.2, 0.02em);
 
@@ -121,8 +186,8 @@
 
 .hotel-text {
   @include font(600, 12px, 1.25, 0.02em);
-  margin-bottom: 20px;
-  color: #bababa;
+  margin-bottom: 48px;
+  color: $c-bgc-text-homepage;
 
   @include tablet-s {
     @include font(600, 16px, 1.25, 0.02em);
@@ -140,6 +205,7 @@
   align-items: center;
   padding: 14px 26px;
 }
+
 .hotel-buttons {
   @include font(700, 16px, 1.25, 0.02em);
   text-align: center;
@@ -154,11 +220,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 330px;
+    width: 236px;
     padding-bottom: 20px;
   }
-  // @include desktop {
-  // }
 }
 
 .hotel-button:first-of-type {
