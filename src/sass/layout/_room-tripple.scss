@@ -85,10 +85,11 @@
   .slick-prev-arrow {
     position: absolute;
     bottom: 0;
-    right: 64px;
+    left: 0px;
 
     @include mobile-s {
-      right: 195px;
+      left: unset;
+      right: 225px;
     }
     @include tablet-s {
       right: unset;
@@ -103,10 +104,11 @@
   .slick-next-arrow {
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 64px;
 
     @include mobile-s {
-      right: 131px;
+      left: unset;
+      right: 150px;
     }
     @include tablet-s {
       right: unset;
