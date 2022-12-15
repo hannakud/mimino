@@ -1,35 +1,53 @@
-<div class="modal modal-window_entry " data-modal="3">
+<div class="modal modal-window_entry" data-modal="3">
   <div class="modal-price">
     <button type="button" class="modal-price__btn js-modal-close"> 
       <svg width="24" height="24">
-      <use href="./images/icons/sprite.svg#icon-close"></use>
-    </svg>
-  </button>
-  <h3 class="modal-price__title">Ціни на номер</h3>
-  <p class="modal-price__subtitle">Двомісний люкс</p>
-  <p class="modal-price__text">Категорія номеру</p>
-  <form action="" class="modal-price__form" name="cost-form" autocomplete="on">
-    <ul class="list modal-price__list">
-      <li class="modal-price__item">
-        <select name="quantity-room" id="quantity-room" class="modal-price__select">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-        </select>
-        <label for="quantity-room" class="modal-price__label">Кількість ночей</label>
+        <use href="./images/icons/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="modal-price__title">Ціни на номер</h3>
+    <p class="modal-price__subtitle">Двомісний люкс</p>
+    <p class="modal-price__text">Категорія номеру</p>
+    <form
+      action=""
+      class="modal-price__form"
+      name="cost-form"
+      autocomplete="on"
+    >
+      <ul class="list modal-price__list">
+        <li class="modal-price__item">
+          <select
+            name="quantity-room"
+            id="quantity-room"
+            class="modal-price__select"
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <label for="quantity-room" class="modal-price__label"
+            >Кількість ночей</label
+          >
         </li>
-      <li class="modal-price__item">
-        <input
-         type="number"
-         class="modal-price__input"
-         name="price"
-         id="price-room"
-         placeholder="1000">
-         <label for="price-room" class="modal-price__label modal-price__label--lowercase">Грн</label>
+        <li class="modal-price__item">
+          <input
+            type="number"
+            class="modal-price__input"
+            name="price"
+            id="price-room"
+            placeholder="1000"
+          />
+          <label
+            for="price-room"
+            class="modal-price__label modal-price__label--lowercase"
+            >Грн</label
+          >
         </li>
-    </ul>
-    <button class="modal-price__button" type="submit">Забронювати номер</button>
-  </form>
+      </ul>
+      <button class="modal-price__button js-modal-close" type="submit">
+        Забронювати номер
+      </button>
+    </form>
   </div>
 </div>
 <div class="overlay js-overlay-modal"></div>
