@@ -22,7 +22,10 @@
     ),
     url('/src/images/mobile/home/details-rest-bg.jpg');
   @include retina {
-    background-image: $c-bgc-gradient-rest-hotel, $c-bgc-gradient-rest-hotel,
+    background-image: linear-gradient(
+        $c-bgc-gradient-rest-hotel,
+        $c-bgc-gradient-rest-hotel
+      ),
       url('/src/images/mobile/home/details-rest-bg.jpg'),
       url('/src/images/mobile/home/details-rest-bg-2x.jpg');
   }
@@ -38,7 +41,10 @@
       ),
       url('/src/images/tablet/home/details-rest-bg.jpg');
     @include retina {
-      background-image: $c-bgc-gradient-rest-hotel, $c-bgc-gradient-rest-hotel,
+      background-image: linear-gradient(
+          $c-bgc-gradient-rest-hotel,
+          $c-bgc-gradient-rest-hotel
+        ),
         url('/src/images/tablet/home/details-rest-bg.jpg'),
         url('/src/images/tablet/home/details-rest-bg-2x.jpg');
     }
@@ -52,7 +58,10 @@
       ),
       url('/src/images/desktop/home/details-rest-bg.jpg');
     @include retina {
-      background-image: $c-bgc-gradient-rest-hotel, $c-bgc-gradient-rest-hotel,
+      background-image: linear-gradient(
+          $c-bgc-gradient-rest-hotel,
+          $c-bgc-gradient-rest-hotel
+        ),
         url('/src/images/desktop/home/details-rest-bg.jpg'),
         url('/src/images/desktop/home/details-rest-bg-2x.jpg');
     }

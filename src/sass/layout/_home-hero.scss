@@ -5,9 +5,10 @@
   padding-bottom: 102px;
   text-align: center;
 
-  background-image:
-    linear-gradient($c-bgc-gradient-homepage-main,
-      $c-bgc-gradient-homepage-main),
+  background-image: linear-gradient(
+      $c-bgc-gradient-homepage-main,
+      $c-bgc-gradient-homepage-main
+    ),
     url(/src/images/mobile/home/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -15,8 +16,10 @@
   margin: 0 auto;
 
   @include retina {
-    background-image: linear-gradient($c-bgc-gradient-homepage-main,
-        $c-bgc-gradient-homepage-main),
+    background-image: linear-gradient(
+        $c-bgc-gradient-homepage-main,
+        $c-bgc-gradient-homepage-main
+      ),
       url(/src/images/mobile/home/hero-bg.jpg),
       url(/src/images/mobile/home/hero-bg-2x.jpg);
   }
@@ -24,14 +27,17 @@
   @media screen and (min-width: 1024px) {
     padding-top: 188px;
     padding-bottom: 64px;
-    background-image:
-      linear-gradient($c-bgc-gradient-homepage-main,
-        $c-bgc-gradient-homepage-main),
+    background-image: linear-gradient(
+        $c-bgc-gradient-homepage-main,
+        $c-bgc-gradient-homepage-main
+      ),
       url(/src/images/tablet/home/hero-bg.jpg);
 
     @include retina {
-      background-image: linear-gradient($c-bgc-gradient-homepage-main,
-          $c-bgc-gradient-homepage-main),
+      background-image: linear-gradient(
+          $c-bgc-gradient-homepage-main,
+          $c-bgc-gradient-homepage-main
+        ),
         url(/src/images/tablet/home/hero-bg.jpg),
         url(/src/images/tablet/home/hero-bg-2x.jpg);
     }
@@ -40,15 +46,18 @@
   @media screen and (min-width: 1280px) {
     padding-top: 164px;
     padding-bottom: 64px;
-    background-image:
-      linear-gradient($c-bgc-gradient-homepage-main,
-        $c-bgc-gradient-homepage-main),
+    background-image: linear-gradient(
+        $c-bgc-gradient-homepage-main,
+        $c-bgc-gradient-homepage-main
+      ),
       url(/src/images/desktop/home/hero-bg.jpg);
   }
 
   @include retina {
-    background-image: linear-gradient($c-bgc-gradient-homepage-main,
-        $c-bgc-gradient-homepage-main),
+    background-image: linear-gradient(
+        $c-bgc-gradient-homepage-main,
+        $c-bgc-gradient-homepage-main
+      ),
       url(/src/images/desktop/home/hero-bg.jpg),
       url(/src/images/desktop/home/hero-bg-2x.jpg);
   }
@@ -175,7 +184,7 @@
 .rest-soc-icon {
   fill: $c-main-accent;
 
-  transform: fill $transition-cubic;
+  transition: all $transition-cubic;
 }
 
 .rest-soc-icon:focus,
@@ -196,80 +205,81 @@
     right: auto;
     bottom: 64px;
   }
-  
-    @media screen and (min-width: 1280px) {
-      top: auto;
-      right: auto;
-      bottom: 64px;
-    }
+
+  @media screen and (min-width: 1280px) {
+    top: auto;
+    right: auto;
+    bottom: 64px;
+  }
+}
+
+.contact-map-thumb {
+  width: 210px;
+  height: 47px;
+  border: 1px solid rgba(62, 62, 61, 0.7);
+  border-radius: 2px;
+
+  @media screen and (min-width: 1024px) {
+    width: 285px;
+    height: 56px;
   }
 
-    .contact-map-thumb {
-      width: 210px;
-      height: 47px;
-      border: 1px solid rgba(62, 62, 61, 0.7);
-      border-radius: 2px;
-  
-      @media screen and (min-width: 1024px) {
-        width: 285px;
-        height: 56px;
-      }
-  
-      @media screen and (min-width: 1280px) {
-        width: 285px;
-        height: 56px;
-      }
-    }
-  
-    .contact-link-hotel {
-      @include font(400, 12px, 1.25, 0.01em);
-      font-family: 'Montserrat';
-      display: flex;
-      gap: 8px;
-      text-align: start;
-  
-      color: $c-address-homepage;
-  
-      @media screen and (min-width: 1024px) {
-        @include font(400, 16px, 1.25, 0.01em);
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-  
-      @media screen and (min-width: 1280px) {
-        @include font(400, 16px, 1.25, 0.01em);
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-    }
-  
-    .icon-map-tab {
-      fill: $c-main-accent;
-      transform: fill $transition-cubic;
-    }
-    
-    .icon-map-tab:hover, .icon-map-tab:focus{
-      fill: $c-second-accent;
-    }
-  
-    .hero-wrap-home {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 24px;
-  
-      @media screen and (min-width: 1024px) {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        gap: 40px;
-      }
-  
-      @media screen and (min-width: 1280px) {
-        flex-direction: row;
-        gap: 60px;
-        justify-content: flex-end;
-      }
-    }
+  @media screen and (min-width: 1280px) {
+    width: 285px;
+    height: 56px;
+  }
+}
+
+.contact-link-hotel {
+  @include font(400, 12px, 1.25, 0.01em);
+  font-family: 'Montserrat';
+  display: flex;
+  gap: 8px;
+  text-align: start;
+
+  color: $c-address-homepage;
+
+  @media screen and (min-width: 1024px) {
+    @include font(400, 16px, 1.25, 0.01em);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(400, 16px, 1.25, 0.01em);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.icon-map-tab {
+  fill: $c-main-accent;
+  transition: all $transition-cubic;
+}
+
+.icon-map-tab:hover,
+.icon-map-tab:focus {
+  fill: $c-second-accent;
+}
+
+.hero-wrap-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    gap: 60px;
+    justify-content: flex-end;
+  }
+}

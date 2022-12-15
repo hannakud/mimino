@@ -84,7 +84,7 @@
       max-width: 419px;
     }
     @include desktop {
-      @include font(600, 16px, 1.25, 0.015  em);
+      @include font(600, 16px, 1.25, 0.015em);
       max-width: 488px;
     }
   }
@@ -152,7 +152,7 @@
     }
   }
 
-  .hotel-photo{
+  .hotel-photo {
     width: 200px;
     height: 278px;
 

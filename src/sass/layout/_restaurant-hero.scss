@@ -168,7 +168,7 @@
 .rest-soc-icon {
   fill: $c-main-accent;
 
-  transform: fill $transition-cubic;
+  transition: all $transition-cubic;
 }
 
 .rest-soc-icon:focus,

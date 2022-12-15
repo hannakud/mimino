@@ -111,8 +111,10 @@
       ),
       url('/src/images/desktop/home/details-hotel-bg.jpg');
     @include retina {
-      background-image: $c-bgc-gradient-homepage-main,
-        $c-bgc-gradient-homepage-main,
+      background-image: linear-gradient(
+          $c-bgc-gradient-homepage-main,
+          $c-bgc-gradient-homepage-main
+        ),
         url('/src/images/desktop/home/details-hotel-bg.jpg'),
         url('/src/images/desktop/home/details-hotel-bg-2x.jpg');
     }

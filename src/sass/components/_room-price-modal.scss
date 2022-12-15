@@ -157,10 +157,10 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  fill:rgba(128, 128, 128, 1);
-  
 }
-
+.modal-price__btn svg {
+  fill: rgba(128, 128, 128, 1);
+}
 .modal-price__select {
   display: block;
   width: 100%;
@@ -190,6 +190,6 @@
 }
 .modal.active,
 .overlay.active {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }

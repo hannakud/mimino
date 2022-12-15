@@ -24,12 +24,15 @@
   cursor: pointer;
   margin-left: auto;
   padding: 0;
-  fill:rgba(128, 128, 128, 1);
 
   @media screen and (min-width: 1024px) {
     margin-top: -44px;
     margin-right: -44px;
   }
+}
+
+.modal-room__icon svg {
+  fill: rgba(128, 128, 128, 1);
 }
 
 .backdrop {
@@ -218,6 +221,6 @@
 }
 .modal.active,
 .overlay.active {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }

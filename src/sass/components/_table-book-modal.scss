@@ -44,14 +44,15 @@
   cursor: pointer;
   margin-left: auto;
   padding: 0;
-  fill:rgba(128, 128, 128, 1);
 
   @media screen and (min-width: 1024px) {
     margin-top: -44px;
     margin-right: -44px;
   }
 }
-
+.modal-table__icon svg {
+  fill: rgba(128, 128, 128, 1);
+}
 .modal-table__title {
   margin-bottom: 40px;
   margin-top: 20px;
@@ -119,7 +120,7 @@
   padding-left: 10px;
 
   @media screen and (min-width: 1024px) {
-    @include font(nuli, 16px, 1.25, null);
+    @include font(null, 16px, 1.25, null);
     width: 288px;
   }
 }
@@ -189,6 +190,6 @@
 }
 .modal.active,
 .overlay.active {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
