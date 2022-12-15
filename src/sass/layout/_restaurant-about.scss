@@ -148,9 +148,9 @@
   margin-left: 70px;
 
   @include tablet-s {
-    position: absolute;
+    position: relative;
     right: 0;
-    bottom: -896px;
+    bottom: 310px;
 
     .image-slider {
       margin: 0;
