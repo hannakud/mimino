@@ -1,1 +1,11 @@
 <script src="./js/modal.js"></script>
+<script type="text/javascript">
+    wow = new WOW({
+        mobile: false,
+        live: true,
+        callback: function (box) {
+            console.log('animation started');
+        }
+    });
+    wow.init();
+</script>
