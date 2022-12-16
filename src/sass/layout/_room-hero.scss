@@ -126,6 +126,9 @@
     position: absolute;
     right: 74px;
     bottom: 40px;
+    @include mobile-tiny {
+      right: 34px;
+    }
     @include tablet-s {
       bottom: 64px;
     }

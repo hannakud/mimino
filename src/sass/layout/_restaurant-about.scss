@@ -43,7 +43,13 @@
 }
 
 .restaurant-about {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
   @extend %light-bg-lines;
+  @include mobile-small {
+    overflow: hidden;
+  }
   @media screen and (min-width: 1024px) {
     padding-top: 0;
   }
@@ -127,6 +133,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  picture {
+    @include mobile-small {
+      width: 175px;
+    }
+  }
   @media screen and (min-width: 1024px) {
     justify-content: start;
     gap: 50px;
@@ -147,9 +158,13 @@
   margin-top: 32px;
   margin-left: 70px;
 
+  @include mobile-tiny {
+    overflow: hidden;
+  }
+
   @include tablet-s {
     position: relative;
-    left: 70px;
+    left: 90px;
     bottom: 330px;
 
     .image-slider {
@@ -164,7 +179,7 @@
 
   @include desktop {
     position: absolute;
-    right: 0;
+    right: 60px;
     bottom: 30px;
   }
 

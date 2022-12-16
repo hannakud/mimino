@@ -4,7 +4,7 @@
   padding-top: 181px;
   padding-bottom: 102px;
   text-align: center;
-
+  max-width: 1280px;
   background-image: linear-gradient(
       $c-bgc-gradient-homepage-main,
       $c-bgc-gradient-homepage-main
@@ -14,6 +14,14 @@
   background-position: center;
   background-size: cover;
   margin: 0 auto;
+
+  @include mobile-tiny {
+    overflow: hidden;
+  }
+
+  @include mobile-small {
+    overflow: hidden;
+  }
 
   @include retina {
     background-image: linear-gradient(
@@ -105,8 +113,6 @@
 .hero-home-subtitle {
   margin-bottom: 40px;
   @include font(600, 16px, 1.25, 0.02em);
-  // position: relative;
-  // right: -10px;
   font-family: 'Montserrat';
   color: $c-white-main;
 

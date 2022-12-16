@@ -11,6 +11,12 @@
 
 // шаблон для точок перелому адаптивних сторінок
 
+@mixin mobile-tiny {
+  @media screen and (max-width: 380px) {
+    @content;
+  }
+}
+
 @mixin mobile-small {
   @media screen and (max-width: 414px) {
     @content;
