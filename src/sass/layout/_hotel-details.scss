@@ -10,7 +10,21 @@
       margin-bottom: 0;
     }
   }
-
+  .hotel-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    @include tablet-s {
+      max-width: 1279px;
+      padding-right: 47px;
+      padding-left: 47px;
+    }
+    @include desktop {
+      padding-right: 85px;
+      padding-left: 85px;
+    }
+  }
   .hotel-slider-buttons-wrapper {
     position: relative;
   }
@@ -53,22 +67,10 @@
   }
 }
 
-.hotel-container {
+.hotel-details {
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-  @include tablet-s {
-    padding-right: 47px;
-    padding-left: 47px;
-  }
-  @include desktop {
-    padding-right: 85px;
-    padding-left: 85px;
-  }
-}
-
-.hotel-details {
   height: 100%;
   background-image: linear-gradient(
       $c-bgc-gradient-homepage-main,

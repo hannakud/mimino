@@ -1,4 +1,7 @@
 .about-kitchen {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
   @extend %light-bg-lines-light;
   margin: 0 auto;
 
@@ -174,13 +177,14 @@
   }
 
   .about-kitchen-slider-wrapper {
+    overflow: hidden;
     @include mobile-s {
-      overflow: hidden;
       margin-right: -15px;
     }
     @include tablet-s {
       bottom: 50px;
       position: absolute;
+      overflow: visible;
       right: 47px;
       width: 400px;
     }
@@ -188,6 +192,7 @@
     @include desktop {
       width: 510px;
       position: absolute;
+      overflow: visible;
       right: 85px;
       bottom: 50px;
     }

@@ -1,7 +1,7 @@
 .restaurant-hero {
   position: relative;
   margin: 0 auto;
-
+  max-width: 1280px;
   padding-top: 181px;
   padding-bottom: 102px;
   text-align: center;
@@ -15,6 +15,10 @@
   background-position: center;
   background-size: cover;
   margin: 0 auto;
+
+  @include mobile-tiny {
+    overflow: hidden;
+  }
 
   @include retina {
     background-image: linear-gradient(

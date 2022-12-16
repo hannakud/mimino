@@ -16,6 +16,10 @@
   background-size: cover;
   margin: 0 auto;
 
+  @include mobile-tiny {
+    overflow: hidden;
+  }
+
   @include retina {
     background-image: linear-gradient(
         $c-bgc-gradient-homepage-main,
