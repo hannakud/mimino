@@ -10,7 +10,6 @@
     max-width: 414px;
     @media screen and (min-width: 1024px) {
       max-width: 1024px;
-      //height: 1238px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -53,21 +52,12 @@
   }
 
   .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+    @extend %visually-hidden;
   }
 
   .about-kitchen__times {
     font-family: 'Times New Roman', sans-serif;
-    @include font(400, 20px, 1.15, normal);
+    @include font(400, 20px, 1.15, 0.3em);
     color: $c-subtitles;
     text-align: left;
     margin-bottom: 12px;
@@ -80,7 +70,7 @@
 
   .about-kitchen__logo {
     font-family: 'Film P3';
-    @include font(700, 40px, 1.08, 0.03em);
+    @include font(700, 64px, 1.08, 0.3em);
     margin-bottom: 12px;
     color: $c-logo-restaurant-hotel;
 

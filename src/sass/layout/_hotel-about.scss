@@ -232,5 +232,11 @@
 
   .down-wrapper {
     margin-bottom: 32px;
+    @include tablet-s {
+      margin-bottom: 0;
+    }
+    @include desktop {
+      margin-bottom: 0;
+    }
   }
 }

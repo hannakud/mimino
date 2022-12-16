@@ -201,6 +201,7 @@
 }
 
 .hotel-button {
+  @include font(700, 16px, 1.25, 0.02em);
   min-width: 236px;
   color: $c-main-accent;
   justify-content: center;
@@ -209,11 +210,8 @@
 }
 
 .hotel-buttons {
-  @include font(700, 16px, 1.25, 0.02em);
   text-align: center;
-  @include font(700, 16px, 1.25, 0.02em);
   width: 240px;
-  text-align: center;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
