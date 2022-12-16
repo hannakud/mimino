@@ -194,13 +194,13 @@
 // Кнопки
 
 .restaurant-buttons {
-  @include font(700, 16px, 1.25, 0.02em);
-  text-align: center;
-
-  @include font(700, 16px, 1.25, 0.02em);
-  width: 100%;
+  // text-align: center;
+  width: 240px;
   text-align: center;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
   @media screen and (min-width: 1024px) {
     display: flex;
@@ -209,18 +209,41 @@
     width: 330px;
     padding-bottom: 60px;
   }
-}
-
-.restaurant-button,
-.buttons-link {
-  display: inline-block;
-  border: 2px solid #ffffff;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 240px;
+    padding-bottom: 60px;
+  }
 }
 
 .restaurant-button {
-  padding: 14px 24px;
-  margin-bottom: 16px;
+  @include font(700, 16px, 1.25, 0.02em);
+  min-width: 236px;
+  color: $c-main-accent;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 20px;
 }
-.buttons-link {
-  padding: 14px 31px;
+
+// .restaaurant-buttons {
+//   width: 240px;
+//   text-align: center;
+//   margin: 0 auto;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 16px;
+
+//   @include tablet-s {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-end;
+//     width: 236px;
+//     padding-bottom: 20px;
+//   }
+// }
+
+.restaaurant-button:first-of-type {
+  margin-bottom: 16px;
 }
