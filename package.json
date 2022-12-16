@@ -5,8 +5,8 @@
   "homepage": "https://hannakud.github.io/mimino",
   "scripts": {
     "start": "parcel src/*.html --no-cache",
-    "build": "parcel build src/*.html --public-url /mimino/",
-    "dev": "parcel src/index.html --no-cache"
+    "dev": "parcel src/index.html --no-cache",
+    "build": "parcel build src/*.html --public-url /mimino/"
   },
   "repository": {
     "type": "git",
